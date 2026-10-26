@@ -100,8 +100,8 @@ plugins:
   - callouts
   - include-markdown
 
-repo_url: https://github.com/firestar5683/StarPilot
-repo_name: firestar5683/StarPilot
+repo_url: https://github.com/StarPilotHQ/StarPilot
+repo_name: StarPilotHQ/StarPilot
 
 extra:
   social:

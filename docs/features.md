@@ -110,7 +110,7 @@ improvements across multiple manufacturers, while the car guides explain specifi
 StarPilot builds on openpilot and work from the wider community. Features such as Always On Lateral,
 Conditional Experimental Mode, themes, and Speed Limit Controller have shared project
 history; their presence alone does not make them exclusive to StarPilot. The
-[StarPilot project README](https://github.com/firestar5683/StarPilot#features) describes
+[StarPilot project README](https://github.com/StarPilotHQ/StarPilot#features) describes
 the project's features.
 
 For questions about a feature on your car or software branch, use the

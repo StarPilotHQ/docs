@@ -59,7 +59,7 @@ StarPilot is driver assistance; read the [operation guide](./usage/operation.md)
 
 ## How do I install StarPilot?
 
-The stable installer value is `firestar5683/StarPilot`. Enter it on your comma device's
+The stable installer value is `StarPilotHQ/StarPilot`. Enter it on your comma device's
 custom software setup screen. Follow the [StarPilot installation guide](./software/starpilot.md)
 for comma 3, 3X, and 4 instructions, development builds, and branch switching.
 
@@ -67,13 +67,13 @@ for comma 3, 3X, and 4 instructions, development builds, and branch switching.
 
 StarPilot builds directly on openpilot as a standalone community project with its own
 development, hardware support, features, and vehicle improvements.
-For the implementation, see the [StarPilot source code](https://github.com/firestar5683/StarPilot).
+For the implementation, see the [StarPilot source code](https://github.com/StarPilotHQ/StarPilot).
 For specific capabilities, use the feature guides above and the [settings guide](./usage/settings.md).
 
 ## Official StarPilot links
 
 - [StarPilot wiki](https://wiki.firestar.link/): installation, compatibility, and usage documentation.
-- [StarPilot on GitHub](https://github.com/firestar5683/StarPilot): source code and development.
+- [StarPilot on GitHub](https://github.com/StarPilotHQ/StarPilot): source code and development.
 - [StarPilot Discord](https://firestar.link/discord): announcements, community help, and support.
 - [FAQ and troubleshooting](./faq.md): common questions and fixes.
 - [Support tickets](./ticketsystem.md): report an issue or request an investigation.

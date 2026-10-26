@@ -7,8 +7,8 @@ description: Install StarPilot on comma 3, 3X, or 4 with the official stable and
 
 The StarPilot install links are:
 
-* Stable: `firestar5683/StarPilot`
-* Unstable Dev: `firestar5683/Dom`
+* Stable: `StarPilotHQ/StarPilot`
+* Unstable Dev: `StarPilotHQ/Dom`
 
 If your comma is new or already on the setup screen, skip to the instructions for your device.
 
@@ -23,7 +23,7 @@ If openpilot or another fork is already installed:
 
 1. Choose **Custom Software** on the setup screen.
 1. Connect to Wi-Fi when prompted.
-1. Enter `firestar5683/StarPilot` for Stable or `firestar5683/Dom` for Unstable Dev.
+1. Enter `StarPilotHQ/StarPilot` for Stable or `StarPilotHQ/Dom` for Unstable Dev.
 1. Start the installation and let it finish. The comma may restart more than once.
 
 Do not unplug the comma while it is installing or updating AGNOS.
@@ -32,7 +32,7 @@ Do not unplug the comma while it is installing or updating AGNOS.
 
 1. Connect to Wi-Fi on the setup screen.
 1. Choose to install custom software.
-1. Enter `firestar5683/StarPilot` for Stable or `firestar5683/Dom` for Unstable Dev.
+1. Enter `StarPilotHQ/StarPilot` for Stable or `StarPilotHQ/Dom` for Unstable Dev.
 1. Start the installation and wait for the comma to restart.
 
 You can power the comma inside your home with a suitable USB-C power adapter if the Wi-Fi
