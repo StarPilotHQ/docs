@@ -59,7 +59,7 @@ StarPilot is driver assistance; read the [operation guide](./usage/operation.md)
 
 ## How do I install StarPilot?
 
-The stable installer value is `StarPilotHQ/StarPilot`. Enter it on your comma device's
+The stable installer value is `starpilothq/StarPilot`. Enter it on your comma device's
 custom software setup screen. Follow the [StarPilot installation guide](./software/starpilot.md)
 for comma 3, 3X, and 4 instructions, development builds, and branch switching.
 
