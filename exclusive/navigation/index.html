@@ -6,17 +6,17 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Set a destination through Galaxy and use StarPilot route guidance with your driving model. Learn navigation setup, turn assistance, and limitations.">
+        <meta name="description" content="Set a destination, configure Mapbox and GPS, and download offline maps in Galaxy.">
       
       
       
         <link rel="canonical" href="https://wiki.firestar.link/exclusive/navigation/">
       
       
-        <link rel="prev" href="../../faq/">
+        <link rel="prev" href="../../usage/model-manager/">
       
       
-        <link rel="next" href="../android-auto/">
+        <link rel="next" href="../starport/">
       
       
       <link rel="icon" href="../../assets/images/favicon.ico">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Navigation & Route Guidance - StarPilot Docs</title>
+        <title>Navigation & Maps - StarPilot Docs</title>
       
     
     
@@ -56,9 +56,9 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Navigation & Route Guidance - StarPilot Docs" >
+        <meta  property="og:title"  content="Navigation & Maps - StarPilot Docs" >
       
-        <meta  property="og:description"  content="Set a destination through Galaxy and use StarPilot route guidance with your driving model. Learn navigation setup, turn assistance, and limitations." >
+        <meta  property="og:description"  content="Set a destination, configure Mapbox and GPS, and download offline maps in Galaxy." >
       
         <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/exclusive/navigation.png" >
       
@@ -72,9 +72,9 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Navigation & Route Guidance - StarPilot Docs" >
+        <meta  name="twitter:title"  content="Navigation & Maps - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="Set a destination through Galaxy and use StarPilot route guidance with your driving model. Learn navigation setup, turn assistance, and limitations." >
+        <meta  name="twitter:description"  content="Set a destination, configure Mapbox and GPS, and download offline maps in Galaxy." >
       
         <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/exclusive/navigation.png" >
       
@@ -101,7 +101,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#navigation" class="md-skip">
+        <a href="#navigation-maps" class="md-skip">
           Skip to content
         </a>
       
@@ -199,36 +199,6 @@
   
   
   
-  
-    
-    
-      
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../.." class="md-tabs__link">
-          
-  
-  
-  General
-
-        </a>
-      </li>
-    
-  
-
-    
-  
-
-      
-        
-  
-  
-  
     
   
   
@@ -244,11 +214,11 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../.." class="md-tabs__link">
           
   
   
-  StarPilot Exclusive Features
+  StarPilot
 
         </a>
       </li>
@@ -266,15 +236,8 @@
   
     
     
-      
-  
-  
-  
-  
-    
-    
       <li class="md-tabs__item">
-        <a href="../../cars/bolt/" class="md-tabs__link">
+        <a href="../../cars/support/" class="md-tabs__link">
           
   
   
@@ -282,9 +245,6 @@
 
         </a>
       </li>
-    
-  
-
     
   
 
@@ -364,33 +324,36 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1" >
-        
-          
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
-    General
+    StarPilot
     
   </span>
   
@@ -398,10 +361,10 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
-            General
+            StarPilot
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -418,10 +381,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -430,7 +396,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_1" >
         
           
-          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_1" id="__nav_1_1_label" tabindex="">
             
   
   
@@ -480,81 +446,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../features/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    StarPilot Features
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../software/starpilot/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Installing StarPilot
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cars/all/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Car Setup Guides
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../cars/support/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Vehicle Compatibility
     
   </span>
   
@@ -586,10 +483,13 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
@@ -598,7 +498,7 @@
         <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2" >
         
           
-          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1_2" id="__nav_1_2_label" tabindex="">
             
   
   
@@ -671,35 +571,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../usage/driving-model/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Driving Model
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../usage/galaxy/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Galaxy
+    Galaxy & Features
     
   </span>
   
@@ -717,160 +594,6 @@
   
 
               
-            
-              
-                
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-          
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    Troubleshooting & FAQ
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_1_3">
-            <span class="md-nav__icon md-icon"></span>
-            Troubleshooting & FAQ
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../ticketsystem/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Ticket System
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../faq/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    FAQ
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-    
-  
-  
-  
-    
-    
-    
-    
-      
-        
-        
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
-        
-          
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
-            
-  
-  
-  <span class="md-ellipsis">
-    StarPilot Exclusive Features
-    
-  </span>
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2">
-            <span class="md-nav__icon md-icon"></span>
-            StarPilot Exclusive Features
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -897,10 +620,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_3" id="__nav_1_3_label" tabindex="">
             
   
   
@@ -913,12 +636,35 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_3">
             <span class="md-nav__icon md-icon"></span>
             Tools
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/model-manager/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Models
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -977,54 +723,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-it" class="md-nav__link">
+  <a href="#set-up" class="md-nav__link">
     <span class="md-ellipsis">
-      How to use it
+      Set up
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-helps-while-driving" class="md-nav__link">
+  <a href="#plan-a-route" class="md-nav__link">
     <span class="md-ellipsis">
-      How it helps while driving
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#galaxy-vs-the-comma-device" class="md-nav__link">
-    <span class="md-ellipsis">
-      Galaxy vs. the comma device
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup-checklist" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup checklist
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Credits
+      Plan a route
     </span>
   </a>
   
@@ -1046,12 +756,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../android-auto/" class="md-nav__link">
+      <a href="../starport/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Android Auto
+    StarPort
     
   </span>
   
@@ -1164,10 +874,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_4" >
         
           
-          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="">
             
   
   
@@ -1180,8 +890,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
             <span class="md-nav__icon md-icon"></span>
             Toggles
           </label>
@@ -1241,6 +951,108 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Troubleshooting & FAQ
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting & FAQ
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ticketsystem/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ticket System
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    FAQ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1270,10 +1082,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   
@@ -1286,12 +1098,58 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Vehicle Specific Information
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cars/support/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Vehicle Compatibility
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../cars/all/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Car Setup Guides
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
             
               
                 
@@ -1315,10 +1173,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_1" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_3" >
         
           
-          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
             
   
   
@@ -1331,8 +1189,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_1">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             GM
           </label>
@@ -1414,10 +1272,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_4" >
         
           
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_4" id="__nav_2_4_label" tabindex="0">
             
   
   
@@ -1430,8 +1288,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_4">
             <span class="md-nav__icon md-icon"></span>
             Hyundai / Kia
           </label>
@@ -1497,10 +1355,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -1513,8 +1371,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Comma Hardware Info
           </label>
@@ -1565,10 +1423,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_2" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_2" >
         
           
-          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
             
   
   
@@ -1581,8 +1439,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
             Comma Installation
           </label>
@@ -1687,10 +1545,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="0">
             
   
   
@@ -1703,8 +1561,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_4">
             <span class="md-nav__icon md-icon"></span>
             Comma Pedal
           </label>
@@ -1877,54 +1735,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#how-to-use-it" class="md-nav__link">
+  <a href="#set-up" class="md-nav__link">
     <span class="md-ellipsis">
-      How to use it
+      Set up
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#how-it-helps-while-driving" class="md-nav__link">
+  <a href="#plan-a-route" class="md-nav__link">
     <span class="md-ellipsis">
-      How it helps while driving
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
-    <span class="md-ellipsis">
-      Features
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#galaxy-vs-the-comma-device" class="md-nav__link">
-    <span class="md-ellipsis">
-      Galaxy vs. the comma device
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#setup-checklist" class="md-nav__link">
-    <span class="md-ellipsis">
-      Setup checklist
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#credits" class="md-nav__link">
-    <span class="md-ellipsis">
-      Credits
+      Plan a route
     </span>
   </a>
   
@@ -1950,70 +1772,15 @@
   
 
 
-<h1 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h1>
-<p>Navigation is StarPilot's take on <strong>Navigate on openpilot (NOO)</strong> - a modern version built to work with <strong>any driving model</strong>.</p>
-<p>Set a destination from <a href="../../usage/galaxy/">Galaxy</a> on your phone or computer, pick a route, and StarPilot sends it straight to your comma device. While you drive, the system tracks your position along the route and uses upcoming turns to help guide both steering and speed, without replacing your driving model or hardcoding wheel commands.</p>
-<h2 id="how-to-use-it">How to use it<a class="headerlink" href="#how-to-use-it" title="Permanent link">&para;</a></h2>
-<ol>
-<li><strong>Set up navigation first.</strong> You need a Mapbox key and two toggles enabled before anything works. See <a href="../../usage/settings/#navigation">Navigation setup</a> for the required steps.</li>
-<li>Open <strong>Navigation</strong> in the Galaxy sidebar.</li>
-<li>Search for a destination, or pick from <strong>Home</strong>, <strong>Work</strong>, favorites, or recent places.</li>
-<li>Review the route options — Galaxy shows alternate routes with <strong>live traffic and ETA</strong>.</li>
-<li>Confirm the route you want. It syncs to your comma device automatically.</li>
-<li>Engage openpilot as usual. Navigation assists in the background while you stay in control.</li>
-</ol>
-<p>You can also <strong>start or cancel navigation remotely</strong> from Galaxy without touching the comma device.</p>
-<h2 id="how-it-helps-while-driving">How it helps while driving<a class="headerlink" href="#how-it-helps-while-driving" title="Permanent link">&para;</a></h2>
-<p>Navigation does not take over your car. Instead, it gives the end-to-end driving model extra context about <strong>where you actually want to go</strong>.</p>
-<p>As you move along the route, StarPilot reads upcoming maneuvers: turns, forks, ramps, lane splits, roundabouts, and U-turns and feeds that into the model as desires (for example, turn left, turn right, keep left, keep right).</p>
-<p>With <strong>Route Speed Control</strong> enabled, the system can also slow down ahead of sharper maneuvers. The model still does the driving; navigation just nudges it in the right direction.</p>
-<div class="admonition note">
-<p class="admonition-title">Works on any model</p>
-<p>Turn desires are injected into the model, so navigation guidance works even if the driving model itself was never trained on navigation data.</p>
-</div>
-<div class="admonition warning">
-<p class="admonition-title">A driving aid, not point-to-point autonomy</p>
-<p>This is not "take me home" self-driving. Navigation helps the model cooperate with turns and exits, but you must stay alert and ready to steer, especially at intersections, forks, and complex merges. See <a href="../../usage/operation/#navigation">the operation guide</a> for realistic expectations.</p>
-</div>
-<h2 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Alternate routes</strong> with live traffic and ETA</li>
-<li><strong>Automatic rerouting</strong> if you drift off the planned route</li>
-<li><strong>Presets</strong> : save Home, Work, favorites, and recent destinations</li>
-<li><strong>Remote start and cancel</strong> from Galaxy</li>
-<li><strong>On-device turn-by-turn</strong> instructions on your comma screen</li>
-</ul>
-<h2 id="galaxy-vs-the-comma-device">Galaxy vs. the comma device<a class="headerlink" href="#galaxy-vs-the-comma-device" title="Permanent link">&para;</a></h2>
-<p>Galaxy is where you search, compare routes, and manage favorites. Your comma device shows turn-by-turn guidance while you drive and runs the navigation daemon that keeps the route in sync.</p>
-<p>Both sides stay connected — change or cancel a route from Galaxy at any time.</p>
-<h2 id="setup-checklist">Setup checklist<a class="headerlink" href="#setup-checklist" title="Permanent link">&para;</a></h2>
-<p>Navigation will not do anything until these are configured:</p>
-<table>
-<thead>
-<tr>
-<th>Requirement</th>
-<th>Where to set it</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Mapbox API key</strong></td>
-<td>Galaxy → <strong>App Keys</strong> (Navigation keys)</td>
-</tr>
-<tr>
-<td><strong>Use Route Desires</strong></td>
-<td>Toggles → Lateral → Lateral Tuning</td>
-</tr>
-<tr>
-<td><strong>Use Route Speed Control</strong></td>
-<td>Toggles → Longitudinal → Longitudinal Tuning</td>
-</tr>
-</tbody>
-</table>
-<p>Full details are in the <a href="../../usage/settings/#navigation">settings guide</a>.</p>
-<h2 id="credits">Credits<a class="headerlink" href="#credits" title="Permanent link">&para;</a></h2>
-<p>Huge credit to <strong>Chubbs</strong> (<a href="https://github.com/discountchubbs">discountchubbs</a>) for the work this is built upon much of the foundation comes from his navigation work in the community (including SunnyPilot). The StarPilot team has adapted and expanded it with Galaxy integration, rerouting, presets, traffic-aware routing, and on-device turn-by-turn.</p>
-<p>For anyone who used the original NOO: this is the closest StarPilot has come to bringing that experience back and updated for modern models and the Galaxy workflow.</p>
+<h1 id="navigation-maps">Navigation &amp; Maps<a class="headerlink" href="#navigation-maps" title="Permanent link">&para;</a></h1>
+<p>Galaxy sends a destination to your comma and shows route choices. Turn guidance works with every driving model. Steering and speed still follow your normal engagement settings.</p>
+<h2 id="set-up">Set up<a class="headerlink" href="#set-up" title="Permanent link">&para;</a></h2>
+<p>While parked, open <strong>Galaxy → Tools → Navigation &amp; Maps → Setup</strong>. Turn on <strong>Navigation</strong> and save a public Mapbox token (starts with <code>pk.</code>). <strong>GPS Source</strong> selects comma/car position or phone GPS. Phone sharing needs Bluetooth or local Wi-Fi.</p>
+<h2 id="plan-a-route">Plan a route<a class="headerlink" href="#plan-a-route" title="Permanent link">&para;</a></h2>
+<p>On <strong>Destination</strong>, search for a place or choose a saved or recent one. Tap a result to start guidance and choose an alternate route if offered. <strong>Change destination</strong> searches again. <strong>End navigation</strong> clears the route. The star saves a place as Home, Work, or another favorite.</p>
+<p>Routes show traffic-aware choices and ETA when available. Galaxy reroutes after a route deviation. You can start or end guidance through the remote Galaxy link.</p>
+<p><strong>Offline Maps</strong> has two downloads: <strong>Map Overlay Roads</strong> keeps road lines on the car screen offline, while <strong>Speed Limit Maps</strong> saves regional speed-limit and curve data for the map provider. Downloading this data does not itself enable map-based SLC. Planning a new route still needs Internet.</p>
+<p>Navigation assists with turns and exits. It does not complete them for you. Stay ready to steer. The route guidance builds on community work by Chubbs.</p>
 
 
 
@@ -2036,7 +1803,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 14, 2026 19:41:58 UTC">September 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 16, 2026 06:44:11 UTC">November 16, 2026</span>
   </span>
 
     
@@ -2063,6 +1830,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
+          
+          <img src="https://avatars.githubusercontent.com/u/143428353?v=4&size=72" alt="prabhaavp">
+        </a>
       
         <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
           
@@ -2110,7 +1882,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../faq/" class="md-footer__link md-footer__link--prev" aria-label="Previous: FAQ">
+          <a href="../../usage/model-manager/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Models">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2120,20 +1892,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                FAQ
+                Models
               </div>
             </div>
           </a>
         
         
           
-          <a href="../android-auto/" class="md-footer__link md-footer__link--next" aria-label="Next: Android Auto">
+          <a href="../starport/" class="md-footer__link md-footer__link--next" aria-label="Next: StarPort">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Android Auto
+                StarPort
               </div>
             </div>
             <div class="md-footer__button md-icon">
