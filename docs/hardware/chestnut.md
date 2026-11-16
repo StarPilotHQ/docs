@@ -19,24 +19,19 @@ Chestnut bridges that gap. You mount a GPU in the passenger footwell or under th
 
 ## Do I need Chestnut?
 
-**No, unless you want the biggest models.** Most StarPilot driving models run fine on the comma device's built-in compute. You only need Chestnut if you want to download and run models marked as requiring an external GPU.
+Most StarPilot driving models run on the comma device's built-in compute. Chestnut lets you run supported Big models locally and is required for **Model pair**. **Jetlink** is another option for running a single Big model on a remote host; see [Models](../usage/model-manager.md).
 
-In StarPilot and [Galaxy](../usage/galaxy.md):
+On [Galaxy’s Models page](../usage/model-manager.md):
 
-- Models that need Chestnut are labeled accordingly in the model manager.
-- If Chestnut is not connected (or not ready), those models cannot be selected or downloaded.
-- StarPilot falls back to a built-in model if your current selection requires a GPU that is not available.
+- Models that need external hardware are labeled accordingly on the Models page.
+- You can download a Big model before connecting Chestnut. It runs only when compatible GPU hardware is ready.
+- Without an external GPU or an active Jetlink host, StarPilot uses **Active Small**. Your Big selection remains saved.
 
-You do not need to change any settings manually — StarPilot checks for Chestnut at boot and exposes GPU models only when the link is ready.
+StarPilot checks for Chestnut at boot.
 
 ## Hardware options
 
-Comma sells two Chestnut kits:
-
-* **tiny chestnut** ($249) — the dock only; bring your own compatible GPU and power supply.
-* **Ready to drive** (~$799–899) — includes an AMD Radeon RX 9060 8 GB, car power cable, longer USB cable, and mounting hardware.
-
-Both use the same open-source firmware. See comma's shop page for current pricing and availability.
+Comma sells **tiny chestnut**, a dock that needs your own GPU and power supply, and **Ready to drive**, a kit with GPU and power hardware. See [comma's shop](https://comma.ai/shop/chestnut) for current options.
 
 ## Setup overview
 
@@ -52,4 +47,4 @@ This is a high-level summary. Follow comma's included instructions (or their blo
 > Chestnut ships with custom firmware that StarPilot recognizes. The device checks that the firmware is ready before enabling GPU models. If GPU models stay unavailable after connecting Chestnut, ask in [Discord](https://firestar.link/discord).
 
 > [!TIP] Driving models
-> See the [Driving Model guide](../usage/driving-model.md) for model recommendations. Most users should start with a standard on-device model before considering chestnut-class options.
+> See [Models](../usage/model-manager.md) for the current catalog. Most users should start with an on-device model.

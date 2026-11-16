@@ -27,8 +27,7 @@ See the [StarPilot overview](./index.md) and [installation guide](./software/sta
 
 ## What is the Galaxy? Can I change settings from my phone?
 
-The Galaxy is a website that allows you to change the settings from a browser aslong as your Comma is connected to the internet.
-If you'd like to learn more about the Galaxy click this [link](./usage/galaxy.md).
+Galaxy is StarPilot's browser interface for settings, routes, and device tools. Local access works without Internet. Remote access uses a password protected `galaxy.firestar.link` link and needs Internet. See [Access Galaxy](./usage/galaxy.md#access-galaxy).
 
 ---
 
@@ -38,7 +37,7 @@ Yes. StarPilot fully supports all three comma devices, including features that s
 
 ## Does StarPilot support Chestnut (external GPU)?
 
-Yes. StarPilot detects Chestnut on Comma 3, 3X, and 4 and unlocks chestnut-class driving models when the hardware is ready. Most users do not need Chestnut — see the [Chestnut page](./hardware/chestnut.md).
+Yes. StarPilot detects Chestnut on Comma 3, 3X, and 4 and unlocks chestnut-class driving models when the hardware is ready. Most users do not need Chestnut - see the [Chestnut page](./hardware/chestnut.md).
 
 ---
 
@@ -70,20 +69,7 @@ the car returns to stock.
 
 ## Will openpilot navigate on its own?
 
-No — not in the "take me home" sense. But StarPilot does use navigation as a *driving aid*.
-
-You can set a destination from [the Galaxy](./usage/galaxy.md) and StarPilot will inject 
-turn desires into the driving model (even models that don't natively support navigation) 
-and attempt to slow down for upcoming turns. In practice this means the model 
-won't fight you when you make a turn because it knows you're turning, and on highways 
-it can keep right to take an exit with *some* consistency depending on the model. 
-Anything beyond that is iffy. See [the operation guide](./usage/operation.md#navigation) for details.
-
-Comma dropped the original navigate-on-openpilot feature, so it is not a full self-driving 
-or point-to-point routing system. With the limitations of most cars (especially steering torque) 
-and openpilot hardware, do not expect Tesla-style full autonomy.
-Openpilot remains a driver-assistance system and continues to improve; lateral control is typically strong,
-while longitudinal behavior requires more caution and attention.
+No. [Navigation & Maps](./exclusive/navigation.md) displays a route and helps the driving model prepare for turns. You still steer through intersections and exits and remain responsible for the drive.
 
 ---
 
@@ -178,11 +164,7 @@ This is usually caused by a sticky param, especially when coming from another op
 If issues persist, reach out in [Discord](https://firestar.link/discord).
 
 > [!IMPORTANT]
-> Do **not** use this if you can access Galaxy!
-> If you can access [Galaxy](./usage/galaxy.md), 
-> open "Backup and Restore" and click "SAVE ME" instead of using this branch.
-> It is faster and safer, the branch is not always up to date with latest AGNOS 
-> and you avoid the need to swap branches back after.
+> If [Galaxy](./usage/galaxy.md) still works, open **Logs & Diagnostics → Troubleshoot → Show Non-Default Values** and review changed settings before using a recovery branch.
 
 ---
 
@@ -192,7 +174,7 @@ Sometimes the device can get into a bad state due to a bad setting or conflicts 
 (especially if you went a long time without updating). 
 A "saveme" will reset all settings and return to near new state (without require a flash).
 
-Go to [Galaxy](./usage/galaxy.md), open "Backup and Restore" and click "SAVE ME".
+If Galaxy still works, open **Logs & Diagnostics → Troubleshoot → Show Non-Default Values**. Use **Reset Selected** or **Reset All Non-Default Settings** and confirm. This resets available saved settings, not the entire device.
 
 ---
 

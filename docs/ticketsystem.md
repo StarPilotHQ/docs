@@ -62,25 +62,7 @@ Potential fixes are first released on the Dom branch. If you are using the Starp
 
 ## How do I switch from the Starpilot branch to Dom?
 
-You can switch branches through your Comma device or the Galaxy dashboard. You do not need to reinstall StarPilot.
-
-### Through your Comma device
-
-1. Open the device settings.
-2. Go to Software.
-3. Change Target Branch to Dom.
-4. Follow the on-screen instructions.
-
-### Through Galaxy
-
-1. Log in to your Galaxy dashboard.
-2. Open the navigation bar.
-3. Go to Software.
-4. Find Branch Switching and change the branch to Dom.
-5. At the bottom of the page, select Switch + Update.
-
-> [!Important]
-> Your vehicle must be parked and your Comma device must be in offroad mode before you can switch branches.
+Switch to the `Dom` branch while parked using [the software guide](./software/starpilot.md#changing-branches). You do not need to reinstall StarPilot.
 
 > [!Tip]
 > If you do not want to remain on Dom, wait until the fix is included in the next StarPilot release. You can then follow the same process to switch back to the Starpilot branch.

@@ -72,12 +72,9 @@ StarPilot has two main branches you can install:
 
 ### Changing branches
 
-#### Using [Galaxy](../usage/galaxy.md) (Recommended)
+#### Using [Galaxy](../usage/galaxy.md)
 
-1. Click Software in the sidebar
-2. Show advanced options
-3. Select the new branch
-4. Click Switch + Update
+While parked, open **Tools → System Tools → Software & Updates**. Choose a target **Branch**, press **Update**, then confirm **Update & restart**. **Download only** prepares an update without restarting.
 
 #### Direct on device
 
@@ -91,7 +88,7 @@ On the **Comma 3/3X** interface:
 1. Wait for the download to finish.
 1. Install the update.
 
-On the **Comma 4** or the **Galaxy**:
+On the **Comma 4**:
 
 1. Go to **Software**.
 1. Turn on **Show advanced options**.

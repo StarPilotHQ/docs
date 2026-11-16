@@ -9,32 +9,30 @@ exclude_docs: |
   hardware/embed/
 
 nav:
-  - General:
+  - StarPilot:
       - Getting Started:
           - Welcome to StarPilot: index.md
-          - StarPilot Features: features.md
           - Installing StarPilot: software/starpilot.md
-          - Car Setup Guides: cars/all.md
-          - Vehicle Compatibility: cars/support.md
       - Usage:
           - Operation: usage/operation.md
           - Settings: usage/settings.md
-          - Driving Model: usage/driving-model.md
-          - Galaxy: usage/galaxy.md
-      - Troubleshooting & FAQ:
-          - Ticket System: ticketsystem.md
-          - FAQ: faq.md
-  - StarPilot Exclusive Features:
+          - Galaxy & Features: usage/galaxy.md
       - Tools:
+          - Models: usage/model-manager.md
           - Navigation: exclusive/navigation.md
-          - Android Auto: exclusive/android-auto.md
+          - StarPort: exclusive/starport.md
           - Cameras & Monitoring: exclusive/cameras-and-monitoring.md
           - Sentry Mode: exclusive/sentry-mode.md
           - Bluetooth: exclusive/bluetooth-controls.md
       - Toggles:
           - Lane Centering: exclusive/lane-centering.md
           - Speed Limit Controller: exclusive/speed-limit-controller.md
+      - Troubleshooting & FAQ:
+          - Ticket System: ticketsystem.md
+          - FAQ: faq.md
   - Vehicle Specific Information:
+      - Vehicle Compatibility: cars/support.md
+      - Car Setup Guides: cars/all.md
       - GM:
           - Bolt EV: cars/bolt.md
           - Volt & Other ASCM/SDGM Cars: cars/volt.md
@@ -88,6 +86,11 @@ markdown_extensions:
 
 plugins:
   - search
+  - redirects:
+      redirect_maps:
+        features.md: usage/galaxy.md
+        usage/driving-model.md: usage/model-manager.md
+        exclusive/android-auto.md: exclusive/starport.md
   - social:
       # Start fresh so cached social cards cannot retain the previous logo.
       cache_dir: .cache/plugin/social-starpilot

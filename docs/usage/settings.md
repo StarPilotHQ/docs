@@ -146,18 +146,4 @@ nudge-initiated lane changes will also be smoother and more natural.
 
 ## Navigation
 
-StarPilot can inject turn desires into any driving model to assist through turns and exits.
-Set a destination from [the Galaxy](./galaxy.md) to use it.
-See [the operation guide](./operation.md#navigation) for what to expect — 
-it is a driving aid, not point-to-point autonomy.
-
-> [!IMPORTANT] Required setup for navigation
-> Navigation will not do anything until these are set:
->
-> * **Add a Mapbox key.** A Mapbox API key is required for navigation/maps to work.
-> * **Enable Use Route Desires.** Under **Toggles -> Lateral -> Lateral Tuning**, 
-> turn on **Use Route Desires**. This is what injects turn desires into the model 
-> (the steering side of navigation).
-> * **Enable Use Route Speed Control.** Under **Toggles -> Longitudinal -> Longitudinal Tuning**, 
-> turn on **Use Route Speed Control**. This is what slows the vehicle down for upcoming turns 
-> (the longitudinal side of navigation).
+Open **Galaxy → Tools → Navigation & Maps → Setup**, enable **Navigation**, and save a public Mapbox token. See [Navigation & Maps](../exclusive/navigation.md) for routes, GPS, and offline maps.
