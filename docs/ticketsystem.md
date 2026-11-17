@@ -62,7 +62,7 @@ Potential fixes are first released on the Dom branch. If you are using the Starp
 
 ## How do I switch from the Starpilot branch to Dom?
 
-Switch to the `Dom` branch while parked using [the software guide](./software/starpilot.md#changing-branches). You do not need to reinstall StarPilot.
+Switch to the `testing` branch while parked using [the software guide](./software/starpilot.md#changing-branches). You do not need to reinstall StarPilot.
 
 > [!Tip]
 > If you do not want to remain on Dom, wait until the fix is included in the next StarPilot release. You can then follow the same process to switch back to the Starpilot branch.

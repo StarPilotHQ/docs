@@ -43,4 +43,4 @@ Under **Jetlink → Remote model connection**, choose **USB computer** or **iPho
 
 Jetlink runs Active Big on its host, which downloads the model itself. **Prepared** means the remote model is built, rather than active. The local Small model remains available, and your local Small and Chestnut selections stay saved.
 
-Follow the [Jetlink setup guide](https://github.com/StarPilotHQ/StarPilot/blob/Dom/openpilot/starpilot/models/JETLINK.md) for host setup.
+Follow the [Jetlink setup guide](https://github.com/StarPilotHQ/StarPilot/blob/testing/openpilot/starpilot/models/JETLINK.md) for host setup.

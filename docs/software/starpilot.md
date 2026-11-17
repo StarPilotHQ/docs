@@ -1,14 +1,14 @@
 ---
 title: Install StarPilot on comma 3, 3X & 4
-description: Install StarPilot on comma 3, 3X, or 4 with the official stable and development installer values, device setup steps, and branch switching instructions.
+description: Install StarPilot on comma 3, 3X, or 4 with the official stable and testing installer values, device setup steps, and branch switching instructions.
 ---
 
 # Installing StarPilot
 
 The StarPilot install links are:
 
-* Stable: `starpilothq/StarPilot`
-* Unstable Dev: `starpilothq/Dom`
+* Stable: `starpilothq/stable`
+* Testing: `starpilothq/testing`
 
 If your comma is new or already on the setup screen, skip to the instructions for your device.
 
@@ -23,7 +23,7 @@ If openpilot or another fork is already installed:
 
 1. Choose **Custom Software** on the setup screen.
 1. Connect to Wi-Fi when prompted.
-1. Enter `starpilothq/StarPilot` for Stable or `starpilothq/Dom` for Unstable Dev.
+1. Enter `starpilothq/stable` for Stable or `starpilothq/testing` for Testing.
 1. Start the installation and let it finish. The comma may restart more than once.
 
 Do not unplug the comma while it is installing or updating AGNOS.
@@ -32,7 +32,7 @@ Do not unplug the comma while it is installing or updating AGNOS.
 
 1. Connect to Wi-Fi on the setup screen.
 1. Choose to install custom software.
-1. Enter `starpilothq/StarPilot` for Stable or `starpilothq/Dom` for Unstable Dev.
+1. Enter `starpilothq/stable` for Stable or `starpilothq/testing` for Testing.
 1. Start the installation and wait for the comma to restart.
 
 You can power the comma inside your home with a suitable USB-C power adapter if the Wi-Fi
@@ -63,12 +63,31 @@ Use this only if the comma is stuck and you cannot uninstall through **Settings 
 
 ## Branches
 
-StarPilot has two main branches you can install:
+StarPilot has two main channels. `dev` remains the maintainer’s personal branch; it is not a recommended user channel:
 
 | Branch | Purpose | Stability |
 | --- | --- | --- |
-| `StarPilot` | The default branch. Use this unless you have a specific reason not to. | Stable. Recommended for everyone. |
-| `Dom` | The active development branch. Changes are made to it regularly and it may break at any time. Commonly used by users who want to test new features or fixes that are still in development. | Unstable. Use at your own risk. |
+| `stable` | The default branch. Use this unless you have a specific reason not to. | Stable. Recommended for everyone. |
+| `testing` | The active testing branch. Changes are made to it regularly and it may break at any time. Commonly used by users who want to test new features or fixes that are still in development. | Unstable. Use at your own risk. |
+
+### Existing installs and the one-time rename
+
+The channel names are changing from `StarPilot` to `stable`, and from `Dom` to `testing`.
+The rename release keeps the installed software version and settings. It changes the
+local branch and update target once; it does not install the rebase, erase recordings,
+remove models, reset calibration, or unpair Galaxy. A later deliberate branch switch
+is respected and does not run a chain of renames.
+
+Update normally while parked. After the rename release starts, check that Galaxy’s
+installed branch and update target show `stable` or `testing`. Devices can complete
+this local rename without a network connection after downloading that release.
+
+If your comma was offline during the rollout, **check the target before updating**.
+GitHub does not redirect Git branch names or raw-file installer URLs. If an old branch
+has since been reused for different software, do not update it expecting the old
+channel. Select `stable` or `testing` explicitly in Galaxy. If the old updater cannot
+switch, use the pinned migration release provided in the rollout announcement or
+contact support; do not factory-reset or delete your recordings as a first step.
 
 ### Changing branches
 
