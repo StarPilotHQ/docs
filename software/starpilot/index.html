@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Install StarPilot on comma 3, 3X, or 4 with the official stable and development installer values, device setup steps, and branch switching instructions.">
+        <meta name="description" content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and planned channel names, device setup steps, and branch switching instructions.">
       
       
       
@@ -58,7 +58,7 @@
       
         <meta  property="og:title"  content="Install StarPilot on comma 3, 3X & 4 - StarPilot Docs" >
       
-        <meta  property="og:description"  content="Install StarPilot on comma 3, 3X, or 4 with the official stable and development installer values, device setup steps, and branch switching instructions." >
+        <meta  property="og:description"  content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and planned channel names, device setup steps, and branch switching instructions." >
       
         <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/software/starpilot.png" >
       
@@ -74,7 +74,7 @@
       
         <meta  name="twitter:title"  content="Install StarPilot on comma 3, 3X & 4 - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="Install StarPilot on comma 3, 3X, or 4 with the official stable and development installer values, device setup steps, and branch switching instructions." >
+        <meta  name="twitter:description"  content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and planned channel names, device setup steps, and branch switching instructions." >
       
         <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/software/starpilot.png" >
       
@@ -531,6 +531,15 @@
   
     <nav class="md-nav" aria-label="Branches">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#planned-channel-names-and-the-one-time-rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planned channel names and the one-time rename
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#changing-branches" class="md-nav__link">
@@ -1829,6 +1838,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#planned-channel-names-and-the-one-time-rename" class="md-nav__link">
+    <span class="md-ellipsis">
+      Planned channel names and the one-time rename
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#changing-branches" class="md-nav__link">
     <span class="md-ellipsis">
       Changing branches
@@ -1890,8 +1908,9 @@
 <p>The StarPilot install links are:</p>
 <ul>
 <li>Stable: <code>starpilothq/StarPilot</code></li>
-<li>Unstable Dev: <code>starpilothq/Dom</code></li>
+<li>Testing: <code>starpilothq/Dom</code></li>
 </ul>
+<p>These are the current working links. The planned channel rename below has not been published yet.</p>
 <p>If your comma is new or already on the setup screen, skip to the instructions for your device.</p>
 <p>If openpilot or another fork is already installed:</p>
 <ol>
@@ -1904,7 +1923,7 @@
 <ol>
 <li>Choose <strong>Custom Software</strong> on the setup screen.</li>
 <li>Connect to Wi-Fi when prompted.</li>
-<li>Enter <code>starpilothq/StarPilot</code> for Stable or <code>starpilothq/Dom</code> for Unstable Dev.</li>
+<li>Enter <code>starpilothq/StarPilot</code> for Stable or <code>starpilothq/Dom</code> for Testing.</li>
 <li>Start the installation and let it finish. The comma may restart more than once.</li>
 </ol>
 <p>Do not unplug the comma while it is installing or updating AGNOS.</p>
@@ -1912,7 +1931,7 @@
 <ol>
 <li>Connect to Wi-Fi on the setup screen.</li>
 <li>Choose to install custom software.</li>
-<li>Enter <code>starpilothq/StarPilot</code> for Stable or <code>starpilothq/Dom</code> for Unstable Dev.</li>
+<li>Enter <code>starpilothq/StarPilot</code> for Stable or <code>starpilothq/Dom</code> for Testing.</li>
 <li>Start the installation and wait for the comma to restart.</li>
 </ol>
 <p>You can power the comma inside your home with a suitable USB-C power adapter if the Wi-Fi
@@ -1944,7 +1963,7 @@ multiple times before resorting to flashing.</p>
 <p>Use <a href="../../usage/galaxy/">the Galaxy</a></p>
 </div>
 <h2 id="branches">Branches<a class="headerlink" href="#branches" title="Permanent link">&para;</a></h2>
-<p>StarPilot has two main branches you can install:</p>
+<p>StarPilot currently has two main channels:</p>
 <table>
 <thead>
 <tr>
@@ -1961,11 +1980,28 @@ multiple times before resorting to flashing.</p>
 </tr>
 <tr>
 <td><code>Dom</code></td>
-<td>The active development branch. Changes are made to it regularly and it may break at any time. Commonly used by users who want to test new features or fixes that are still in development.</td>
+<td>The active testing branch. Changes are made to it regularly and it may break at any time. Commonly used by users who want to test new features or fixes that are still in development.</td>
 <td>Unstable. Use at your own risk.</td>
 </tr>
 </tbody>
 </table>
+<h3 id="planned-channel-names-and-the-one-time-rename">Planned channel names and the one-time rename<a class="headerlink" href="#planned-channel-names-and-the-one-time-rename" title="Permanent link">&para;</a></h3>
+<p>The planned names are <code>stable</code> (currently <code>StarPilot</code>) and <code>testing</code> (currently <code>Dom</code>).
+<code>dev</code> is reserved for the maintainer’s personal work, not a recommended user channel.
+Continue using the current names above until the rollout is announced.
+When published, the rename release keeps the installed software version and settings. It changes the
+local branch and update target once; it does not install the rebase, erase recordings,
+remove models, reset calibration, or unpair Galaxy. A later deliberate branch switch
+is respected and does not run a chain of renames.</p>
+<p>Once the rollout is announced, update normally while parked. After the rename release starts, check that Galaxy’s
+installed branch and update target show <code>stable</code> or <code>testing</code>. Devices can complete
+this local rename without a network connection after downloading that release.</p>
+<p>If your comma was offline during the rollout, <strong>check the target before updating</strong>.
+GitHub does not redirect Git branch names or raw-file installer URLs. If an old branch
+has since been reused for different software, do not update it expecting the old
+channel. Select <code>stable</code> or <code>testing</code> explicitly in Galaxy. If the old updater cannot
+switch, use the pinned migration release provided in the rollout announcement or
+contact support; do not factory-reset or delete your recordings as a first step.</p>
 <h3 id="changing-branches">Changing branches<a class="headerlink" href="#changing-branches" title="Permanent link">&para;</a></h3>
 <h4 id="using-galaxy">Using <a href="../../usage/galaxy/">Galaxy</a><a class="headerlink" href="#using-galaxy" title="Permanent link">&para;</a></h4>
 <p>While parked, open <strong>Tools → System Tools → Software &amp; Updates</strong>. Choose a target <strong>Branch</strong>, press <strong>Update</strong>, then confirm <strong>Update &amp; restart</strong>. <strong>Download only</strong> prepares an update without restarting.</p>
@@ -2009,7 +2045,7 @@ multiple times before resorting to flashing.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 16, 2026 06:44:11 UTC">November 16, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 17, 2026 23:53:39 UTC">November 17, 2026</span>
   </span>
 
     
@@ -2037,6 +2073,11 @@ multiple times before resorting to flashing.</p>
     
     <nav>
       
+        <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
+          
+          <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
+        </a>
+      
         <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
           
           <img src="https://avatars.githubusercontent.com/u/143428353?v=4&size=72" alt="prabhaavp">
@@ -2045,11 +2086,6 @@ multiple times before resorting to flashing.</p>
         <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
           
           <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
-        </a>
-      
-        <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
-          
-          <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
         </a>
       
         <a href="https://github.com/L4M3573R" class="md-author" title="@L4M3573R">
