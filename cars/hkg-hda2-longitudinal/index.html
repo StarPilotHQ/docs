@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Configure StarPilot longitudinal control for the listed Ioniq 6, Kia EV9, and Ioniq 5 HDA2 vehicles, including fingerprint and vehicle settings.">
+        <meta name="description" content="Configure StarPilot longitudinal control for the listed Ioniq 6, Kia EV9, and Ioniq 5 HDA2 vehicles, including vehicle identification and startup checks.">
       
       
       
@@ -58,7 +58,7 @@
       
         <meta  property="og:title"  content="Hyundai & Kia HDA2 Longitudinal Setup - StarPilot Docs" >
       
-        <meta  property="og:description"  content="Configure StarPilot longitudinal control for the listed Ioniq 6, Kia EV9, and Ioniq 5 HDA2 vehicles, including fingerprint and vehicle settings." >
+        <meta  property="og:description"  content="Configure StarPilot longitudinal control for the listed Ioniq 6, Kia EV9, and Ioniq 5 HDA2 vehicles, including vehicle identification and startup checks." >
       
         <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/cars/hkg-hda2-longitudinal.png" >
       
@@ -74,7 +74,7 @@
       
         <meta  name="twitter:title"  content="Hyundai & Kia HDA2 Longitudinal Setup - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="Configure StarPilot longitudinal control for the listed Ioniq 6, Kia EV9, and Ioniq 5 HDA2 vehicles, including fingerprint and vehicle settings." >
+        <meta  name="twitter:description"  content="Configure StarPilot longitudinal control for the listed Ioniq 6, Kia EV9, and Ioniq 5 HDA2 vehicles, including vehicle identification and startup checks." >
       
         <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/cars/hkg-hda2-longitudinal.png" >
       
@@ -87,7 +87,7 @@
   
   <link rel="preload" href="../../assets/fonts/sora/Sora.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../../assets/theme-ui.css">
-  <script src="../../assets/theme-loader.js?v=2"></script>
+  <script src="../../assets/theme-loader.js?v=3"></script>
 
   </head>
   
@@ -123,7 +123,7 @@
   <img src="../../assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Navigation menu">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
@@ -136,7 +136,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" role="button" tabindex="0" aria-label="Search documentation">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
@@ -571,6 +571,128 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_4" id="__nav_1_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Companion Apps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Companion Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/ios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1290,18 +1412,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#every-time-startup-procedure" class="md-nav__link">
+  <a href="#startup-by-vehicle" class="md-nav__link">
     <span class="md-ellipsis">
-      Every-Time Startup Procedure
+      Startup by vehicle
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#engaging-long-after-you-see-mphkph" class="md-nav__link">
+  <a href="#engaging-speed-control" class="md-nav__link">
     <span class="md-ellipsis">
-      Engaging Long After You See --- MPH/KPH
+      Engaging speed control
     </span>
   </a>
   
@@ -1465,7 +1587,7 @@
   
   
   <span class="md-ellipsis">
-    Installing your Comma
+    Installing comma hardware in a Bolt
     
   </span>
   
@@ -1751,18 +1873,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#every-time-startup-procedure" class="md-nav__link">
+  <a href="#startup-by-vehicle" class="md-nav__link">
     <span class="md-ellipsis">
-      Every-Time Startup Procedure
+      Startup by vehicle
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#engaging-long-after-you-see-mphkph" class="md-nav__link">
+  <a href="#engaging-speed-control" class="md-nav__link">
     <span class="md-ellipsis">
-      Engaging Long After You See --- MPH/KPH
+      Engaging speed control
     </span>
   </a>
   
@@ -1798,53 +1920,23 @@
 
 
 <h1 id="how-to-set-up-long-on-some-hda2-vehicles">How to Set Up Long on Some HDA2 Vehicles<a class="headerlink" href="#how-to-set-up-long-on-some-hda2-vehicles" title="Permanent link">&para;</a></h1>
-<p>This is how to set up long on:</p>
-<ul>
-<li>Ioniq 6 HDA2 2023-2025</li>
-<li>EV9 HDA2 2024-2026</li>
-<li>Ioniq 5 2026 HDA2</li>
-</ul>
+<p>This guide covers specific configurations of the Hyundai Ioniq 6 HDA II, Kia EV9 HDA II and Hyundai Ioniq 5 PE with HDA II and LFA2. Check <a href="../support/">Vehicle Compatibility</a> for the applicable model and configuration.</p>
 <h2 id="first-time-things-to-toggle">First-Time Things to Toggle<a class="headerlink" href="#first-time-things-to-toggle" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Toggle on <code>Disable Automatic Fingerprint Detection</code> in
-   <code>Settings &gt; StarPilot &gt; Vehicle Settings</code>.</li>
-<li>Set <code>Car Make</code> to <code>Hyundai</code>.</li>
-<li>Set <code>Car Model</code> to your car model. In my instance, this is
-   <code>Hyundai Ioniq 6 (with HDA II) 2023-2024</code>.</li>
-<li>Toggle on <code>openpilot Longitudinal Control (Alpha)</code> in <code>Settings &gt; Developer</code>.</li>
-</ol>
-<h2 id="every-time-startup-procedure">Every-Time Startup Procedure<a class="headerlink" href="#every-time-startup-procedure" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Make sure the car is off.</li>
-<li>Keep your foot off the brake.</li>
-<li>Press the start button twice.</li>
-<li>Wait for the comma to fully turn on to an onroad state.</li>
-<li>Wait for the cruise-control indicator on the dash to show <code>--- MPH</code> or <code>HDA 25</code>.</li>
-<li>Push the brake pedal down.</li>
-<li>Hit the start button once.</li>
-</ol>
-<p>Long should be enabled now!</p>
-<h2 id="engaging-long-after-you-see-mphkph">Engaging Long After You See <code>--- MPH/KPH</code><a class="headerlink" href="#engaging-long-after-you-see-mphkph" title="Permanent link">&para;</a></h2>
-<p>Our wheel controls are slightly different from other forks:</p>
-<ul>
-<li>LKAS button = Always on Lateral (M.A.D.S.)</li>
-<li>Cruise button = Always on Lateral (M.A.D.S.)</li>
-<li>Cruise knob down = Activate long at the current speed</li>
-<li>Cruise knob in = Deactivate long</li>
-<li>Cruise knob up = Turn long back on at the previously set speed</li>
-</ul>
-<p>After it's engaged:</p>
-<ul>
-<li>Cruise knob down = Lower the max-speed threshold</li>
-<li>Cruise knob up = Raise the max-speed threshold</li>
-</ul>
+<p>In Galaxy, open <strong>Toggles → Vehicle</strong>. Verify the recognized model and use the exact registered configuration if manual selection is needed. On setups where <strong>openpilot Longitudinal Control (Alpha)</strong> is available, follow the <a href="../../usage/settings/#openpilot-toggles">Openpilot Toggles</a> guidance before enabling it. Availability depends on the vehicle and configuration.</p>
+<h2 id="startup-by-vehicle">Startup by vehicle<a class="headerlink" href="#startup-by-vehicle" title="Permanent link">&para;</a></h2>
+<p><span id="every-time-startup-procedure"></span></p>
+<p>Startup checks differ by vehicle. Use the startup instructions confirmed for your exact vehicle and control configuration.</p>
+<p>On an <strong>Ioniq 5 PE with HDA II and LFA2</strong>, the vehicle can retain factory speed control
+when takeover is unavailable.</p>
+<p>A cruise or HDA indicator on the dashboard does not by itself confirm that StarPilot is
+controlling speed. If you're unsure how to confirm the handoff or a startup check fails,
+leave the controls disengaged and ask in <a href="https://firestar.link/discord">Discord</a> with
+your vehicle, hardware, software version and what you saw at startup.</p>
+<h2 id="engaging-speed-control">Engaging speed control<a class="headerlink" href="#engaging-speed-control" title="Permanent link">&para;</a></h2>
+<p><span id="engaging-long-after-you-see-mphkph"></span></p>
+<p>Use the controls for your vehicle. Depending on the configuration, steering and speed control can engage separately. Use the applicable SET, RES and Cancel controls as described in <a href="../../usage/operation/#basic-operation">Operation</a>. SET adjustments can differ between factory cruise and StarPilot speed control. See <a href="../../usage/settings/#wheel-controls">Wheel Controls</a>.</p>
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
-<p>If the <code>openpilot Longitudinal Control (Alpha)</code> toggle is grayed out, try one of these:</p>
-<ol>
-<li>Restart the comma.</li>
-<li>Turn off the car, turn off the comma, and wait for the comma to shut off completely.
-   Then go through the every-time startup procedure again.</li>
-</ol>
+<p>Verify the recognized vehicle and check the displayed availability or startup status. If the <strong>openpilot Longitudinal Control (Alpha)</strong> control is unavailable for your configuration, keep factory cruise settings. Switch the vehicle off before restarting the comma. If the expected handoff is still unavailable, include the startup status and route details in a <a href="../../ticketsystem/">support ticket</a>.</p>
 
 
 
@@ -1867,7 +1959,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 14, 2026 19:41:58 UTC">September 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:49:03 UTC">November 18, 2026</span>
   </span>
 
     
@@ -1894,6 +1986,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
+          
+          <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
+        </a>
       
         <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
           

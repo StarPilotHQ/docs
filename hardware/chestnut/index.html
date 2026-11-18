@@ -87,7 +87,7 @@
   
   <link rel="preload" href="../../assets/fonts/sora/Sora.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../../assets/theme-ui.css">
-  <script src="../../assets/theme-loader.js?v=2"></script>
+  <script src="../../assets/theme-loader.js?v=3"></script>
 
   </head>
   
@@ -123,7 +123,7 @@
   <img src="../../assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Navigation menu">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
@@ -136,7 +136,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" role="button" tabindex="0" aria-label="Search documentation">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
@@ -571,6 +571,128 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_4" id="__nav_1_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Companion Apps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Companion Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/ios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1384,7 +1506,7 @@
   
   
   <span class="md-ellipsis">
-    Installing your Comma
+    Installing comma hardware in a Bolt
     
   </span>
   
@@ -1798,39 +1920,29 @@
 
 
 <h1 id="chestnut-external-gpu">Chestnut (External GPU)<a class="headerlink" href="#chestnut-external-gpu" title="Permanent link">&para;</a></h1>
-<p><strong>Chestnut</strong> is comma.ai's external GPU (eGPU) dock. It connects a desktop graphics card to your comma device over USB4, giving openpilot far more compute than the built-in chip can provide on its own.</p>
-<p>StarPilot fully supports Chestnut on the <strong>Comma 3</strong>, <strong>Comma 3X</strong>, and <strong>Comma 4</strong>.</p>
+<p><strong>Chestnut</strong> is comma.ai’s external GPU dock. The cable, power and software requirements depend on the device.</p>
 <p>Learn more from comma.ai: <a href="https://blog.comma.ai/chestnut/">Introducing chestnut</a> · <a href="https://comma.ai/shop/chestnut">Chestnut shop</a></p>
 <h2 id="what-does-chestnut-do">What does Chestnut do?<a class="headerlink" href="#what-does-chestnut-do" title="Permanent link">&para;</a></h2>
-<p>Comma devices are built around low-power, on-device inference — roughly a 10 W compute budget. That works well for most driving models, but newer <strong>chestnut-class models</strong> are much larger and need a desktop GPU to run in real time.</p>
-<p>Chestnut bridges that gap. You mount a GPU in the passenger footwell or under the passenger seat, connect it to 12 V power, and plug a USB cable into your comma device. At startup, model weights load over USB4; after that, inference runs entirely on the GPU.</p>
+<p>Chestnut lets the comma run compatible larger models on a desktop GPU.</p>
 <h2 id="do-i-need-chestnut">Do I need Chestnut?<a class="headerlink" href="#do-i-need-chestnut" title="Permanent link">&para;</a></h2>
-<p>Most StarPilot driving models run on the comma device's built-in compute. Chestnut lets you run supported Big models locally and is required for <strong>Model pair</strong>. <strong>Jetlink</strong> is another option for running a single Big model on a remote host; see <a href="../../usage/model-manager/">Models</a>.</p>
-<p>On <a href="../../usage/model-manager/">Galaxy’s Models page</a>:</p>
-<ul>
-<li>Models that need external hardware are labeled accordingly on the Models page.</li>
-<li>You can download a Big model before connecting Chestnut. It runs only when compatible GPU hardware is ready.</li>
-<li>Without an external GPU or an active Jetlink host, StarPilot uses <strong>Active Small</strong>. Your Big selection remains saved.</li>
-</ul>
-<p>StarPilot checks for Chestnut at boot.</p>
+<p><strong>Most users do not need Chestnut.</strong> Standard driving models can run on the comma’s built-in hardware.</p>
+<p>In Galaxy, you can download compatible GPU models for later without Chestnut connected. Running them requires ready, supported hardware. If a selected model needs unavailable hardware, StarPilot can fall back to an eligible model. See <strong>Running now</strong> in <a href="../../usage/model-manager/">Models</a> to check what is in use.</p>
 <h2 id="hardware-options">Hardware options<a class="headerlink" href="#hardware-options" title="Permanent link">&para;</a></h2>
-<p>Comma sells <strong>tiny chestnut</strong>, a dock that needs your own GPU and power supply, and <strong>Ready to drive</strong>, a kit with GPU and power hardware. See <a href="https://comma.ai/shop/chestnut">comma's shop</a> for current options.</p>
+<p>Comma sells the dock on its own and a ready-to-drive kit for comma four. Check the <a href="https://comma.ai/shop/chestnut">Chestnut shop</a> for current kit contents, compatibility and pricing. Comma 3 and 3X setups have their own connection and power requirements.</p>
 <h2 id="setup-overview">Setup overview<a class="headerlink" href="#setup-overview" title="Permanent link">&para;</a></h2>
-<p>This is a high-level summary. Follow comma's included instructions (or their blog) for the full install:</p>
+<p>Follow the instructions for your dock, GPU and comma device:</p>
 <ol>
-<li>Assemble Chestnut with your GPU and connect GPU power.</li>
-<li>Mount Chestnut in the passenger footwell or under the passenger seat.</li>
-<li>Connect Chestnut to 12 V vehicle power (cigarette lighter or similar).</li>
-<li>Run the USB cable from Chestnut to your comma device's USB4 port.</li>
-<li>Boot StarPilot — the device should detect Chestnut automatically.</li>
+<li>Assemble and secure Chestnut and the compatible GPU.</li>
+<li>Connect the specified power supply and data cable for your hardware.</li>
+<li>Start StarPilot and check in <a href="../../usage/model-manager/">Models</a> that the hardware is ready and the expected model is running.</li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Firmware</p>
-<p>Chestnut ships with custom firmware that StarPilot recognizes. The device checks that the firmware is ready before enabling GPU models. If GPU models stay unavailable after connecting Chestnut, ask in <a href="https://firestar.link/discord">Discord</a>.</p>
+<p>The device checks that supported firmware is ready before enabling GPU models. If GPU models stay unavailable after connecting Chestnut, ask in <a href="https://firestar.link/discord">Discord</a>.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Driving models</p>
-<p>See <a href="../../usage/model-manager/">Models</a> for the current catalog. Most users should start with an on-device model.</p>
+<p>See <a href="../../usage/model-manager/">Models</a> for model selection and hardware requirements, including <a href="../../usage/model-manager/#jetlink">Jetlink</a> for a supported USB host.</p>
 </div>
 
 
@@ -1854,7 +1966,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 16, 2026 06:44:11 UTC">November 16, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:49:03 UTC">November 18, 2026</span>
   </span>
 
     
@@ -1881,6 +1993,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
+          
+          <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
+        </a>
       
         <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
           

@@ -87,7 +87,7 @@
   
   <link rel="preload" href="../../assets/fonts/sora/Sora.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../../assets/theme-ui.css">
-  <script src="../../assets/theme-loader.js?v=2"></script>
+  <script src="../../assets/theme-loader.js?v=3"></script>
 
   </head>
   
@@ -123,7 +123,7 @@
   <img src="../../assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Navigation menu">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
@@ -136,7 +136,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" role="button" tabindex="0" aria-label="Search documentation">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
@@ -587,6 +587,128 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_4" id="__nav_1_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Companion Apps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Companion Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/ios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -752,6 +874,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Set up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starport-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      StarPort Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection choices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pair-a-wireless-adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pair a wireless adapter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -760,6 +915,21 @@
       Connection problems
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Connection problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Logs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -770,12 +940,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Other phones and audio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keep-another-phone-from-taking-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keep another phone from taking over
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play-music-from-your-phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Play music from your phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-spotify-connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up Spotify Connect
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#layout-maps-and-upkeep" class="md-nav__link">
     <span class="md-ellipsis">
-      Layout, maps, and upkeep
+      Layout, maps and upkeep
     </span>
   </a>
   
@@ -1485,7 +1688,7 @@
   
   
   <span class="md-ellipsis">
-    Installing your Comma
+    Installing comma hardware in a Bolt
     
   </span>
   
@@ -1768,6 +1971,39 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Set up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#starport-support" class="md-nav__link">
+    <span class="md-ellipsis">
+      StarPort Support
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connection-choices" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection choices
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pair-a-wireless-adapter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pair a wireless adapter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1776,6 +2012,21 @@
       Connection problems
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Connection problems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connection-logs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Connection Logs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1786,12 +2037,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Other phones and audio">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keep-another-phone-from-taking-over" class="md-nav__link">
+    <span class="md-ellipsis">
+      Keep another phone from taking over
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#play-music-from-your-phone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Play music from your phone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-up-spotify-connect" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set up Spotify Connect
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#layout-maps-and-upkeep" class="md-nav__link">
     <span class="md-ellipsis">
-      Layout, maps, and upkeep
+      Layout, maps and upkeep
     </span>
   </a>
   
@@ -1827,49 +2111,75 @@
 
 
 <h1 id="starport">StarPort<a class="headerlink" href="#starport" title="Permanent link">&para;</a></h1>
-<p>Open <strong>Galaxy → Tools → StarPort</strong> while parked. Choose your device, follow its setup steps, then connect. Supported setups include built-in Android Auto, AAWireless and Motorola MA1 wireless adapters, and the Open Headunit and HeadunitPad tablet apps. Other adapters and apps may work but are not tested and may be unreliable.</p>
+<p><span id="android-auto"></span></p>
+<p>Open <strong>Galaxy → Tools → StarPort</strong> while parked. StarPort shows StarPilot on your car screen
+or tablet. Choose built-in wireless Android Auto, a wireless adapter, USB where available,
+or a tablet app. Tested adapters include <strong>AAWireless</strong> and <strong>Motorola MA1</strong>. The supported
+tablet apps are <strong>HeadunitPad</strong> on iPad and <strong>Open Headunit</strong> on Android tablets.</p>
 <h2 id="set-up">Set up<a class="headerlink" href="#set-up" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Under <strong>StarPort Support</strong>, turn on StarPort and choose <strong>Install support</strong>. Download a current stable Android Auto package by Google LLC and upload it without unzipping it. Wait for support to show <strong>Ready</strong>. Wireless pairing needs Bluetooth; accept Galaxy's prompt to enable it if needed.</li>
-<li>Choose your connection and follow the matching instructions:<ul>
-<li><strong>Built-in wireless:</strong> Open the car's phone pairing screen, tap <strong>Find car</strong>, select the car, and confirm the pairing code on both screens. Enable wireless Android Auto in the car's settings if needed; it may be called <em>smartphone connection</em> or <em>phone projection</em>.</li>
-<li><strong>Wireless adapter:</strong> Choose the adapter, put it in pairing mode, and tap <strong>Find adapter</strong>. Select the adapter as the receiver. If Galaxy asks you to connect your paired car in Bluetooth first, open <strong>Galaxy → Tools → Bluetooth</strong>, connect the car, and return to StarPort.</li>
-<li><strong>USB cable:</strong> Connect the car's Android Auto USB data port to the comma with a data-capable cable, then tap <strong>Connect</strong>. Bluetooth pairing is not needed. In the expanded setup, this option is called <strong>Wired AA</strong>.</li>
-<li><strong>Tablet app:</strong> Choose the app, open it on the tablet on the same Wi-Fi network as the comma, then tap <strong>Connect</strong>.</li>
-</ul>
-</li>
-<li>Tap <strong>Connect</strong> and keep the car on and its screen awake. The first connection can take a few minutes and sometimes more than one drive while StarPort finds a working setup. Later connections use what worked before.</li>
-</ol>
-<p>Enable <strong>Automatic Connection</strong> to connect when you start driving. Use <strong>Setup and Pairing</strong> or <strong>Change how your car connects</strong> to reopen setup.</p>
-<h2 id="connection-problems">Connection problems<a class="headerlink" href="#connection-problems" title="Permanent link">&para;</a></h2>
-<p>Check that StarPort support shows <strong>Ready</strong>, the correct car or adapter is selected, and Bluetooth and wireless Android Auto are enabled when using a wireless receiver. Other paired phones may take the screen first.</p>
+<h3 id="starport-support">StarPort Support<a class="headerlink" href="#starport-support" title="Permanent link">&para;</a></h3>
+<p>Under <strong>StarPort Support</strong>, choose <strong>Install support</strong>. Follow Galaxy’s download instructions
+for a stable Android Auto package by Google LLC. Use <strong>Choose File</strong> to select the package
+as downloaded, then choose <strong>Install</strong> or <strong>Turn On and Install</strong>. Wait for <strong>Ready</strong>. For
+wireless car or adapter pairing, enable Bluetooth if Galaxy prompts you. Use a local
+network connection for the package download and upload.</p>
+<h3 id="connection-choices">Connection choices<a class="headerlink" href="#connection-choices" title="Permanent link">&para;</a></h3>
+<p><span id="wireless-adapters"></span></p>
 <table>
 <thead>
 <tr>
-<th>Status</th>
+<th>Choose</th>
+<th>What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Built-in wireless</strong></td>
+<td>Open the car’s phone pairing screen. Tap <strong>Find car</strong>, select the car and confirm the code on both screens.</td>
+</tr>
+<tr>
+<td><strong>Wireless adapter</strong></td>
+<td>Use the car’s wired Android Auto data port. Select <strong>Wireless adapter</strong> in StarPort and follow the <a href="#pair-a-wireless-adapter">adapter pairing steps</a>.</td>
+</tr>
+<tr>
+<td><strong>USB cable</strong></td>
+<td>If <strong>Wired AA</strong> is available, connect the car’s Android Auto USB data port to the comma with a data-capable cable.</td>
+</tr>
+<tr>
+<td><strong>Tablet app</strong></td>
+<td>Put the tablet on the same Wi-Fi as the comma or join the Galaxy hotspot. Follow the steps Galaxy shows for the selected app.</td>
+</tr>
+</tbody>
+</table>
+<p>Tap <strong>Connect</strong> when prompted. Keep the car on and its screen awake for the first connection.
+Enable <strong>Automatic Connection</strong> to connect when you start driving.</p>
+<p>Disconnect wired Android Auto before enabling <a href="../../usage/model-manager/#jetlink">Jetlink</a>.
+Both use the comma's USB-C port.</p>
+<h3 id="pair-a-wireless-adapter">Pair a wireless adapter<a class="headerlink" href="#pair-a-wireless-adapter" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Verify wired Android Auto works in the car’s USB data port, then plug the adapter into that port. In StarPort, select <strong>Wireless adapter</strong> and choose the matching adapter model.</li>
+<li>If an old phone is already using the adapter, disconnect it or temporarily turn off that phone’s Bluetooth and Wi-Fi. Leave the adapter powered.</li>
+<li>Open pairing mode on the adapter. On an <strong>AAWireless TWO</strong>, hold the button for about two seconds until the light is solid purple. Look for <strong>AAWireless-XXXX</strong>. For another AAWireless model, follow its model-specific pairing steps. On a <strong>Motorola MA1</strong>, hold the button and release as soon as the light flashes blue. Look for <strong>AndroidAuto-XXXX</strong>.</li>
+<li>Tap <strong>Find adapter</strong>, or <strong>Pair another adapter</strong> if one is already selected. If more than one device appears, match the advertised name and suffix to yours. Select it and follow the pairing prompts. Use the adapter entry for this connection. If Galaxy asks you to connect a paired car in Bluetooth, do that and return to StarPort.</li>
+<li>If discovery or pairing times out, confirm the adapter is still in pairing mode and the old phone is disconnected. Restart discovery. If the adapter keeps hanging up, briefly unplug it and reconnect it while the car screen stays on. For a stale pairing, follow <a href="#start-over">Start over</a>.</li>
+</ol>
+<p><a href="https://www.aawireless.io/en/articles/best-wireless-android-auto-adapter-2026-aawireless-two-vs-two-plus">AAWireless pairing guide</a> · <a href="https://www.motorolasound.com/media/44kdgyve/ma1_ug_en_na_v18.pdf">Motorola MA1 user guide</a></p>
+<h2 id="connection-problems">Connection problems<a class="headerlink" href="#connection-problems" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>What Galaxy shows</th>
 <th>What to check</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Connecting over Bluetooth</strong> or <strong>Finding Android Auto</strong></td>
-<td>Keep the car on and the selected receiver paired.</td>
-</tr>
-<tr>
-<td><strong>Starting wireless setup</strong> or <strong>Waiting for car Wi-Fi</strong></td>
-<td>Enable wireless Android Auto and check whether another phone is using it.</td>
-</tr>
-<tr>
-<td><strong>Getting car Wi-Fi details</strong> or <strong>Joining car Wi-Fi</strong></td>
-<td>Follow the displayed instructions; restart the car or adapter if this repeatedly fails.</td>
-</tr>
-<tr>
-<td><strong>Securing your connection</strong></td>
-<td>Check the support certificate and update or reinstall support if needed.</td>
+<td><strong>Finding Android Auto</strong> or <strong>Waiting for car Wi-Fi</strong></td>
+<td>Check that StarPort Support shows <strong>Ready</strong>, the right car or adapter is selected, and wireless Android Auto is enabled in the car.</td>
 </tr>
 <tr>
 <td><strong>Waiting for your USB cable</strong></td>
-<td>Use the car's Android Auto data port and a data-capable cable.</td>
+<td>Use the car’s Android Auto data port and a data-capable cable.</td>
 </tr>
 <tr>
 <td><strong>Connected · car screen in use</strong></td>
@@ -1877,28 +2187,54 @@
 </tr>
 <tr>
 <td><strong>Trying your connection again</strong></td>
-<td>Allow the automatic reconnect and follow any displayed instructions.</td>
-</tr>
-<tr>
-<td><strong>Your dashboard is live</strong></td>
-<td>StarPilot is showing on the screen.</td>
+<td>Let StarPort retry and follow the prompts.</td>
 </tr>
 </tbody>
 </table>
-<p>For a black or frozen screen, tap <strong>Disconnect</strong>, wait a few seconds, and connect again. If it keeps happening, turn the car off, wait for its screen to go dark, and restart it. If a wireless adapter hangs repeatedly, unplug it for ten seconds and plug it back in. StarPort continues automatically or offers <strong>Continue</strong>.</p>
-<p>Use <strong>Connection Logs</strong> on the StarPort page when asking for help. The logs page includes the last 20 sessions.</p>
+<p>If the screen is black or frozen, tap <strong>Disconnect</strong>, wait a few seconds, then reconnect.
+If it keeps happening, restart the car or adapter.</p>
+<h3 id="connection-logs">Connection Logs<a class="headerlink" href="#connection-logs" title="Permanent link">&para;</a></h3>
+<ol>
+<li>Try to reproduce the issue while parked. Open <strong>Connection Logs</strong> in StarPort and find the attempt by time, car and connection type. The list shows up to 20 sessions, newest first.</li>
+<li>Check the outcome. <strong>Projected</strong> means the connection reached the projection stage. <strong>Failed</strong> shows the recorded error. A stop at <strong>RFCOMM</strong> means the attempt ended during Bluetooth setup. Include the last status shown in Galaxy if the log gives little detail.</li>
+<li>For a StarPort issue, use <strong>Send StarPort logs</strong> if it is available. Add a short description of what happened. You can also use <strong>Download all logs</strong> over a network connection and attach the zip to a <a href="../../ticketsystem/">support ticket</a>. Include the car year/model, adapter model, connection type and steps you tried. Bluetooth-only access shows summaries and can send the archive from the comma when <strong>Send StarPort logs</strong> is available.</li>
+</ol>
 <h2 id="other-phones-and-audio">Other phones and audio<a class="headerlink" href="#other-phones-and-audio" title="Permanent link">&para;</a></h2>
-<p>Most cars run Android Auto on one device at a time. If another phone keeps taking over, choose the comma as the preferred device where supported, disable that phone's wireless Android Auto for this car, or remove unused pairings.</p>
-<p>Open <strong>StarPort → Spotify and Phone Audio</strong> for music and phone audio. For phone audio, pair your phone through <a href="../bluetooth-controls/">Bluetooth</a> first.</p>
-<h2 id="layout-maps-and-upkeep">Layout, maps, and upkeep<a class="headerlink" href="#layout-maps-and-upkeep" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Customize Layout</strong> opens the StarPort layout editor.</li>
-<li><strong>Offline Road Maps</strong> saves road lines for the map overlay. For destinations and other map downloads, see <a href="../navigation/">Navigation &amp; Maps</a>.</li>
-<li>Wireless projection may use the comma's Wi-Fi for the car instead of its usual network. Use the Galaxy hotspot for local access; remote Galaxy needs an Internet connection on the comma.</li>
-<li>If the support certificate expires soon or has expired, open <strong>StarPort Support</strong> and use <strong>Update</strong> or <strong>Reinstall</strong> as offered.</li>
-</ul>
+<h3 id="keep-another-phone-from-taking-over">Keep another phone from taking over<a class="headerlink" href="#keep-another-phone-from-taking-over" title="Permanent link">&para;</a></h3>
+<ol>
+<li>On the car’s screen, open its paired devices or phone projection list. Select the comma and set it as the preferred or first device if the car offers that option. For an adapter, use its phone-switching or priority control if available.</li>
+<li>On the other Android phone, search Settings for <strong>Android Auto</strong>. Turn off <strong>Wireless Android Auto</strong> if the phone offers that switch. If you only want to stop it for this car, disable projection for that phone in the car’s device list. If the car has no separate projection control, remove the other phone’s car or adapter pairing.</li>
+<li>Reconnect StarPort with the other phone disconnected. Re-enable the other phone’s Bluetooth afterward if you still use it for calls.</li>
+</ol>
+<h3 id="play-music-from-your-phone">Play music from your phone<a class="headerlink" href="#play-music-from-your-phone" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In Galaxy, open <strong>Bluetooth → Pair phone</strong> or use the <a href="../../usage/companion-apps/">companion app</a>. Follow any media-audio pairing prompts.</li>
+<li>Open <strong>StarPort → Spotify and Phone Audio</strong>. Choose <strong>Phone over Bluetooth</strong>, select your phone, and turn on <strong>Phone Audio</strong>.</li>
+<li>On your phone, select the comma as the media audio output and play music. Calls and microphone audio stay on the phone.</li>
+</ol>
+<h3 id="set-up-spotify-connect">Set up Spotify Connect<a class="headerlink" href="#set-up-spotify-connect" title="Permanent link">&para;</a></h3>
+<ol>
+<li>In <strong>Spotify and Phone Audio</strong>, choose <strong>Spotify Connect on the comma</strong>. Follow <strong>Install</strong> under <strong>Spotify Soloist</strong> to download and upload the ARM64 Linux archive. Keep the archive as downloaded.</li>
+<li>With Spotify Premium, use <strong>Create Your API Key</strong> in Galaxy. Save the key and select <strong>Car speakers via StarPort (Android Auto)</strong> under <strong>Send audio to</strong> when prompted.</li>
+<li>Start StarPort. Put the phone and comma on the same network for first pairing. Open Spotify on your phone, play something, and select the comma from the device picker. Keep both devices online for playback.</li>
+</ol>
+<p><a href="https://support.spotify.com/article/spotify-connect/">Spotify Connect setup</a></p>
+<h2 id="layout-maps-and-upkeep">Layout, maps and upkeep<a class="headerlink" href="#layout-maps-and-upkeep" title="Permanent link">&para;</a></h2>
+<p><span id="settings-and-upkeep"></span></p>
+<p><strong>Customize Layout</strong> opens the editor for the StarPort display. <strong>Offline Road Maps</strong>
+saves road lines for the map overlay.</p>
+<p>Wireless projection can interrupt the comma’s usual Wi-Fi connection. Use the Galaxy
+hotspot for local access. Remote Galaxy still needs Internet on the comma.</p>
+<p>If the support certificate expires soon or has expired, use <strong>Update</strong> or <strong>Reinstall</strong>
+under <strong>StarPort Support</strong>.</p>
 <h2 id="start-over">Start over<a class="headerlink" href="#start-over" title="Permanent link">&para;</a></h2>
-<p>Forget the receiver in Galaxy's <strong>Bluetooth</strong> page and remove the comma from the receiver's paired-device list. Restart the car or adapter, reopen its pairing screen, then follow the matching StarPort setup again.</p>
+<p>For a saved wireless setup, try <strong>Reset handshake</strong> if Galaxy offers it. This returns
+to the standard handshake and keeps your Bluetooth pairing.</p>
+<ul>
+<li><strong>Built-in wireless:</strong> In Galaxy, open <strong>Tools → Bluetooth</strong>, find the car and choose <strong>Forget</strong>. On the car screen, remove the comma from paired phones or the Android Auto list. Then use <strong>Find car</strong> again.</li>
+<li><strong>Wireless adapter:</strong> Forget the adapter in Galaxy under <strong>Tools → Bluetooth</strong>. In the adapter’s own settings, remove the comma if the adapter provides a paired-device list. If it only offers pairing mode, open that mode to pair again. Use the manufacturer’s reset instructions only if stale pairings still block setup. A factory reset clears the adapter’s other saved pairings too.</li>
+<li><strong>USB or tablet:</strong> Return to the matching connection steps. Reconnect the data cable or reconnect the tablet app to the comma’s network.</li>
+</ul>
 
 
 
@@ -1921,7 +2257,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 16, 2026 06:44:11 UTC">November 16, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:48:47 UTC">November 18, 2026</span>
   </span>
 
     
@@ -1948,6 +2284,11 @@
 
     
     <nav>
+      
+        <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
+          
+          <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
+        </a>
       
         <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
           

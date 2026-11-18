@@ -87,7 +87,7 @@
   
   <link rel="preload" href="../../assets/fonts/sora/Sora.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../../assets/theme-ui.css">
-  <script src="../../assets/theme-loader.js?v=2"></script>
+  <script src="../../assets/theme-loader.js?v=3"></script>
 
   </head>
   
@@ -123,7 +123,7 @@
   <img src="../../assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Navigation menu">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
@@ -136,7 +136,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" role="button" tabindex="0" aria-label="Search documentation">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
@@ -582,6 +582,128 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_4" id="__nav_1_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Companion Apps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Companion Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/ios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1485,7 +1607,7 @@
   
   
   <span class="md-ellipsis">
-    Installing your Comma
+    Installing comma hardware in a Bolt
     
   </span>
   
@@ -1827,36 +1949,22 @@
 
 
 <h1 id="sentry-mode">Sentry Mode<a class="headerlink" href="#sentry-mode" title="Permanent link">&para;</a></h1>
-<p>When your car is parked, Sentry Mode watches for activity around your vehicle and automatically captures events, similar in spirit to Tesla's Sentry Mode, but built for your comma device and managed through <a href="../../usage/galaxy/">Galaxy</a>.</p>
-<p>The best part: it is not running the cameras all day and draining your battery. Sentry stays dormant until something actually happens.</p>
+<p>Sentry Mode captures events when the comma detects sustained movement while your car is
+parked. Set up monitoring and review events through <a href="../../usage/galaxy/">Galaxy</a>.</p>
 <h2 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
-<p>Sentry uses your comma device's <strong>accelerometer</strong> to detect movement while the vehicle is parked. The system sleeps quietly in the background and only wakes up when sustained motion is detected — for example, someone bumping your car or rocking it.</p>
-<p>When that happens, Sentry captures camera images from the event and saves them for you to review later.</p>
+<p>Sentry uses your comma device's <strong>accelerometer</strong> to detect movement while the vehicle is parked, for example if someone bumps or rocks it.</p>
+<p>With monitoring enabled, the vehicle off and sufficient power, Sentry arms after 90 seconds of continuous valid conditions. If those conditions are interrupted, it may need to arm again. Motion can create a warning, and further activity can escalate to an alarm.</p>
+<p>The comma’s normal parked shutdown and battery cutoff still apply.</p>
 <h2 id="galaxy-dashboard">Galaxy dashboard<a class="headerlink" href="#galaxy-dashboard" title="Permanent link">&para;</a></h2>
-<p>Sentry is managed entirely through Galaxy. Open <strong>Cameras &amp; Monitoring → Sentry</strong> to:</p>
-<ul>
-<li>Turn Sentry Mode on or off</li>
-<li>See the current status of the system</li>
-<li>Review your latest event (with camera captures)</li>
-<li>Browse past events and delete ones you no longer need</li>
-<li>Grab a live snapshot from both cameras while parked</li>
-<li>Send a test capture to confirm everything is working</li>
-</ul>
-<p>Events refresh automatically while you have the page open, so you can check in from your phone without touching the comma device.</p>
+<p>Open <strong>Cameras &amp; Monitoring → Sentry</strong> to turn monitoring on or off, adjust its settings and review events. The event list refreshes while the page is open. Select <strong>Delete</strong> to remove an event or <strong>Delete All</strong> to clear the list.</p>
+<p>For a live parked image, use <a href="../cameras-and-monitoring/#camera-snapshot">Camera Snapshot</a>.</p>
 <h2 id="notifications">Notifications<a class="headerlink" href="#notifications" title="Permanent link">&para;</a></h2>
-<p>When Sentry detects something, you can get alerted through any combination of:</p>
-<ul>
-<li><strong>Browser push notifications</strong> — enable directly from the Sentry page in Galaxy</li>
-<li><strong>ntfy</strong> — paste your ntfy topic URL for phone notifications</li>
-<li><strong>Discord</strong> — paste a Discord webhook URL (or any compatible webhook)</li>
-</ul>
-<p>Use <strong>Send test notification</strong> in Galaxy to confirm your setup before you need it.</p>
+<p>The Sentry page supports <strong>Browser push</strong>, <strong>Discord</strong>, <strong>General webhook</strong>, <strong>ntfy</strong> and <strong>Galaxy App Alerts</strong> where available. Browser push requires HTTPS and a compatible browser. App alerts require permission on the phone and a configured push relay. Use the test button for each channel you set up.</p>
 <div class="admonition tip">
 <p class="admonition-title">iPhone users</p>
 <p>Add Galaxy to your Home Screen as a web app before enabling browser notifications. iOS requires a Home Screen web app for web push to work.</p>
 </div>
 <h2 id="settings">Settings<a class="headerlink" href="#settings" title="Permanent link">&para;</a></h2>
-<p>All Sentry settings live on the Galaxy Sentry page — there is nothing extra to configure on the comma device itself.</p>
 <table>
 <thead>
 <tr>
@@ -1866,7 +1974,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Enable Sentry Mode</strong></td>
+<td><strong>Use parked motion monitoring</strong></td>
 <td>Turn parked monitoring on or off</td>
 </tr>
 <tr>
@@ -1875,30 +1983,14 @@
 </tr>
 <tr>
 <td><strong>Warning persistence</strong></td>
-<td>How long movement must continue before the first alert fires. Useful for filtering out brief vibrations (wind, passing trucks, etc.)</td>
-</tr>
-<tr>
-<td><strong>Webhook URL</strong></td>
-<td>Optional Discord or custom webhook for alerts</td>
-</tr>
-<tr>
-<td><strong>ntfy URL</strong></td>
-<td>Optional ntfy topic for phone alerts</td>
+<td>How much motion evidence triggers the first warning. Higher values help filter brief vibrations.</td>
 </tr>
 </tbody>
 </table>
 <p>Start with the defaults and adjust sensitivity if you get too many false alerts or not enough real ones.</p>
 <h2 id="what-gets-captured">What gets captured<a class="headerlink" href="#what-gets-captured" title="Permanent link">&para;</a></h2>
-<p>When Sentry triggers, it saves camera images from the event along with a timestamp. You can view them in Galaxy immediately or come back to them later from the event history.</p>
-<p>Events stay on your device until you delete them.</p>
-<div class="admonition note">
-<p class="admonition-title">Power-off alerts</p>
-<p>If your comma device shuts down while Sentry is enabled, you may receive a power-off alert. These do not include camera images because the device is already shutting down.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Sentry is for when you are parked</p>
-<p>Sentry only runs while your vehicle is off-road (not actively driving). It is a parking security feature, not something that runs during normal openpilot operation.</p>
-</div>
+<p>Galaxy lists <strong>Motion</strong>, <strong>Alarm</strong>, <strong>Selfie</strong> and <strong>Low battery</strong> events with timestamps. Motion and alarm events can include road and cabin images when the capture succeeds. Low battery entries show the measured battery voltage and the cutoff.</p>
+<p>Sentry stores up to 512 events. When storage is full, new events can’t be saved until you clear space. Use a supported network connection to view event images. Bluetooth-only access can show event details.</p>
 
 
 
@@ -1921,7 +2013,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 22, 2026 15:23:52 UTC">October 22, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:48:04 UTC">November 18, 2026</span>
   </span>
 
     
@@ -1949,6 +2041,11 @@
     
     <nav>
       
+        <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
+          
+          <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
+        </a>
+      
         <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
           
           <img src="https://avatars.githubusercontent.com/u/143428353?v=4&size=72" alt="prabhaavp">
@@ -1964,12 +2061,13 @@
           <img src="https://avatars.githubusercontent.com/u/87735573?v=4&size=72" alt="L4M3573R">
         </a>
       
-        <a href="https://github.com/Sonnyhayka" class="md-author" title="@Sonnyhayka">
-          
-          <img src="https://avatars.githubusercontent.com/u/147892136?v=4&size=72" alt="Sonnyhayka">
-        </a>
       
       
+        
+          <a href="https://github.com/StarPilotHQ/StarPilot/blob/master/docs/exclusive/sentry-mode.md" class="md-author md-author--more">
+            +1
+          </a>
+        
       
     </nav>
   </span>

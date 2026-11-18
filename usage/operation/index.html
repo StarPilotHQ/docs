@@ -87,7 +87,7 @@
   
   <link rel="preload" href="../../assets/fonts/sora/Sora.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../../assets/theme-ui.css">
-  <script src="../../assets/theme-loader.js?v=2"></script>
+  <script src="../../assets/theme-loader.js?v=3"></script>
 
   </head>
   
@@ -123,7 +123,7 @@
   <img src="../../assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Navigation menu">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
@@ -136,7 +136,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" role="button" tabindex="0" aria-label="Search documentation">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
@@ -701,6 +701,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#longitudinal-planner-and-enhanced-stops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Longitudinal Planner and Enhanced Stops
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#experimental-mode" class="md-nav__link">
     <span class="md-ellipsis">
       Experimental Mode
@@ -801,6 +810,128 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_4" id="__nav_1_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Companion Apps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Companion Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../companion-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../companion-apps/ios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../companion-apps/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1617,7 +1748,7 @@
   
   
   <span class="md-ellipsis">
-    Installing your Comma
+    Installing comma hardware in a Bolt
     
   </span>
   
@@ -2020,6 +2151,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#longitudinal-planner-and-enhanced-stops" class="md-nav__link">
+    <span class="md-ellipsis">
+      Longitudinal Planner and Enhanced Stops
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#experimental-mode" class="md-nav__link">
     <span class="md-ellipsis">
       Experimental Mode
@@ -2092,38 +2232,25 @@
 
 <h1 id="openpilot-operation">Openpilot Operation<a class="headerlink" href="#openpilot-operation" title="Permanent link">&para;</a></h1>
 <h2 id="capabilities">Capabilities<a class="headerlink" href="#capabilities" title="Permanent link">&para;</a></h2>
-<p>Openpilot is driver assistance, not self-driving.
-It performs best on highways, providing a (mostly) hands-free experience.</p>
-<p>It performs adaptive cruise control and automated lane centering. 
-It will stop at most traffic lights and rolling stop for some stop signs.
-It can handle most curves, especially at the recommended curve speed limit. 
-It will attempt to do low-speed turns (be prepared to take manual control), 
-but is limited by available steering torque, which depends on the vehicle.</p>
-<p>It is not full self-driving. 
-It requires you to pay attention using a driver monitoring camera instead of wheel nags.</p>
-<p>It is actively developed and continues to improve (eg. the rolling stops),
-but this is a snapshot of what it currently does.</p>
+<p>Openpilot is driver assistance, not self-driving. It performs best on highways.</p>
+<p>On supported configurations, it provides adaptive cruise control and automated lane centering.
+Traffic-light and stop-sign behavior depends on the driving mode, planner, Enhanced Stops and
+vehicle. Curves and low-speed turns are limited by the vehicle’s steering capabilities.</p>
+<p>You must stay attentive and ready to steer or brake. Driver monitoring helps check your attention.</p>
 <h2 id="basic-operation">Basic Operation<a class="headerlink" href="#basic-operation" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Pay attention at all times. You are responsible for your vehicle's operation.</li>
-<li>You can manually override or disengage openpilot at any time. 
-Steering, throttle, and brakes can be used at any time.</li>
-<li>To engage openpilot (ie. to make it control your speed and steering), 
-engage your CC system as normal by turning CC ON, then pressing SET/-. </li>
-<li>To disengage openpilot, it should be the same as your CC system. 
-Press CC cancel, CC OFF, or hit the brakes.</li>
-<li>To adjust openpilot max speed, use the CC +/- buttons. 
-Depending on the car, your dash may not reflect the max speed, 
-so instead use the openpilot UI's max speed shown.</li>
+<li>Pay attention at all times. You are responsible for your vehicle’s operation.</li>
+<li>You can steer, accelerate, brake, or disengage openpilot at any time.</li>
+<li>Use your vehicle’s engagement controls; steering and speed can engage separately.</li>
+<li>Button and pedal behavior depends on the vehicle and AOL settings. Manual steering or accelerator input may override assistance without disengaging it.</li>
+<li>To adjust openpilot max speed, use the CC +/- buttons. Depending on the car, your dash may not reflect the max speed, so instead use the openpilot UI’s max speed shown.</li>
 </ol>
 <h2 id="always-on-lateral">Always On Lateral<a class="headerlink" href="#always-on-lateral" title="Permanent link">&para;</a></h2>
-<p>With Always on Lateral (AOL), steering (lane centering) stays active at all times, 
-even when Cruise Control (CC) is disengaged or pressing throttle/brake pedal. 
-This does not change the manual override safety protocols, 
-you can always override it by manually steering.</p>
-<p>To enable, turn the CC system on. 
-To disable, turn CC system off.</p>
-<p>To permanently disable, <a href="../settings/#always-on-lateral">see settings</a></p>
+<p>With Always On Lateral (AOL), steering assistance can remain active when cruise speed control
+is disengaged. AOL can be armed (ready to assist), active or paused. Pedal and Cancel/OFF behavior
+depends on the vehicle and settings. You can still override steering manually. Use the controls
+for your vehicle to enable or disable AOL.</p>
+<p>To permanently disable, <a href="../settings/#always-on-lateral">see settings</a>.</p>
 <h2 id="lane-changes">Lane Changes<a class="headerlink" href="#lane-changes" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Verify it is safe to change lanes.</li>
@@ -2135,44 +2262,98 @@ To disable, turn CC system off.</p>
 <p>Openpilot will attempt to use your blind spot monitors on supported cars, 
 but you should always check yourself.</p>
 </div>
+<p>Lane-change assistance depends on the minimum-speed setting and vehicle capabilities.</p>
 <div class="admonition warning">
 <p class="admonition-title">Nudge-less lane changes</p>
-<p>Step 3 can be skipped if nudge-less lane changes are enabled in settings.
-Be careful if you use this non-recommended setting.</p>
+<p>Step 3 can be skipped when <strong>Automatic Lane Changes</strong> is enabled, after the configured delay
+and when lane and blindspot checks allow. If <strong>Require Cruise for Automatic Lane Changes</strong>
+is enabled, engage factory cruise or StarPilot speed control before signaling. Narrower or
+uncertain lanes still require a nudge.</p>
+<p>Be careful if you use this non-recommended setting.</p>
 </div>
 <h2 id="ui-basics">UI Basics<a class="headerlink" href="#ui-basics" title="Permanent link">&para;</a></h2>
 <h3 id="border-colors">Border Colors<a class="headerlink" href="#border-colors" title="Permanent link">&para;</a></h3>
-<ol>
-<li>None - openpilot is not engaged</li>
-<li>Blue - openpilot is controlling only steering (AOL)</li>
-<li>Green - openpilot is engaged in chill mode</li>
-<li>Grey - openpilot is engaged, but overridden (manually steering or pressing throttle pedal)</li>
-<li>Orange - openpilot is engaged, <a href="#conditional-experimental-mode">CEM</a> is active</li>
-<li>Red - openpilot is engaged, personality set to Traffic Mode</li>
-<li>Purple - switchback mode is enabled, which limits the frequency of "Steer limit exceeded" warnings</li>
-</ol>
+<table>
+<thead>
+<tr>
+<th>Color</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dark blue</td>
+<td>No active StarPilot steering or speed assistance</td>
+</tr>
+<tr>
+<td>Dark teal</td>
+<td>AOL armed and waiting to assist</td>
+</tr>
+<tr>
+<td>Teal</td>
+<td>Steering assistance without active speed control</td>
+</tr>
+<tr>
+<td>Pink</td>
+<td>StarPilot speed control only</td>
+</tr>
+<tr>
+<td>Green</td>
+<td>Steering and speed assistance together, or steering with factory cruise</td>
+</tr>
+<tr>
+<td>Yellow</td>
+<td>Manually selected Chill mode</td>
+</tr>
+<tr>
+<td>Orange</td>
+<td>Experimental or stop-related state</td>
+</tr>
+<tr>
+<td>Red</td>
+<td>Traffic Mode</td>
+</tr>
+<tr>
+<td>Purple</td>
+<td>Switchback Mode</td>
+</tr>
+<tr>
+<td>Grey</td>
+<td>Manual steering or speed override</td>
+</tr>
+</tbody>
+</table>
+<p>Mode and override colors can take precedence over the steering/speed colors. Alerts and
+optional turn-signal or blindspot edge indicators can also change the displayed border.</p>
 <h3 id="max-speed">Max Speed<a class="headerlink" href="#max-speed" title="Permanent link">&para;</a></h3>
-<p>Your max speed is shown in the top left of the UI.</p>
+<p>Your cruise SET speed is shown in the driving UI; its position depends on the layout. SET is
+the driver’s cruise ceiling. Speed-limit control, curve-speed control or the active planner
+can request a lower speed.</p>
 <h2 id="speed-limit-controller">Speed Limit Controller<a class="headerlink" href="#speed-limit-controller" title="Permanent link">&para;</a></h2>
-<p>The Speed Limit Controller (SLC) will use map data from <a href="https://openstreetmap.org">OpenStreetMap (OSM)</a> 
-to limit your max speed based upon speed limit data for your vehicle location.</p>
-<p>See the <a href="../../exclusive/speed-limit-controller/">Speed Limit Controller guide</a> for source, offset, confirmation, fallback, and override settings.</p>
-<p>Speed limit for your current location is shown below your max speed. 
-The active +offset shown is how far above the speed limit it will allow.
-Offsets are configurable in settings.</p>
-<p>If your max speed is <em>red</em>, SLC is limiting the speed to the speed limit + offset.</p>
-<p>If your max speed is <em>orange</em>, your max speed is still active but approaching the SLC limit.</p>
+<p>The Speed Limit Controller (SLC) can use map data, dashboard speed limits or camera-detected
+signs, depending on your configuration.</p>
+<p>When StarPilot controls speed, SLC can limit the target to the accepted speed limit plus your
+configured offset, up to your cruise SET speed. Accepting a limit normally does not change SET.</p>
+<p>The driving display shows the speed-limit sign and optional offset. Status text explains
+whether SLC is using the speed limit, using SET, awaiting confirmation or being overridden.</p>
+<p>See the <a href="../../exclusive/speed-limit-controller/">Speed Limit Controller guide</a> for source, offset, confirmation, and override settings.</p>
 <h3 id="submitting-new-speed-limits">Submitting New Speed Limits<a class="headerlink" href="#submitting-new-speed-limits" title="Permanent link">&para;</a></h3>
-<p>If you see an incorrect or missing speed limit, go to OSM and submit an edit. 
-Your openpilot speed limit data will update in about a week.</p>
+<p>If you see an incorrect or missing map-based speed limit, submit an edit to
+<a href="https://openstreetmap.org">OpenStreetMap</a>. The correction reaches StarPilot after it
+appears in newer map data and your device uses that coverage. See
+<a href="../../exclusive/navigation/#offline-maps">Speed Limit Maps</a> to download updated coverage
+for your region.</p>
 <h3 id="vision-speed-limit-detection">Vision Speed Limit Detection<a class="headerlink" href="#vision-speed-limit-detection" title="Permanent link">&para;</a></h3>
 <p>StarPilot can read speed limit signs with the road camera as an SLC source. See the <a href="../../exclusive/speed-limit-controller/#vision-speed-limits">Vision speed limits guide</a> for setup and accuracy guidance.</p>
+<p>In Galaxy, open <strong>Toggles → Longitudinal (Speed &amp; Following) → Speed Limit Controller</strong>.
+Select <strong>Vision</strong> under <strong>Primary source</strong>, <strong>Secondary source</strong> or <strong>Third source</strong>, where available.</p>
+<p><strong>Show speed limit signs</strong> controls the display. Enable <strong>Speed Limit Controller</strong> for
+accepted limits to affect speed on supported configurations.</p>
 <h4 id="help-us-improve-it">Help us improve it<a class="headerlink" href="#help-us-improve-it" title="Permanent link">&para;</a></h4>
 <p>The model gets better with more real-world driving data. If you'd like to help:</p>
 <ol>
 <li>Select <strong>Vision</strong> as a speed-limit source in <strong>Toggles → Longitudinal (Speed &amp; Following) → Speed Limit Controller</strong>.</li>
-<li>Under <strong>Maps</strong>, select the regions you'll be driving in, 
-then <strong>Save Selection</strong> and <strong>Download Maps</strong>.</li>
+<li>If you also use <strong>Maps</strong> as a source, install map data for your region.</li>
 <li>Drive as normal.</li>
 <li>In <a href="https://connect.comma.ai">Comma Connect</a>, open the route, 
 choose <strong>Files -&gt; Upload All Files</strong>, then under <strong>More Info</strong> enable <strong>Public Access</strong> 
@@ -2188,59 +2369,43 @@ are present for every segment.</p>
 </div>
 <h2 id="curve-speed-controller">Curve Speed Controller<a class="headerlink" href="#curve-speed-controller" title="Permanent link">&para;</a></h2>
 <p><img alt="curve speed controller icon" src="../../assets/images/curve_speed.png" style="height:50px;width:50px" /> </p>
-<p>The Curve Speed Controller (CSC) will limit your max speed in order to match how you take curves.
-If you see the curve speed icon next to your max speed, 
-CSC is overriding your max speed to the speed shown. </p>
-<p>If you think it is going too fast or slow for the curve, 
-manually speed up or slow down by overriding throttle/brake 
-and it will learn to match that speed over time.</p>
+<p>The Curve Speed Controller (CSC) uses learned cornering preferences to reduce speed for curves
+when StarPilot controls acceleration and braking on supported configurations.</p>
+<p>With <strong>Show Curve status</strong> enabled, the display can show <strong>CURVE</strong> with its speed target,
+or <strong>CURVE LEARNING</strong> with learning progress.</p>
+<p>With CSC enabled on a supported configuration, it can learn on qualifying curves while you control speed yourself, with no lead vehicle tracked and no turn signal active. Qualifying accelerator or brake feedback during a CSC-controlled curve can also adjust saved preferences.</p>
+<h2 id="longitudinal-planner-and-enhanced-stops">Longitudinal Planner and Enhanced Stops<a class="headerlink" href="#longitudinal-planner-and-enhanced-stops" title="Permanent link">&para;</a></h2>
+<p><strong>Use StarPilot Longitudinal Planner</strong> selects the planner for the next drive.</p>
+<p>On supported configurations, <strong>Enhanced Stops</strong> improves stopping behavior at traffic lights
+and enables stopping at detected stop signs. Release behavior depends on the stop and the vehicle. If Enhanced Stops is holding the vehicle, press the accelerator to continue when it’s safe.</p>
+<p>On builds that expose <strong>Always Hold Enhanced Stops</strong> in developer settings, an acquired hold
+waits for Resume or accelerator input while assistance is active and the required inputs
+are valid. Disengaging assistance or losing required data can end the hold. Be ready to
+hold the vehicle with the brake. This option applies on the next drive.</p>
 <h2 id="experimental-mode">Experimental Mode<a class="headerlink" href="#experimental-mode" title="Permanent link">&para;</a></h2>
-<p>Normal openpilot operation is known as <em>chill mode</em>.</p>
-<p>Experimental mode, also known as end-to-end longitudinal (e2e long), 
-gives the driving model full control of the gas/brake. 
-Experimental mode does not affect steering.
-It is not recommended at the moment. 
-It may brake or accelerate erratically.</p>
-<p>One day, driving models will be good enough to stay in experimental mode full time, 
-but for now we recommend keeping it disabled.</p>
+<p>Driving Mode offers <strong>Automatic</strong>, <strong>Chill</strong> and <strong>Experimental</strong>.</p>
+<p>Experimental mode, also known as end-to-end longitudinal (e2e long), lets the driving model
+influence acceleration and braking on supported configurations. The active planner and
+vehicle limits still apply.</p>
+<p>Behavior varies with the driving model and conditions. It may brake or accelerate
+unexpectedly; stay attentive and ready to take control.</p>
 <h2 id="conditional-experimental-mode">Conditional Experimental Mode<a class="headerlink" href="#conditional-experimental-mode" title="Permanent link">&para;</a></h2>
-<p>Conditional Experimental Mode (CEM) automatically switches into experimental mode 
-under certain conditions, like approaching a traffic light or stop sign. 
-Experimental mode can behave strangely at times, 
-so we conditionally swap into it for conditions we know the driving model is better at.</p>
-<p>The condition that caused the mode swap is indicated by a widget. </p>
+<p>Conditional Experimental Mode (CEM) is presented as <strong>Automatic</strong> in Driving Mode. It switches
+between Chill and Experimental using your saved conditions. Configure these under
+<strong>Automatic conditions</strong>.</p>
 <h3 id="cem-widgets-and-meaning">CEM Widgets and Meaning<a class="headerlink" href="#cem-widgets-and-meaning" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Couch - Chill/normal mode</li>
-<li>Traffic Light - Traffic lights or stop signs</li>
-<li>Car - (Slower or stopped) lead car</li>
-<li>Speedometer - CEM activated by being below speed threshold</li>
-<li>Steering wheel - Turn signal is on, speed is below threshold, and no detected lane</li>
-<li>Map - Navigation</li>
-</ul>
+<p>The on-screen indicator shows the reason for the current mode choice, such as speed, a lead
+vehicle, curves, a turn signal or a stop condition.</p>
 <h2 id="conditional-chill-mode">Conditional Chill Mode<a class="headerlink" href="#conditional-chill-mode" title="Permanent link">&para;</a></h2>
-<p>Conditional Chill Mode (CCM) is essentially the inverse of CEM:</p>
-<ul>
-<li><strong>Conditional Experimental Mode (CEM)</strong> — keeps you in chill mode by default, 
-and automatically switches <em>to</em> experimental mode when set conditions are met, 
-so the model can handle challenging situations with smarter decision making.</li>
-<li><strong>Conditional Chill Mode (CCM)</strong> — keeps experimental mode on by default, 
-and temporarily switches <em>to</em> chill mode in simple cruising scenes 
-where holding speed is usually better.</li>
-</ul>
-<p>The idea: experimental mode is better at stopping and recognizing the key parts of a 
-complex scene, so why not leave it on as long as it's holding speed? 
-CCM keeps experimental on unless it hits very specific conditions — including a configurable 
-maximum "under set speed", which tells the model "you're fired" 
-and drops back to chill mode if it's bleeding off too much speed.</p>
-<p>Like CEM, an on-screen indicator shows when CCM is active. 
-Settings for CCM are available in both the C3 UI and <a href="../galaxy/">the Galaxy</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">CCM and CEM are mutually exclusive</p>
-<p>Only one can be active at a time. If both are enabled, <strong>CEM takes precedence</strong>.</p>
-</div>
+<p>Older saved Conditional Chill Mode (CCM) selections are handled as Automatic. Current settings
+use <strong>Driving Mode</strong> and <strong>Automatic conditions</strong>, rather than a separate CCM editor.</p>
 <h2 id="navigation">Navigation<a class="headerlink" href="#navigation" title="Permanent link">&para;</a></h2>
-<p>Navigation displays a route and can help the driving model prepare for turns. It does not drive to the destination for you. Stay ready to steer, especially at intersections and exits. See <a href="../../exclusive/navigation/">Navigation &amp; Maps</a> for setup.</p>
+<p>Navigation displays a route and can help the driving model prepare for turns. It does not
+drive to the destination for you. Stay ready to steer, especially at intersections and exits.
+See <a href="../../exclusive/navigation/">Navigation &amp; Maps</a> for setup.</p>
+<p>On supported configurations, <strong>Turn Signal Guidance</strong> can help the model choose a turning
+path at low speed even without a route. Steering assistance must be active. See
+<a href="../settings/#lateral-tuning">Lateral Tuning</a> for the setting.</p>
 
 
 
@@ -2263,7 +2428,7 @@ Settings for CCM are available in both the C3 UI and <a href="../galaxy/">the Ga
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 16, 2026 06:44:11 UTC">November 16, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:48:04 UTC">November 18, 2026</span>
   </span>
 
     
@@ -2291,6 +2456,11 @@ Settings for CCM are available in both the C3 UI and <a href="../galaxy/">the Ga
     
     <nav>
       
+        <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
+          
+          <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
+        </a>
+      
         <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
           
           <img src="https://avatars.githubusercontent.com/u/143428353?v=4&size=72" alt="prabhaavp">
@@ -2306,16 +2476,11 @@ Settings for CCM are available in both the C3 UI and <a href="../galaxy/">the Ga
           <img src="https://avatars.githubusercontent.com/u/87735573?v=4&size=72" alt="L4M3573R">
         </a>
       
-        <a href="https://github.com/Sonnyhayka" class="md-author" title="@Sonnyhayka">
-          
-          <img src="https://avatars.githubusercontent.com/u/147892136?v=4&size=72" alt="Sonnyhayka">
-        </a>
-      
       
       
         
           <a href="https://github.com/StarPilotHQ/StarPilot/blob/master/docs/usage/operation.md" class="md-author md-author--more">
-            +2
+            +3
           </a>
         
       

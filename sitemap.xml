@@ -120,4 +120,16 @@
          <loc>https://wiki.firestar.link/usage/settings/</loc>
          <lastmod>2026-11-18</lastmod>
     </url>
+    <url>
+         <loc>https://wiki.firestar.link/usage/companion-apps/</loc>
+         <lastmod>2026-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.firestar.link/usage/companion-apps/android/</loc>
+         <lastmod>2026-11-18</lastmod>
+    </url>
+    <url>
+         <loc>https://wiki.firestar.link/usage/companion-apps/ios/</loc>
+         <lastmod>2026-11-18</lastmod>
+    </url>
 </urlset>

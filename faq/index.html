@@ -87,7 +87,7 @@
   
   <link rel="preload" href="../assets/fonts/sora/Sora.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../assets/theme-ui.css">
-  <script src="../assets/theme-loader.js?v=2"></script>
+  <script src="../assets/theme-loader.js?v=3"></script>
 
   </head>
   
@@ -123,7 +123,7 @@
   <img src="../assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Navigation menu">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
@@ -136,7 +136,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" role="button" tabindex="0" aria-label="Search documentation">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
@@ -582,6 +582,128 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_4" id="__nav_1_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Companion Apps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Companion Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/companion-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/companion-apps/ios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../usage/companion-apps/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1593,7 +1715,7 @@
   
   
   <span class="md-ellipsis">
-    Installing your Comma
+    Installing comma hardware in a Bolt
     
   </span>
   
@@ -2058,76 +2180,41 @@ It runs on comma 3, 3X, and 4 and adds driving, device management, and customiza
 See the <a href="../">StarPilot overview</a> and <a href="../software/starpilot/">installation guide</a>.</p>
 <hr />
 <h2 id="what-is-the-galaxy-can-i-change-settings-from-my-phone">What is the Galaxy? Can I change settings from my phone?<a class="headerlink" href="#what-is-the-galaxy-can-i-change-settings-from-my-phone" title="Permanent link">&para;</a></h2>
-<p>Galaxy is StarPilot's browser interface for settings, routes, and device tools. Local access works without Internet. Remote access uses a password protected <code>galaxy.firestar.link</code> link and needs Internet. See <a href="../usage/galaxy/#access-galaxy">Access Galaxy</a>.</p>
+<p><a href="../usage/galaxy/">Galaxy</a> lets you manage StarPilot from a browser on the same local network, or remotely after pairing. Local access works without Internet. Remote access requires Internet. See <a href="../usage/companion-apps/">Companion Apps</a> for iOS and Android.</p>
 <hr />
 <h2 id="does-starpilot-support-comma-3-3x-and-4">Does StarPilot support Comma 3, 3X, and 4?<a class="headerlink" href="#does-starpilot-support-comma-3-3x-and-4" title="Permanent link">&para;</a></h2>
-<p>Yes. StarPilot fully supports all three comma devices, including features that stock openpilot has dropped on older hardware (such as the Comma 3). See the <a href="../hardware/comma/">Comma Devices</a> page for details.</p>
+<p>Yes. StarPilot supports comma 3, 3X and 4, including continued support for older devices. Feature availability depends on the device, vehicle and configuration. See <a href="../hardware/comma/">Comma Devices</a> for details.</p>
 <h2 id="does-starpilot-support-chestnut-external-gpu">Does StarPilot support Chestnut (external GPU)?<a class="headerlink" href="#does-starpilot-support-chestnut-external-gpu" title="Permanent link">&para;</a></h2>
-<p>Yes. StarPilot detects Chestnut on Comma 3, 3X, and 4 and unlocks chestnut-class driving models when the hardware is ready. Most users do not need Chestnut - see the <a href="../hardware/chestnut/">Chestnut page</a>.</p>
+<p>Yes. You can download compatible GPU models before connecting Chestnut. Running them requires ready, supported hardware. Most users do not need Chestnut. See <a href="../hardware/chestnut/">Chestnut</a> and <a href="../usage/model-manager/">Models</a>.</p>
 <hr />
 <h2 id="why-is-my-car-driving-terribly">Why is my car driving terribly?<a class="headerlink" href="#why-is-my-car-driving-terribly" title="Permanent link">&para;</a></h2>
-<p>It may be a bad setting. Try enabling safe mode to revert to all defaults.
-If that fixes it, reset your toggles to defaults. 
-If not, create a troubleshooting thread in the discord.</p>
+<p>If a custom setting may be contributing, try <a href="../usage/settings/#safe-mode">Safe Mode</a>. It temporarily bypasses supported custom features and tuning without erasing their saved settings. To restore default toggle values, back up your settings first and follow <a href="../usage/settings/#backup-and-reset">Backup and reset</a>.</p>
+<p>If the behavior persists, include your vehicle, hardware, software version and route details in a <a href="../ticketsystem/">support ticket</a>.</p>
 <hr />
 <h2 id="will-installing-openpilot-void-my-warranty">Will installing openpilot void my warranty?<a class="headerlink" href="#will-installing-openpilot-void-my-warranty" title="Permanent link">&para;</a></h2>
 <p><a href="https://comma.ai/support#will-installing-a-comma-device-void-my-warranty">https://comma.ai/support#will-installing-a-comma-device-void-my-warranty</a></p>
 <hr />
 <h2 id="is-the-openpilot-install-reversible">Is the openpilot install reversible?<a class="headerlink" href="#is-the-openpilot-install-reversible" title="Permanent link">&para;</a></h2>
-<p>Yes. The openpilot hardware install is fully reversible. 
-There are no car modifications, just custom harnesses that intercept at the existing harnesses.</p>
-<p>When the comma USB-C is unplugged, your car can't tell the difference.</p>
-<p>When the openpilot hardware (camera harnesses, pedal, ASCM, SASCM, SDSU, SDGM, etc.) are removed,
-the car returns to stock.</p>
+<p>A standard plug-in harness installation can generally be removed. Firmware flashing and hardware retrofits may require separate restoration. See the <a href="../cars/volt/#flashing-volt-firmware">Volt firmware guidance</a> for an example.</p>
 <hr />
 <h2 id="will-openpilot-navigate-on-its-own">Will openpilot navigate on its own?<a class="headerlink" href="#will-openpilot-navigate-on-its-own" title="Permanent link">&para;</a></h2>
-<p>No. <a href="../exclusive/navigation/">Navigation &amp; Maps</a> displays a route and helps the driving model prepare for turns. You still steer through intersections and exits and remain responsible for the drive.</p>
+<p>StarPilot is driver assistance. Stay attentive and ready to take control. <a href="../exclusive/navigation/">Navigation &amp; Maps</a> can provide guidance for supported low-speed turns with the matching turn signal on and blind spot clear. It can also request slowing for an upcoming maneuver when StarPilot controls speed. See <a href="../usage/operation/#navigation">Operation</a> for driving behavior.</p>
 <hr />
 <h2 id="how-do-i-clear-the-lkas-fault-restart-the-car-error">How do I clear the "LKAS Fault: Restart the car" error?<a class="headerlink" href="#how-do-i-clear-the-lkas-fault-restart-the-car-error" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Turn your car off</li>
-<li>Open your car door</li>
-<li>Wait 2 minutes (you can close your door in the meantime)</li>
-<li>Turn car on</li>
-<li>Done. LKAS fault should have cleared.</li>
-</ol>
+<p>Pull over safely and turn the vehicle off. Follow the fault recovery guidance for your vehicle. If the fault recurs, report the exact configuration and include the route or logs.</p>
 <hr />
 <h2 id="how-do-i-avoid-lkas-faults">How do I avoid LKAS faults?<a class="headerlink" href="#how-do-i-avoid-lkas-faults" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Never reboot, unplug, or power off the comma while your car is on. 
-This <strong>will</strong> cause an LKAS fault.</li>
-</ol>
+<p>Switch the vehicle off before rebooting, unplugging or turning off the comma. Interrupting the connection while the vehicle is on can cause an LKAS fault.</p>
 <hr />
 <h2 id="how-do-i-clear-the-cruise-fault-restart-the-car-error">How do I clear the "Cruise Fault: Restart the car" error?<a class="headerlink" href="#how-do-i-clear-the-cruise-fault-restart-the-car-error" title="Permanent link">&para;</a></h2>
-<p>This error applies only to vehicles with adaptive cruise control (ACC).</p>
-<ol>
-<li>Turn car off</li>
-<li>Open car door</li>
-<li>Close car door</li>
-<li>Turn car on</li>
-<li>Wait 5 seconds</li>
-<li>If your error is cleared, you are done. 
-If the error is still present, go back to step 1. This can take 6 or more tries.</li>
-</ol>
+<p>Park safely and turn the vehicle off before following the restart guidance for your vehicle. If the fault persists, include the hardware, software version and route details in a <a href="../ticketsystem/">support ticket</a>.</p>
 <hr />
 <h2 id="how-do-i-clear-the-controls-mismatch-error">How do I clear the "Controls Mismatch" error?<a class="headerlink" href="#how-do-i-clear-the-controls-mismatch-error" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Turn car off</li>
-<li>Wait 5 seconds</li>
-<li>Turn car on</li>
-</ol>
-<p>If the error persists, restart the comma device with the car off.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Remote Start Issues
-If you use remote start and the "boot comma with remote start" setting is enabled,
-to avoid issues, you should cycle the car off and then back on
-again after you get in. Otherwise, you might get the Controls Mismatch error.</p>
-</div>
+<p>Park and switch the vehicle off before restarting the comma. If the error persists, report your exact vehicle configuration, how you started the car and the matching route or log.</p>
 <hr />
 <h2 id="how-do-i-upload-logs-for-troubleshooting">How do I upload logs for troubleshooting?<a class="headerlink" href="#how-do-i-upload-logs-for-troubleshooting" title="Permanent link">&para;</a></h2>
 <p>Logs are sent as routes. A route is a single drive (from car on to car off), 
-with 1 minute segments. Log data contains all Openpilot data: video, comms, gps, etc.</p>
+with one-minute segments. Log data can include video, vehicle messages and GPS. If support accepts a local export, use <a href="../usage/galaxy/#routes">Routes in Galaxy</a> to download the recording or logs. Downloading them does not upload anything to comma Connect.</p>
 <ol>
 <li>Navigate to <a href="https://connect.comma.ai">connect.comma.ai</a></li>
 <li>Find the route your issue happened on and click on it. </li>
@@ -2137,8 +2224,7 @@ To undo your last selection, click the back arrow just above the video slider.
 Once you are happy with the segments selected, proceed to the next step.</li>
 <li>Click <code>Files</code>, then next to <code>All logs</code>, click <code>(upload ## logs)</code></li>
 <li>Wait for data to be uploaded (you can check the progress using <code>Files</code> &gt; <code>View Upload Queue</code>)</li>
-<li>Click <code>More info</code>, then enable <code>Public access</code> and 
-copy the Route info using the Copy button: <img alt="Copy button" src="../assets/images/copy_clipboard.png" /></li>
+<li>If you choose to share the route publicly, open <strong>More info</strong>, enable <strong>Public access</strong> and copy the route information. Turn public access off when sharing is no longer needed.</li>
 <li><a href="../ticketsystem/">Create a ticket</a> using the buttons in
 <a href="https://firestar.link/discord">the #submit-feedback-and-reports channel of the Discord server</a>.
 Be as descriptive as possible. 
@@ -2148,38 +2234,22 @@ StarPilot has a unique, community-focused ticketing system that helps users and 
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Ending a route log early
-To make it easier to find the error, you can force the log to end early using:
-Settings &gt; Utilities &gt; Force offroad. This will make sure the error is near the end of
-the log. </p>
+While safely parked, open <strong>Settings → System → Force Drive State → Offroad</strong> on
+the comma to stop driving services and end the route. In Galaxy, the equivalent control is
+<strong>Tools → System Tools → Software &amp; Updates → Advanced options → Force device offroad</strong>.
+Return the comma to <strong>Auto</strong>, or turn off <strong>Force device offroad</strong> in Galaxy, when you are
+done.</p>
 </div>
 <hr />
 <h2 id="im-stuck-on-the-boot-logo-screen-how-do-i-fix-it">I'm stuck on the boot logo screen. How do I fix it?<a class="headerlink" href="#im-stuck-on-the-boot-logo-screen-how-do-i-fix-it" title="Permanent link">&para;</a></h2>
-<p>This is usually caused by a sticky param, especially when coming from another openpilot fork.</p>
-<ol>
-<li>Unplug the device</li>
-<li>Wait 60 seconds</li>
-<li>Plug it back in</li>
-<li>Tap the center of the screen over and over until the reset prompt comes up</li>
-<li>Reset</li>
-<li>Install using link: <code>starpilothq/saveme</code></li>
-<li>After the device boots, use the <a href="../software/starpilot/#changing-branches">branch switcher</a> to go back to <code>StarPilot</code></li>
-</ol>
-<p>If issues persist, reach out in <a href="https://firestar.link/discord">Discord</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Important</p>
-<p>If <a href="../usage/galaxy/">Galaxy</a> still works, open <strong>Logs &amp; Diagnostics → Troubleshoot → Show Non-Default Values</strong> and review changed settings before using a recovery branch.</p>
-</div>
+<p>If Galaxy is reachable, try the <a href="../usage/settings/#backup-and-reset">backup and reset tools</a>. Save any recordings or logs you need before resetting the device.</p>
+<p>If Galaxy is unavailable, follow <a href="../software/starpilot/#if-you-cannot-open-settings">If You Cannot Open Settings</a> for your device. A factory reset erases stored content and settings. If the problem persists, ask in <a href="https://firestar.link/discord">Discord</a>.</p>
 <hr />
 <h2 id="my-device-is-behaving-oddly-what-is-a-saveme">My device is behaving oddly. What is a "saveme"?<a class="headerlink" href="#my-device-is-behaving-oddly-what-is-a-saveme" title="Permanent link">&para;</a></h2>
-<p>Sometimes the device can get into a bad state due to a bad setting or conflicts during updates 
-(especially if you went a long time without updating). 
-A "saveme" will reset all settings and return to near new state (without require a flash).</p>
-<p>If Galaxy still works, open <strong>Logs &amp; Diagnostics → Troubleshoot → Show Non-Default Values</strong>. Use <strong>Reset Selected</strong> or <strong>Reset All Non-Default Settings</strong> and confirm. This resets available saved settings, not the entire device.</p>
+<p>For a settings problem, open <a href="../usage/settings/#backup-and-reset">Backup and reset</a> in Galaxy. Use <strong>Back up toggles</strong> first. You can then <strong>Restore toggles</strong> from a compatible backup, or use <strong>Reset toggles to default</strong> while parked. The toggle reset keeps your recordings and other device data.</p>
 <hr />
 <h2 id="how-do-i-fix-the-can-bus-disconnected-error">How do I fix the "CAN bus disconnected" Error?<a class="headerlink" href="#how-do-i-fix-the-can-bus-disconnected-error" title="Permanent link">&para;</a></h2>
-<p>Openpilot had an issue communicating on the CAN bus. 
-Reseat (unplug and plug back in) all of your openpilot connections 
-(harnesses, OBD-C, pedal, etc).</p>
+<p>With the vehicle off, inspect and reseat connections according to the hardware guide for your setup. Check the harness, OBD-C cable and pedal connection where applicable. If the error persists, ask for <a href="../ticketsystem/">support</a> with your vehicle, hardware and logs.</p>
 
 
 
@@ -2202,7 +2272,7 @@ Reseat (unplug and plug back in) all of your openpilot connections
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 17, 2026 23:53:39 UTC">November 17, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:49:03 UTC">November 18, 2026</span>
   </span>
 
     
@@ -2230,6 +2300,11 @@ Reseat (unplug and plug back in) all of your openpilot connections
     
     <nav>
       
+        <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
+          
+          <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
+        </a>
+      
         <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
           
           <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
@@ -2245,16 +2320,11 @@ Reseat (unplug and plug back in) all of your openpilot connections
           <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
         </a>
       
-        <a href="https://github.com/L4M3573R" class="md-author" title="@L4M3573R">
-          
-          <img src="https://avatars.githubusercontent.com/u/87735573?v=4&size=72" alt="L4M3573R">
-        </a>
-      
       
       
         
           <a href="https://github.com/StarPilotHQ/StarPilot/blob/master/docs/faq.md" class="md-author md-author--more">
-            +3
+            +4
           </a>
         
       

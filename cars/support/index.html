@@ -87,7 +87,7 @@
   
   <link rel="preload" href="../../assets/fonts/sora/Sora.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="stylesheet" href="../../assets/theme-ui.css">
-  <script src="../../assets/theme-loader.js?v=2"></script>
+  <script src="../../assets/theme-loader.js?v=3"></script>
 
   </head>
   
@@ -123,7 +123,7 @@
   <img src="../../assets/images/galaxy-icon.svg" alt="logo">
 
     </a>
-    <label class="md-header__button md-icon" for="__drawer">
+    <label class="md-header__button md-icon" for="__drawer" role="button" tabindex="0" aria-label="Navigation menu">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
@@ -136,7 +136,7 @@
     
       
       
-        <label class="md-header__button md-icon" for="__search">
+        <label class="md-header__button md-icon" for="__search" role="button" tabindex="0" aria-label="Search documentation">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         </label>
@@ -571,6 +571,128 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_1_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_2_4" id="__nav_1_2_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Companion Apps
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_1_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Companion Apps
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/ios/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    iOS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../usage/companion-apps/android/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Android
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1190,9 +1312,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#brand-wide-tuning-improvements" class="md-nav__link">
+  <a href="#vehicle-tuning-improvements" class="md-nav__link">
     <span class="md-ellipsis">
-      Brand-wide tuning improvements
+      Vehicle tuning improvements
     </span>
   </a>
   
@@ -1543,7 +1665,7 @@
   
   
   <span class="md-ellipsis">
-    Installing your Comma
+    Installing comma hardware in a Bolt
     
   </span>
   
@@ -1925,9 +2047,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#brand-wide-tuning-improvements" class="md-nav__link">
+  <a href="#vehicle-tuning-improvements" class="md-nav__link">
     <span class="md-ellipsis">
-      Brand-wide tuning improvements
+      Vehicle tuning improvements
     </span>
   </a>
   
@@ -1956,6 +2078,11 @@
 <h1 id="vehicle-compatibility">Vehicle Compatibility<a class="headerlink" href="#vehicle-compatibility" title="Permanent link">&para;</a></h1>
 <p>StarPilot adds support for cars that stock openpilot doesn't cover, and re-tunes a number
 of cars that <em>are</em> supported by stock so they drive better.</p>
+<p>Support depends on your car’s model year, trim, region, steering system, ACC configuration,
+and installed hardware. Check the requirements for your exact configuration before choosing
+hardware or enabling controls.</p>
+<p>Trim, package, and harness notes describe specific configurations. Check the car guide
+or ask in <a href="https://firestar.link/discord">Discord</a> about other setups.</p>
 <div class="admonition tip">
 <p class="admonition-title">Stock support list</p>
 <p>For everything stock openpilot already supports, see the official
@@ -1974,19 +2101,25 @@ ask in the <a href="https://firestar.link/discord">Discord</a> — it may have b
 </div>
 <h2 id="supported-improved-cars">Supported &amp; improved cars<a class="headerlink" href="#supported-improved-cars" title="Permanent link">&para;</a></h2>
 <h3 id="gm-buick-cadillac-chevrolet-gmc">GM (Buick / Cadillac / Chevrolet / GMC)<a class="headerlink" href="#gm-buick-cadillac-chevrolet-gmc" title="Permanent link">&para;</a></h3>
+<p><strong>No-ACC</strong> configurations use different speed-control methods, including factory cruise
+buttons, a pedal interceptor, or a vehicle-specific retrofit. Braking and standstill behavior
+depend on the configuration. Follow the car-specific guide before choosing hardware.</p>
 <ul>
-<li>Buick Baby Enclave 2020-23</li>
+<li>Buick Baby Enclave 2020-23 — SDGM Harness; Driver Assist Package</li>
+<li>Buick Envision 2016 (Chinese specification) — SDGM retrofit and custom cross-flashed ADAS stack; ACC retains speed control</li>
 <li>Buick LaCrosse 2017-19 ASCM Harness</li>
 <li>Buick LaCrosse 2019 US ASCM Harness</li>
 <li>Cadillac CT6 2016-20 — No-ACC</li>
 <li>Cadillac Escalade 2018 ASCM Harness</li>
 <li>Cadillac Escalade ESV Platinum 2019 ASCM Harness</li>
+<li>Cadillac XT4 2023 — SDGM setup; Driver Assist Package</li>
 <li>Cadillac XT4 2023 — No-ACC</li>
-<li>Cadillac XT5 2022</li>
+<li>Cadillac XT5 2022 — SDGM Harness; Driver Assist Package</li>
 <li>Cadillac XT5 2022 — No-ACC</li>
-<li>Cadillac XT6 2020</li>
-<li>Chevrolet Blazer 2019-25</li>
-<li>Chevrolet Bolt EV / EUV ACC 2022-23</li>
+<li>Cadillac XT6 2020 — SDGM Harness; Driver Assist Package</li>
+<li>Chevrolet Blazer 2019-25 — SDGM Harness; Driver Assist Package</li>
+<li>Chevrolet Bolt EV 2022-23 — factory-ACC setup: 2LT with Adaptive Cruise Control Package</li>
+<li>Chevrolet Bolt EUV 2022-23 — factory-ACC setup: Premier or Premier Redline, without Super Cruise Package</li>
 <li>Chevrolet Bolt EV 2017 — No-ACC</li>
 <li>Chevrolet Bolt EV 2018-21 — No-ACC</li>
 <li>Chevrolet Bolt EV / EUV 2022-23 — No-ACC</li>
@@ -1995,20 +2128,22 @@ ask in the <a href="https://firestar.link/discord">Discord</a> — it may have b
 <li>Chevrolet Equinox 2019-22 — No-ACC</li>
 <li>Chevrolet Equinox 2019-22 <em>(improved over stock)</em></li>
 <li>Chevrolet Malibu 2017-19 ASCM Harness</li>
-<li>Chevrolet Malibu 2019</li>
+<li>Chevrolet Malibu 2019 — SDGM Harness</li>
 <li>Chevrolet Malibu 2023 — No-ACC</li>
 <li>Chevrolet Malibu Hybrid 2017 — No-ACC</li>
 <li>Chevrolet Silverado 1500 2020-21 — No-ACC</li>
 <li>Chevrolet Silverado 1500 <em>(improved over stock)</em></li>
-<li>Chevrolet Suburban Premier 2016-20</li>
+<li>Chevrolet Suburban Premier 2016-20 — ASCM Harness</li>
 <li>Chevrolet Suburban Premier 2016-20 — No-ACC</li>
 <li>Chevrolet Trailblazer 2021-22 — No-ACC</li>
 <li>Chevrolet Trailblazer 2021-22 <em>(improved over stock)</em></li>
-<li>Chevrolet TRAX 2024-25</li>
+<li>Chevrolet Traverse 2022-23 — SDGM Harness; RS, Premier, or High Country trim</li>
+<li>Chevrolet TRAX 2024-25 — Camera Harness; manual configuration; recognized vehicle network layout required</li>
 <li>Chevrolet Volt 2016-18 — No-ACC (OBD-C / L&amp;P Harness)</li>
 <li>Chevrolet Volt 2017-18 ASCM Harness</li>
-<li>Chevrolet Volt 2017-18 Camera Harness</li>
+<li>Chevrolet Volt 2017-18 Camera Harness — manual configuration; recognized vehicle network layout required</li>
 <li>Chevrolet Volt 2017-18 <em>(improved over stock)</em></li>
+<li>Chevrolet Volt 2019 — SDGM Harness; factory ACC and LKAS</li>
 <li>GMC Acadia 2018 ASCM Harness</li>
 <li>GMC Sierra 1500 2020-21 — No-ACC</li>
 <li>GMC Yukon 2019-20 — No-ACC</li>
@@ -2020,7 +2155,7 @@ ask in the <a href="https://firestar.link/discord">Discord</a> — it may have b
 <li>Acura MDX 2014-16</li>
 <li>Acura MDX 2017-19</li>
 <li>Acura MDX 2020</li>
-<li>Acura MDX 2025</li>
+<li>Acura MDX 2025-26 (excluding Type S)</li>
 <li>Acura MDX Hybrid 2017-19</li>
 <li>Acura MDX Hybrid 2020</li>
 <li>Acura RDX 2022-26</li>
@@ -2029,13 +2164,15 @@ ask in the <a href="https://firestar.link/discord">Discord</a> — it may have b
 <li>Acura TLX 2024-25</li>
 <li>Honda Accord 2016-17</li>
 <li>Honda Accord Hybrid 2017</li>
-<li>Honda Accord Hybrid 2023-25</li>
-<li>Honda Accord <em>(improved over stock, with modified EPS firmware)</em></li>
-<li>Honda Civic 2022-24</li>
-<li>Honda Civic <em>(improved over stock, with modified EPS firmware)</em></li>
+<li>Honda Accord Hybrid 2023-26</li>
+<li>Honda Accord <em>(improved over stock, with supported modified EPS firmware)</em></li>
+<li>Honda Civic / Civic Hatchback 2022-26</li>
+<li>Honda Civic / Civic Hatchback Hybrid 2025-26</li>
+<li>Honda Civic Hatchback Hybrid (Europe) 2023</li>
+<li>Honda Civic <em>(improved over stock, with supported modified EPS firmware)</em></li>
 <li>Honda Clarity 2018-21</li>
-<li>Honda CR-V Hybrid 2023-25</li>
-<li>Honda CR-V 5G <em>(improved over stock, with modified EPS firmware)</em></li>
+<li>Honda CR-V Hybrid 2023-27</li>
+<li>Honda CR-V 5G <em>(improved over stock, with supported modified EPS firmware)</em></li>
 <li>Honda Fit (Taiwan) 2021</li>
 <li>Honda Fit (Taiwan) 2024-25</li>
 <li>Honda HR-V 2023-25 <em>(improved over stock)</em></li>
@@ -2044,6 +2181,8 @@ ask in the <a href="https://firestar.link/discord">Discord</a> — it may have b
 <li>Honda Pilot <em>(improved over stock)</em></li>
 <li>Honda Prelude 2026</li>
 </ul>
+<p>Modified EPS support depends on the vehicle and firmware version. Confirm the exact setup
+before flashing.</p>
 <h3 id="hyundai-kia-genesis">Hyundai / Kia / Genesis<a class="headerlink" href="#hyundai-kia-genesis" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Genesis G70 Non-SCC 2021</li>
@@ -2059,7 +2198,7 @@ ask in the <a href="https://firestar.link/discord">Discord</a> — it may have b
 <li>Hyundai Elantra Hybrid Non-SCC 2022</li>
 <li>Hyundai Elantra Non-SCC 2022</li>
 <li>Hyundai Ioniq 5 N (with HDA II) 2024</li>
-<li>Hyundai Ioniq 5 PE (with HDA II &amp; LFA2) 2025-26</li>
+<li>Hyundai Ioniq 5 PE (with HDA II &amp; LFA2) 2025-27</li>
 <li>Hyundai Ioniq 6 <em>(improved over stock)</em></li>
 <li>Hyundai Ioniq 9 (with HDA II &amp; LFA2) 2025-26</li>
 <li>Hyundai Kona (without HDA II) 2024-25</li>
@@ -2086,10 +2225,10 @@ ask in the <a href="https://firestar.link/discord">Discord</a> — it may have b
 <li>Kia Forte Non-SCC 2019</li>
 <li>Kia Forte Non-SCC 2021</li>
 <li>Kia K4 (with HDA II) 2025</li>
-<li>Kia K4 (without HDA II) 2025</li>
+<li>Kia K4 (without HDA II) 2025-26</li>
 <li>Kia K5 (without HDA II) 2025</li>
-<li>Kia Niro EV (with HDA II) 2025</li>
-<li>Kia Niro Hybrid 2023</li>
+<li>Kia Niro EV (with HDA II) 2024-25</li>
+<li>Kia Niro Hybrid 2023-24</li>
 <li>Kia Niro Plug-in Hybrid 2022 <em>(improved over stock)</em></li>
 <li>Kia Seltos Non-SCC 2023-24</li>
 <li>Kia Sorento (without HDA II) 2024-25</li>
@@ -2101,9 +2240,9 @@ ask in the <a href="https://firestar.link/discord">Discord</a> — it may have b
 <li>Kia XCeed Plug-in Hybrid 2021</li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">Improved CAN-FD steering</p>
-<p>Existing CAN-FD cars (Ioniq 5, Ioniq 6, Tucson 2022 CAN-FD, Kona Electric 2nd-gen,
-Kia EV6, Genesis GV60 / GV70 / GV80) get stronger steering torque and limits over stock.</p>
+<p class="admonition-title">CAN-FD steering</p>
+<p>CAN-FD cars use different steering systems and limits. Some use torque control; others
+use angle control. Available controls depend on the vehicle and configuration.</p>
 </div>
 <h3 id="toyota">Toyota<a class="headerlink" href="#toyota" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2117,9 +2256,12 @@ Kia EV6, Genesis GV60 / GV70 / GV80) get stronger steering torque and limits ove
 <li>Subaru Ascent 2023-25 <em>(improved over stock)</em></li>
 <li>Subaru Crosstrek 2025 <em>(improved over stock)</em></li>
 <li>Subaru Impreza <em>(improved over stock)</em></li>
+<li>Subaru Impreza RS 2025 — angle-steering setup</li>
 <li>Subaru Legacy 2025 <em>(improved over stock)</em></li>
 <li>Subaru Outback 2023-24 <em>(improved over stock)</em></li>
 </ul>
+<p>Available Subaru controller options and limits depend on the steering system and vehicle
+configuration.</p>
 <h3 id="chrysler-ram">Chrysler / RAM<a class="headerlink" href="#chrysler-ram" title="Permanent link">&para;</a></h3>
 <ul>
 <li>RAM 1500 5th Gen <em>(improved over stock)</em></li>
@@ -2130,17 +2272,20 @@ Kia EV6, Genesis GV60 / GV70 / GV80) get stronger steering torque and limits ove
 <li>Ford Edge 2022</li>
 <li>Ford F-150 Lightning 2022-25</li>
 <li>Ford Mondeo 2014-22</li>
-<li>Ford Transit 2025</li>
+<li>Ford Transit 2025 (Co-Pilot360 Assist+)</li>
 </ul>
 <h3 id="nissan">Nissan<a class="headerlink" href="#nissan" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Nissan Altima 2019-20, 2024</li>
+<li>Nissan Altima 2019-24</li>
 <li>Nissan Leaf 2018-25 — Instrument Cluster</li>
 </ul>
 <h3 id="tesla">Tesla<a class="headerlink" href="#tesla" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Tesla Model S (Pre-AP) 2012-14</li>
+<li>Tesla Model S (with HW1) 2014-16</li>
 </ul>
+<p>Pre-AP and HW1 use different hardware and control setups. Confirm the exact configuration
+before installing.</p>
 <h3 id="volkswagen-group">Volkswagen Group<a class="headerlink" href="#volkswagen-group" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Audi Q4 e-tron 2021-25</li>
@@ -2149,19 +2294,16 @@ Kia EV6, Genesis GV60 / GV70 / GV80) get stronger steering torque and limits ove
 <li>Volkswagen ID.5 2022-23</li>
 <li>Volkswagen Jetta 2018-23</li>
 </ul>
-<h2 id="brand-wide-tuning-improvements">Brand-wide tuning improvements<a class="headerlink" href="#brand-wide-tuning-improvements" title="Permanent link">&para;</a></h2>
-<p>These improvements apply to <strong>every</strong> car of the brand, including models already supported by stock:</p>
+<h2 id="vehicle-tuning-improvements">Vehicle tuning improvements<a class="headerlink" href="#vehicle-tuning-improvements" title="Permanent link">&para;</a></h2>
+<p><span id="brand-wide-tuning-improvements"></span></p>
+<p>StarPilot includes vehicle-specific tuning and optional control settings. Available changes depend on the vehicle, steering system, speed-control configuration and selected controller.</p>
 <ul>
-<li><strong>All Hyundai / Kia / Genesis</strong> — higher max acceleration</li>
-<li><strong>All Honda / Acura</strong> — smoother stops</li>
-<li><strong>All Toyota</strong> (TSS2 torque cars) — lateral tuning refinement</li>
-<li><strong>All GM</strong> — smoother low-speed braking and reworked gas/regen response</li>
+<li><strong>Hyundai / Kia / Genesis</strong> — Acceleration changes depend on the vehicle and whether StarPilot controls speed.</li>
+<li><strong>Honda / Acura</strong> — Stopping behavior depends on the speed-control configuration.</li>
+<li><strong>Toyota</strong> — Lateral tuning refinements are available on supported torque-steering setups.</li>
+<li><strong>GM</strong> — Braking and regen behavior depend on the ACC, pedal and retrofit configuration.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Tuned identically to stock</p>
-<p>Mazda, Tesla (Model 3 / Y), Nissan, and Volkswagen existing platforms use the same
-tuning as stock openpilot (StarPilot only changes their features/toggles, not tuning).</p>
-</div>
+<p>Some configurations retain their standard controller settings. Optional StarPilot controllers and vehicle-specific features can change behavior where supported.</p>
 
 
 
@@ -2184,7 +2326,7 @@ tuning as stock openpilot (StarPilot only changes their features/toggles, not tu
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 14, 2026 19:41:58 UTC">September 14, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:49:03 UTC">November 18, 2026</span>
   </span>
 
     
@@ -2212,6 +2354,11 @@ tuning as stock openpilot (StarPilot only changes their features/toggles, not tu
     
     <nav>
       
+        <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
+          
+          <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
+        </a>
+      
         <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
           
           <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
@@ -2227,12 +2374,13 @@ tuning as stock openpilot (StarPilot only changes their features/toggles, not tu
           <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
         </a>
       
-        <a href="https://github.com/sherloaf-holmes" class="md-author" title="@sherloaf-holmes">
-          
-          <img src="https://avatars.githubusercontent.com/u/218003650?v=4&size=72" alt="sherloaf-holmes">
-        </a>
       
       
+        
+          <a href="https://github.com/StarPilotHQ/StarPilot/blob/master/docs/cars/support.md" class="md-author md-author--more">
+            +1
+          </a>
+        
       
     </nav>
   </span>
