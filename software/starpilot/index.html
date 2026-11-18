@@ -6,7 +6,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and planned channel names, device setup steps, and branch switching instructions.">
+        <meta name="description" content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and channel names, device setup steps, and branch switching instructions.">
       
       
       
@@ -58,7 +58,7 @@
       
         <meta  property="og:title"  content="Install StarPilot on comma 3, 3X & 4 - StarPilot Docs" >
       
-        <meta  property="og:description"  content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and planned channel names, device setup steps, and branch switching instructions." >
+        <meta  property="og:description"  content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and channel names, device setup steps, and branch switching instructions." >
       
         <meta  property="og:image"  content="https://wiki.firestar.link/assets/images/social/software/starpilot.png" >
       
@@ -74,7 +74,7 @@
       
         <meta  name="twitter:title"  content="Install StarPilot on comma 3, 3X & 4 - StarPilot Docs" >
       
-        <meta  name="twitter:description"  content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and planned channel names, device setup steps, and branch switching instructions." >
+        <meta  name="twitter:description"  content="Install StarPilot on comma 3, 3X, or 4 with the current installer values and channel names, device setup steps, and branch switching instructions." >
       
         <meta  name="twitter:image"  content="https://wiki.firestar.link/assets/images/social/software/starpilot.png" >
       
@@ -1907,7 +1907,7 @@
 <h1 id="installing-starpilot">Installing StarPilot<a class="headerlink" href="#installing-starpilot" title="Permanent link">&para;</a></h1>
 <p>The StarPilot install links are:</p>
 <ul>
-<li>Stable: <code>starpilothq/StarPilot</code></li>
+<li>Stable: <code>starpilothq/stable</code></li>
 <li>Testing: <code>starpilothq/testing</code></li>
 </ul>
 <p>These are the current working links. The old <code>starpilothq/Dom</code> link still works: its first startup switches the installed branch and update target to <code>testing</code>, including fresh installs made later.</p>
@@ -1923,7 +1923,7 @@
 <ol>
 <li>Choose <strong>Custom Software</strong> on the setup screen.</li>
 <li>Connect to Wi-Fi when prompted.</li>
-<li>Enter <code>starpilothq/StarPilot</code> for Stable or <code>starpilothq/testing</code> for Testing.</li>
+<li>Enter <code>starpilothq/stable</code> for Stable or <code>starpilothq/testing</code> for Testing.</li>
 <li>Start the installation and let it finish. The comma may restart more than once.</li>
 </ol>
 <p>Do not unplug the comma while it is installing or updating AGNOS.</p>
@@ -1931,7 +1931,7 @@
 <ol>
 <li>Connect to Wi-Fi on the setup screen.</li>
 <li>Choose to install custom software.</li>
-<li>Enter <code>starpilothq/StarPilot</code> for Stable or <code>starpilothq/testing</code> for Testing.</li>
+<li>Enter <code>starpilothq/stable</code> for Stable or <code>starpilothq/testing</code> for Testing.</li>
 <li>Start the installation and wait for the comma to restart.</li>
 </ol>
 <p>You can power the comma inside your home with a suitable USB-C power adapter if the Wi-Fi
@@ -1974,8 +1974,8 @@ multiple times before resorting to flashing.</p>
 </thead>
 <tbody>
 <tr>
-<td><code>StarPilot</code></td>
-<td>The default branch. Use this unless you have a specific reason not to.</td>
+<td><code>stable</code></td>
+<td>Stable releases. Use this unless you have a specific reason not to.</td>
 <td>Stable. Recommended for everyone.</td>
 </tr>
 <tr>
@@ -1989,22 +1989,21 @@ multiple times before resorting to flashing.</p>
 <p>The testing channel is now <code>testing</code>, formerly <code>Dom</code>. <code>Dom</code> remains a compatibility
 bridge for existing devices and old install links; future updates and development
 continue on <code>testing</code>.</p>
-<p>Stable is still named <code>StarPilot</code>. Its separate move to <code>stable</code> and the GitHub
-default-branch change have not happened yet. <code>dev</code> is reserved for the maintainer’s
-personal work, not a recommended user channel.</p>
+<p>The stable channel is <code>stable</code>, formerly <code>StarPilot</code>. The old <code>StarPilot</code> install
+link and update channel also move once to <code>stable</code>. This naming change keeps
+version 6.7.9; it does not upgrade to the rebase. <code>dev</code> is reserved for the
+maintainer’s personal work, not a recommended user channel.</p>
 <p>The migration release keeps the installed software version and settings. It changes the
 local branch and update target once; it does not install the rebase, erase recordings,
 remove models, reset calibration, or unpair Galaxy. A later deliberate branch switch
 is respected and does not run a chain of renames.</p>
-<p>Update Dom normally while parked. After the migration release starts, check that
-Galaxy’s installed branch and update target both show <code>testing</code>. Devices can complete
-this local rename without a network connection after downloading that release.</p>
-<p>If your comma was offline during the rollout, <strong>check the target before updating</strong>.
-GitHub does not redirect Git branch names or raw-file installer URLs. If an old branch
-has since been reused for different software, do not update it expecting the old
-channel. Select <code>stable</code> or <code>testing</code> explicitly in Galaxy. If the old updater cannot
-switch, use the pinned migration release provided in the rollout announcement or
-contact support; do not factory-reset or delete your recordings as a first step.</p>
+<p>Update normally while parked. After the migration release starts, Galaxy’s installed
+branch and update target show <code>stable</code> for old StarPilot installs, or <code>testing</code> for
+old Dom installs. Devices can complete this local rename without a network
+connection after downloading the release.</p>
+<p>The old <code>StarPilot</code> and <code>Dom</code> links remain available for devices that update later.
+GitHub does not redirect branch names; these preserved compatibility releases
+perform the one-time switch locally.</p>
 <h3 id="changing-branches">Changing branches<a class="headerlink" href="#changing-branches" title="Permanent link">&para;</a></h3>
 <h4 id="using-galaxy">Using <a href="../../usage/galaxy/">Galaxy</a><a class="headerlink" href="#using-galaxy" title="Permanent link">&para;</a></h4>
 <p>While parked, open <strong>Tools → System Tools → Software &amp; Updates</strong>. Choose a target <strong>Branch</strong>, press <strong>Update</strong>, then confirm <strong>Update &amp; restart</strong>. <strong>Download only</strong> prepares an update without restarting.</p>
@@ -2048,7 +2047,7 @@ contact support; do not factory-reset or delete your recordings as a first step.
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 00:23:58 UTC">November 18, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:41:22 UTC">November 18, 2026</span>
   </span>
 
     
