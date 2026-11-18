@@ -10,8 +10,6 @@ The StarPilot install links are:
 * Stable: `starpilothq/stable`
 * Testing: `starpilothq/testing`
 
-These are the current working links. The old `starpilothq/Dom` link still works: its first startup switches the installed branch and update target to `testing`, including fresh installs made later.
-
 If StarPilot is already installed, see [Changing branches](#changing-branches).
 
 If your comma is new or already on the setup screen, skip to the instructions for your device.
