@@ -1,11 +1,13 @@
 ---
 title: Support Tickets & Bug Reports
-description: Report StarPilot bugs, vehicle tuning issues, and feature requests through Discord. Learn which ticket to open and how to test development fixes.
+description: Report StarPilot bugs, vehicle tuning issues, and feature requests through Discord. Learn which ticket to open and how to try fixes on Testing.
 ---
 
 # Ticket System
 
 StarPilot thrives on the feedback and responsiveness of our community. If you are experiencing an issue, please open a ticket and share what you are seeing. The more people submitting feedback, the better your car (and everyone else's) can drive.
+
+For a StarPilot BT connection or app issue on iPhone, use [Submit logs through Discord](./usage/companion-apps/ios.md#submit-logs-through-discord) in the app. Some Galaxy Android builds also offer [Discord reporting](./usage/companion-apps/android.md#report-a-problem-through-discord).
 
 ## What is it?
 
@@ -25,7 +27,14 @@ Potential fixes are first released on the testing branch. If you are using the s
 
     <img src="../assets/images/ticket_buttons.jpg" alt="Ticket Buttons" width="300">
 
-4. Get your [route information and upload your logs](./faq.md#how-do-i-upload-logs-for-troubleshooting). Add that information to the form, describe the problem or requested feature in as much detail as possible, and select Submit.
+4. Fill out the form, then select **Submit**. For an issue, include:
+
+    - Your comma device, vehicle year and trim, and installed hardware
+    - The branch and software version you tested
+    - The approximate time, route or bookmark, and any [relevant logs](./faq.md#how-do-i-upload-logs-for-troubleshooting)
+    - What you expected and what actually happened
+
+    Choose whether to make a route public before sharing it.
 
 ### Which button should I choose?
 
@@ -62,10 +71,13 @@ Potential fixes are first released on the testing branch. If you are using the s
 
 ## How do I switch from stable to testing?
 
-Switch to the `testing` branch while parked using [the software guide](./software/starpilot.md#changing-branches). You do not need to reinstall StarPilot.
+<span id="how-do-i-switch-to-the-testing-branch"></span>
+<span id="how-do-i-switch-from-the-starpilot-branch-to-dom"></span>
+<span id="how-do-i-switch-from-the-starpilot-branch-to-testing"></span>
+<span id="through-your-comma-device"></span>
+<span id="through-galaxy"></span>
 
-> [!Tip]
-> If you do not want to remain on testing, wait until the fix is included in the next StarPilot release. You can then follow the same process to switch back to the stable branch.
+Park and turn off the vehicle. Keep the comma powered and online, then follow [Changing branches](./software/starpilot.md#changing-branches) and choose **Testing** in Galaxy. You can switch without reinstalling StarPilot. Once the fix is in Stable, follow the same steps and choose **Stable** to switch back.
 
 ## What do the colored circles on my ticket mean?
 
@@ -75,7 +87,7 @@ Each colored circle represents the current status of your ticket.
 | --- | --- | --- |
 | 🟠 | Your ticket is new and has been submitted. | Wait for Firestar to review it. |
 | ⚪ | Firestar has reviewed your ticket, but an update is not ready yet. The circle will turn purple when the update is ready to test. | Please be patient and wait for the circle to turn purple. |
-| 🟣 | Your ticket has been reviewed and a potential fix is ready. | Update Testing and test the fix. If the problem remains, submit a new route and updated logs. |
+| 🟣 | Your ticket has been reviewed and a potential fix is ready. | Update to the requested testing build and test the fix. If the problem remains, submit a new route and updated logs. |
 | 🔴 | Your ticket was sent back for further investigation. | Wait for the ticket to return to purple status. |
 | 🟢 | You closed the ticket yourself. | No further action is required. |
 | 🔵 | A staff member or the bot closed your ticket. | No further action is required. |
