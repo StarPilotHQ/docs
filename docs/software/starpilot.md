@@ -12,6 +12,8 @@ The StarPilot install links are:
 
 These are the current working links. The old `starpilothq/Dom` link still works: its first startup switches the installed branch and update target to `testing`, including fresh installs made later.
 
+If StarPilot is already installed, see [Changing branches](#changing-branches).
+
 If your comma is new or already on the setup screen, skip to the instructions for your device.
 
 If openpilot or another fork is already installed:
@@ -44,9 +46,12 @@ signal in your car is poor.
 
 Use this only if the comma is stuck and you cannot uninstall through **Settings > Software**.
 
+A factory reset erases stored content and settings on the comma. Download any recordings
+or logs you need first, if the device is still accessible.
+
 1. Unplug the comma and wait 60 seconds.
 1. Plug it back in and immediately tap the screen repeatedly until the reset prompt appears.
-1. Reset the device. On Comma 4, swipe to confirm. On Comma 3/3X, tap to confirm.
+1. On comma 4, tap **reset & erase**, then swipe to confirm. On comma 3/3X, follow the **Confirm** prompts.
 1. After it returns to setup, follow the instructions above for your device.
 
 > [!NOTE] Recommended settings page
@@ -99,25 +104,63 @@ perform the one-time switch locally.
 
 ### Changing branches
 
-#### Using [Galaxy](../usage/galaxy.md)
+#### Using [Galaxy](../usage/galaxy.md) (Recommended)
 
-While parked, open **Tools → System Tools → Software & Updates**. Choose a target **Branch**, press **Update**, then confirm **Update & restart**. **Download only** prepares an update without restarting.
+<span id="using-galaxy"></span>
+
+Park and turn off the vehicle; keep the comma powered and online.
+In Galaxy, open **Tools → System Tools → Software & Updates**.
+Under **Advanced options → Branch**, choose **Stable** or **Testing**.
+
+To update to the latest version of a branch:
+
+1. Select **Update**. Confirm **Update & restart**, or **Restart & install** if the update
+   is already prepared.
+1. If an update was installed, wait for the device to restart and Galaxy to reconnect.
+   An up-to-date branch needs no restart.
+
+If Galaxy cannot verify the update after five minutes, check the connection and the
+installed version before trying again.
+
+To choose a specific version instead:
+
+1. Select a version from the list.
+1. Choose **Install selected version** or **Download and install selected version**.
+1. Confirm the restart and wait for Galaxy to reconnect.
+
+Choosing a branch or version does not install it. **Download only** prepares a version for
+later installation.
 
 #### Direct on device
 
+With the vehicle off and comma powered and online, open **Settings → Software**.
+If **Target Branch** is shown, select `stable` or `testing`. Otherwise, choose the branch
+in Galaxy.
+
 On the **Comma 3/3X** interface:
 
-1. Go to **Settings**.
-1. Open **Software**.
-1. Tap **Target Branch** and pick the branch.
-1. Click **Select**.
-1. Select **Yes** to download.
+1. Use **CHECK**, then **DOWNLOAD** when offered.
 1. Wait for the download to finish.
-1. Install the update.
+1. Select **Install Update → INSTALL** and wait for the device to restart.
 
-On the **Comma 4**:
+On the **Comma 4** interface:
 
-1. Go to **Software**.
-1. Turn on **Show advanced options**.
-1. Select the branch.
-1. Select **Switch + Update**.
+1. Use **check for update**, then **download update** when offered.
+1. Wait for the download to finish.
+1. Select **install now** and wait for the device to restart.
+
+### Automatic updates
+
+**Download updates automatically** prepares updates while the vehicle is off.
+**Install updates automatically** restarts the device on the configured schedule, only while
+the vehicle is off. These are separate settings. Configure the **Automatic restart schedule**
+and its time zone under **Advanced options** in Galaxy.
+
+### Returning to the previous version
+
+In Galaxy, choose **Select previous version**, then **Install selected version**, and confirm
+**Restore previous version**. Restoring turns off automatic downloads.
+
+Fast Update and previous-version restore depend on compatible saved software and the installed
+operating system. If the updater requires a full update, use the normal download/install path
+instead.
