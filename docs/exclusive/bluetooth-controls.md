@@ -36,6 +36,14 @@ Use local Galaxy with the vehicle off and open **Controller Buttons**.
 
 To connect a phone using **Pair phone**, see [Companion Apps](../usage/companion-apps/index.md).
 
+??? example "See this in Galaxy: controller button mapping"
+
+    Open **Bluetooth → Controller Buttons** in local Galaxy while parked. Check **Attached Controllers** before assigning a button.
+
+    [![Cropped Galaxy controller settings showing Enable assigned controller buttons, no attached controller, and Favorite Buttons with Learn Button controls](../assets/images/galaxy/controller-buttons.webp){ .galaxy-screenshot width="390" height="660" loading="lazy" }](../assets/images/galaxy/controller-buttons.webp)
+
+    *This example has no controller attached. Saved device names and addresses are excluded. No pairing, learning, or button test was started. Tap the image to open it full size.*
+
 ## Bluetooth Controller Examples
 
 Steering-wheel-mounted Bluetooth controls are one option for cars that do not give StarPilot

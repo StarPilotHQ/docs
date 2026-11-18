@@ -166,6 +166,14 @@ While parked with Auto Learn enabled, **Accept finding** in StarPilot Tuner save
 eligible finding for the next drive and lets Auto Learn keep refining it. Check
 **Applied now** to see what the controller is using.
 
+??? example "See this in Galaxy: manual tuning and Auto Learn"
+
+    On supported vehicles, open **Tools → Tuning and Analysis → Your tune**, then find **Steering balance** under **Explore your settings**.
+
+    [![Cropped Galaxy Your tune view showing Steering balance, the Auto Learn explanation, and the Left steering gain manual slider](../assets/images/galaxy/tuning-controls.webp){ .galaxy-screenshot width="390" height="590" loading="lazy" }](../assets/images/galaxy/tuning-controls.webp)
+
+    *Moving a slider can lock that setting; viewing it does not. This example excludes vehicle details and recorded-drive findings. Do not copy its values as a tune for your car. Tap the image to open it full size.*
+
 For a Discord tuning request, **Prep My Vehicle for Tuning** prepares supported steering
 settings before recording a route. Turn it off afterward to restore your previous tuning
 preferences.

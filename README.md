@@ -17,9 +17,10 @@ Link each image to its full-size file, add descriptive alt text and a caption, a
 the `.galaxy-screenshot` class with `loading="lazy"` and the image's width and height.
 Keep the written instructions usable without opening an example.
 
-The six images in `docs/assets/images/galaxy/` were captured on November 17, 2026 at a
+The twelve images in `docs/assets/images/galaxy/` were captured on November 17–18, 2026 at a
 390 × 844 portrait viewport, with the device parked and without changing its settings.
-StarPort is cropped to 390 × 540 to exclude paired-device information. Displayed settings
+StarPort, navigation, controller mapping, tuning, and lane-centering examples use narrower
+crops to focus on the relevant controls and exclude private or unrelated sections. Displayed settings
 are examples, not recommendations. Interface labels can vary by version.
 
 Before adding replacements, inspect every image for locations, routes, camera views,

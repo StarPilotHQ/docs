@@ -20,6 +20,14 @@ save a public Mapbox token, starting with `pk.`.
 An optional Google key adds Google maps, traffic-aware routing and place search. Mapbox
 remains required.
 
+??? example "See this in Galaxy: navigation setup"
+
+    Open **Tools → Navigation & Maps → Setup**. This is where you find the Navigation switch and route preferences.
+
+    [![Galaxy Navigation page with Setup selected, map and routing source badges, the Navigation switch, and Avoid tolls, Avoid highways, and Avoid ferries preferences](../assets/images/galaxy/navigation-setup.webp){ .galaxy-screenshot width="390" height="690" loading="lazy" }](../assets/images/galaxy/navigation-setup.webp)
+
+    *The setup view is cropped before the key sections. Source badges and preferences are examples; use the written setup instructions for required keys. Tap the image to open it full size.*
+
 ## Plan a route {#how-to-use-it}
 
 On **Destination**, search for a place or choose a saved or recent one. Tap a result to start

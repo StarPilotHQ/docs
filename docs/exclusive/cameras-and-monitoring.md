@@ -7,6 +7,14 @@ description: Configure visual spot monitoring, the blind spot camera preview, Se
 
 In [Galaxy](../usage/galaxy.md), **Cameras & Monitoring** contains the blind spot camera preview (PiP), [Sentry](./sentry-mode.md), V-ASM spot monitoring, and a camera snapshot tool. Configure them while parked. For road-camera speed sign detection, see [Vision speed limits](./speed-limit-controller.md#vision-speed-limits).
 
+??? example "See this in Galaxy: camera tools"
+
+    Open **Tools → Cameras & Monitoring** to find the separate PiP, Sentry, and V-ASM pages.
+
+    [![Galaxy Cameras & Monitoring menu with Blind Spot Camera and Preview, Sentry, and V-ASM cards above the Camera Snapshot controls](../assets/images/galaxy/cameras.webp){ .galaxy-screenshot width="390" height="844" loading="lazy" }](../assets/images/galaxy/cameras.webp)
+
+    *The snapshot tool starts without an image. PiP and V-ASM have separate setup pages; no camera snapshot was taken for this example. Tap the image to open it full size.*
+
 ## Camera Snapshot
 
 On the main **Cameras & Monitoring** page, turn off the vehicle, choose **Cabin**, **Wide road**, or **Road**, then tap **Take snapshot**. Use **Clear** to remove the preview. These snapshots are temporary and are not saved as Sentry events.

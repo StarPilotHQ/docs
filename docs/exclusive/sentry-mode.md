@@ -23,6 +23,14 @@ Open **Cameras & Monitoring → Sentry** to turn monitoring on or off, adjust it
 
 For a live parked image, use [Camera Snapshot](./cameras-and-monitoring.md#camera-snapshot).
 
+??? example "See this in Galaxy: parked motion settings"
+
+    Open **Cameras & Monitoring → Sentry**. The status appears above the monitoring switch, sensitivity, and warning persistence.
+
+    [![Galaxy Sentry page showing Disarmed status, the parked motion monitoring switch, Motion sensitivity, and Warning persistence](../assets/images/galaxy/sentry.webp){ .galaxy-screenshot width="390" height="844" loading="lazy" }](../assets/images/galaxy/sentry.webp)
+
+    *This example is disarmed. Values shown are not recommendations. Notifications and event images are outside this view. Tap the image to open it full size.*
+
 ## Notifications
 
 The Sentry page supports **Browser push**, **Discord**, **General webhook**, **ntfy** and **Galaxy App Alerts** where available. Browser push requires HTTPS and a compatible browser. App alerts require permission on the phone and a configured push relay. Use the test button for each channel you set up.

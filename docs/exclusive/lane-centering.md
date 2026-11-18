@@ -25,6 +25,14 @@ The lane line on the side StarPilot is pulling toward can change color when a co
 
 In Galaxy, open **Toggles → Lateral (Steering) → Lane Centering**. You can also search for **Lane Centering** in Toggles. Availability depends on the vehicle and configuration.
 
+??? example "See this in Galaxy: lane-centering controls"
+
+    Open **Toggles → Lateral (Steering) → Lane Centering** to find the enable switch, pause behavior, lane offset, and model path preference.
+
+    [![Galaxy Lane Centering controls showing Enable Lane Centering, Pause on signal, Lane offset, and Model path preference](../assets/images/galaxy/lane-centering.webp){ .galaxy-screenshot width="390" height="730" loading="lazy" }](../assets/images/galaxy/lane-centering.webp)
+
+    *This cropped view shows the first controls. Values are examples, not recommended settings; available controls and scales can vary by version. Tap the image to open it full size.*
+
 ## Lane offset
 
 <span id="what-is-lane-center-offset"></span>
