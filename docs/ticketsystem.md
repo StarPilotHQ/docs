@@ -15,7 +15,7 @@ The Discord ticket system is the main way to report problems and request support
 
 You must first be a member of the [StarPilot Discord server](https://discord.com/invite/b8EzGp5RtE).
 
-Potential fixes are first released on the Dom branch. If you are using the Starpilot branch, you will need to [switch to Dom](#how-do-i-switch-from-the-starpilot-branch-to-dom) to test the update.
+Potential fixes are first released on the testing branch. If you are using the Starpilot branch, you will need to [switch to Dom](#how-do-i-switch-from-the-starpilot-branch-to-dom) to test the update.
 
 ## How do I create a ticket?
 
@@ -60,12 +60,12 @@ Potential fixes are first released on the Dom branch. If you are using the Starp
 > [!Tip]
 > If you can reproduce the issue, open a bookmark on your device shortly before it occurs and close the bookmark shortly afterward. Include the bookmark information in your ticket to help Firestar locate and investigate the issue.
 
-## How do I switch from the Starpilot branch to Dom?
+## How do I switch from the Starpilot branch to testing?
 
-Switch to the `Dom` branch while parked using [the software guide](./software/starpilot.md#changing-branches). You do not need to reinstall StarPilot.
+Switch to the `testing` branch while parked using [the software guide](./software/starpilot.md#changing-branches). You do not need to reinstall StarPilot.
 
 > [!Tip]
-> If you do not want to remain on Dom, wait until the fix is included in the next StarPilot release. You can then follow the same process to switch back to the Starpilot branch.
+> If you do not want to remain on testing, wait until the fix is included in the next StarPilot release. You can then follow the same process to switch back to the Starpilot branch.
 
 ## What do the colored circles on my ticket mean?
 
