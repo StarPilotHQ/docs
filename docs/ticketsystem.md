@@ -15,7 +15,7 @@ The Discord ticket system is the main way to report problems and request support
 
 You must first be a member of the [StarPilot Discord server](https://discord.com/invite/b8EzGp5RtE).
 
-Potential fixes are first released on the testing branch. If you are using the Starpilot branch, you will need to [switch to Dom](#how-do-i-switch-from-the-starpilot-branch-to-dom) to test the update.
+Potential fixes are first released on the testing branch. If you are using the stable branch, you will need to [switch to testing](#how-do-i-switch-from-stable-to-testing) to test the update.
 
 ## How do I create a ticket?
 
@@ -60,12 +60,12 @@ Potential fixes are first released on the testing branch. If you are using the S
 > [!Tip]
 > If you can reproduce the issue, open a bookmark on your device shortly before it occurs and close the bookmark shortly afterward. Include the bookmark information in your ticket to help Firestar locate and investigate the issue.
 
-## How do I switch from the Starpilot branch to testing?
+## How do I switch from stable to testing?
 
 Switch to the `testing` branch while parked using [the software guide](./software/starpilot.md#changing-branches). You do not need to reinstall StarPilot.
 
 > [!Tip]
-> If you do not want to remain on testing, wait until the fix is included in the next StarPilot release. You can then follow the same process to switch back to the Starpilot branch.
+> If you do not want to remain on testing, wait until the fix is included in the next StarPilot release. You can then follow the same process to switch back to the stable branch.
 
 ## What do the colored circles on my ticket mean?
 
@@ -75,7 +75,7 @@ Each colored circle represents the current status of your ticket.
 | --- | --- | --- |
 | 🟠 | Your ticket is new and has been submitted. | Wait for Firestar to review it. |
 | ⚪ | Firestar has reviewed your ticket, but an update is not ready yet. The circle will turn purple when the update is ready to test. | Please be patient and wait for the circle to turn purple. |
-| 🟣 | Your ticket has been reviewed and a potential fix is ready. | Update Dom and test the fix. If the problem remains, submit a new route and updated logs. |
+| 🟣 | Your ticket has been reviewed and a potential fix is ready. | Update Testing and test the fix. If the problem remains, submit a new route and updated logs. |
 | 🔴 | Your ticket was sent back for further investigation. | Wait for the ticket to return to purple status. |
 | 🟢 | You closed the ticket yourself. | No further action is required. |
 | 🔵 | A staff member or the bot closed your ticket. | No further action is required. |
