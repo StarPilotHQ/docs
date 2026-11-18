@@ -13,6 +13,15 @@ SLC does not replace the driver's judgment. Speed-limit information can be missi
 
 In Galaxy, open **Toggles → Longitudinal (Speed & Following) → Speed Limit Controller**. **Show speed limit signs** displays available readings. For accepted limits to affect cruise speed, enable **Speed Limit Controller** on a supported configuration where StarPilot controls speed.
 
+??? example "See this in Galaxy: speed-limit controls"
+
+    Open **Toggles → Longitudinal (Speed & Following) → Speed Limit Controller**.
+    The controller and sign-display switches are separate controls.
+
+    [![Galaxy Speed Limit Controller settings with separate controller and Show speed limit signs switches, a disabled Match Speed Limit on Engage control, and Confirm limits below](../assets/images/galaxy/speed-limit-controller.webp){ .galaxy-screenshot width="390" height="844" loading="lazy" }](../assets/images/galaxy/speed-limit-controller.webp)
+
+    *Disabled controls can depend on your vehicle or other settings. The values shown are an example, not recommended settings. Tap the image to open it full size.*
+
 ## Driving-screen colors
 
 The speed-limit sign displays the limit and indicates when a new reading needs confirmation. A green outline indicates active limiting where shown. **OVERRIDE** indicates that an override is active. The cruise SET display still shows the driver’s ceiling.

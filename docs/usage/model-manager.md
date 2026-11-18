@@ -17,6 +17,15 @@ community favorites, and ask for feedback in [Discord](https://firestar.link/dis
 
 ## Single model
 
+??? example "See this in Galaxy: model selection and status"
+
+    Open **Tools → Models**. The active Small and Big selections appear above
+    **Model Randomizer**, **Running now**, and **Jetlink**.
+
+    [![Galaxy Models page showing Single model and Model pair tabs, Active Small and Active Big selections, Model Randomizer, Running now, and Jetlink](../assets/images/galaxy/models.webp){ .galaxy-screenshot width="390" height="844" loading="lazy" }](../assets/images/galaxy/models.webp)
+
+    *This parked example reports “No running model.” The model names and selections shown are examples, not recommendations. Tap the image to open it full size.*
+
 **Active Small · On-device** runs on the comma’s built-in compute. **Active Big · External**
 selects a larger model for compatible external hardware. Choose **None — always use Active
 Small** to stay with the on-device model.

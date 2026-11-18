@@ -14,6 +14,14 @@ tablet apps are **HeadunitPad** on iPad and **Open Headunit** on Android tablets
 
 ## Set up
 
+??? example "See this in Galaxy: StarPort support status"
+
+    Open **Tools → StarPort**. Check **StarPort Support** before following the connection steps below.
+
+    [![Galaxy StarPort page showing the supported car, adapter, and tablet setups, followed by StarPort Support with Ready status and a Manage button](../assets/images/galaxy/starport.webp){ .galaxy-screenshot width="390" height="540" loading="lazy" }](../assets/images/galaxy/starport.webp)
+
+    *This example already has support installed. Your status and validity date may differ. The view is cropped before paired-device details. Tap the image to open it full size.*
+
 ### StarPort Support
 
 Under **StarPort Support**, choose **Install support**. Follow Galaxy’s download instructions

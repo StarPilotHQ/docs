@@ -10,6 +10,23 @@ Preview the docs website locally using:
 2. Navigate to http://localhost:8000
 3. When finished, `Ctrl+C` the docker command to stop the server.
 
+## Galaxy screenshots
+
+Use collapsed `??? example "See this in Galaxy: …"` blocks near the relevant instructions.
+Link each image to its full-size file, add descriptive alt text and a caption, and apply
+the `.galaxy-screenshot` class with `loading="lazy"` and the image's width and height.
+Keep the written instructions usable without opening an example.
+
+The six images in `docs/assets/images/galaxy/` were captured on November 17, 2026 at a
+390 × 844 portrait viewport, with the device parked and without changing its settings.
+StarPort is cropped to 390 × 540 to exclude paired-device information. Displayed settings
+are examples, not recommendations. Interface labels can vary by version.
+
+Before adding replacements, inspect every image for locations, routes, camera views,
+API keys, network names, device identifiers, accounts and other personal information.
+Exclude those regions or remove them completely; blur is not sufficient. Strip metadata,
+review the final pixels, and keep unreviewed originals outside the repository and Git history.
+
 ## Search visibility
 
 Every standalone guide should have a unique `title` and `description` in its Markdown

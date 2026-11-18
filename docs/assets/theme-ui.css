@@ -344,3 +344,14 @@ html[data-site-theme="galaxy"]
   color: inherit;
   font: inherit;
 }
+
+/* Keep optional portrait examples compact in both wiki themes. */
+.md-typeset .galaxy-screenshot {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  margin: 1rem auto;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.75rem;
+}

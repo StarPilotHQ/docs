@@ -13,6 +13,23 @@ and colors before switching software.
 The below sections highlight settings that might be worth looking at.
 If you have trouble finding any settings, use [Galaxy](./galaxy.md)'s toggle search.
 
+??? example "See this in Galaxy: browse settings"
+
+    Tap **Toggles**, choose a category, then tap **Manage** beside the group you need.
+
+    [![Galaxy Toggles page with Lateral selected and Manage buttons for Always On Lateral, Lane Changes, Lane Centering, and Steering and Torque](../assets/images/galaxy/toggles.webp){ .galaxy-screenshot width="390" height="844" loading="lazy" }](../assets/images/galaxy/toggles.webp)
+
+    *Categories sit above the settings groups in portrait view. Tap the image to open it full size.*
+
+??? example "See this in Galaxy: find a setting with search"
+
+    Tap the search icon and type a feature name. Each result shows its settings category;
+    choose the matching result to open that page.
+
+    [![Galaxy search for speed limit, showing Speed Limit Controller and its Longitudinal settings path as the first result](../assets/images/galaxy/search.webp){ .galaxy-screenshot width="390" height="844" loading="lazy" }](../assets/images/galaxy/search.webp)
+
+    *Search helps when you know the feature name but not its category. Tap the image to open it full size.*
+
 If behavior feels off or the car drives unexpectedly, 
 try resetting your toggles to default or using safe mode.
 

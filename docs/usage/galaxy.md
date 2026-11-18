@@ -70,6 +70,14 @@ combines replayable clips and skips missing ranges.
 
 ## Tools {#features}
 
+??? example "See this in Galaxy: the Tools menu"
+
+    Tap **Tools** in the bottom navigation, then choose a feature card. Scroll for more tools.
+
+    [![Galaxy Tools menu in portrait view, with cards for Bluetooth, Cameras & Monitoring, Colors & Layout, Logs & Diagnostics, Models, and Navigation & Maps](../assets/images/galaxy/tools.webp){ .galaxy-screenshot width="390" height="844" loading="lazy" }](../assets/images/galaxy/tools.webp)
+
+    *The bottom navigation stays within reach on a phone. Tap the image to open it full size.*
+
 | Tool | Purpose |
 |---|---|
 | [Bluetooth](../exclusive/bluetooth-controls.md) | Pair devices, manage audio and map controller buttons |
