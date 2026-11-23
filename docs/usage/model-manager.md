@@ -77,4 +77,7 @@ Jetlink runs Active Big on its host, which downloads the model itself. **Prepare
 the remote model is built, rather than active. Local Small remains available, and your
 Small and Chestnut selections stay saved.
 
-Follow the [Jetlink host setup guide](https://github.com/StarPilotHQ/StarPilot/blob/testing/openpilot/starpilot/models/JETLINK.md).
+On supported layouts, the optional **Big model** widget shows which driving model is running
+and the Jetlink or Chestnut status.
+
+Follow the [Jetlink host setup guide](https://github.com/StarPilotHQ/StarPilot/blob/stable/openpilot/starpilot/models/JETLINK.md).

@@ -104,6 +104,7 @@ depend on the configuration. Follow the car-specific guide before choosing hardw
 * Honda Clarity 2018-21
 * Honda CR-V Hybrid 2023-27
 * Honda CR-V 5G *(improved over stock, with supported modified EPS firmware)*
+* Honda Fit 2018-20 (Nidec) — Always On Lateral on supported factory-cruise setups
 * Honda Fit (Taiwan) 2021
 * Honda Fit (Taiwan) 2024-25
 * Honda HR-V 2023-25 *(improved over stock)*
@@ -189,6 +190,7 @@ before flashing.
 * Subaru Impreza *(improved over stock)*
 * Subaru Impreza RS 2025 — angle-steering setup
 * Subaru Legacy 2025 *(improved over stock)*
+* Subaru Outback 2015-17 (pre-global) — Subaru A harness and steering assistance with factory EyeSight cruise
 * Subaru Outback 2023-24 *(improved over stock)*
 
 Available Subaru controller options and limits depend on the steering system and vehicle
@@ -205,6 +207,10 @@ configuration.
 * Ford F-150 Lightning 2022-25
 * Ford Mondeo 2014-22
 * Ford Transit 2025 (Co-Pilot360 Assist+)
+
+### Mazda
+
+* Mazda CX-5 2017-21 — low-speed steering on setups with the recognized EPS swap
 
 ### Nissan
 
@@ -226,6 +232,10 @@ before installing.
 * Volkswagen ID.3 2020-25
 * Volkswagen ID.5 2022-23
 * Volkswagen Jetta 2018-23
+
+### Volvo
+
+* Volvo V60 2010-18 (EUCD) — custom harness required. Confirm the engine firmware and ACC setup.
 
 ## Vehicle tuning improvements
 

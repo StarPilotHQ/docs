@@ -76,6 +76,12 @@ while you remain stopped.
 
 <span id="gas-brake"></span>
 
+### Low-speed cruise start
+
+Under **Toggles → Longitudinal (Speed & Following) → Long Planner**, enable **Low-Speed
+Cruise Start** to set StarPilot cruise at your current speed down to the vehicle's minimum
+engagement speed. Factory cruise uses the car's own minimum speed.
+
 ### Driving Mode and Automatic conditions {#conditional-experimental-mode-recommended}
 
 **Driving Mode** offers **Automatic**, **Chill** and **Experimental**. Automatic switches
@@ -155,15 +161,18 @@ Lane Changes** is enabled, engage cruise before signaling.
 Where supported, **Steering Controller** offers **Stock Controller** and **StarPilot Controller**.
 Controller changes apply on the next drive.
 
-Under **Steering and Torque**, **Turn Signal Guidance** uses your turn signal to help the
-model choose a turning path at low speeds on supported configurations.
+Under **Toggles → Lateral (Steering) → Steering & Torque**, **Turn Assist** uses steering-angle
+feedback to help with rolling low-speed turns on supported setups. **Automatic Turn
+Initiation** lets the model anticipate a signaled intersection turn. It defaults to **Off**.
+With it off, start the turn yourself to use Turn Assist.
 
-**Use StarPilot Auto Learn** uses data from your drives to refine torque profiles. On current
-testing builds, moving a manual slider locks that setting while Auto Learn can continue on
-the others. Select **Default** to unlock the setting.
+**Use StarPilot Auto Learn** uses data from your drives to refine torque profiles. Moving a
+supported manual slider locks that setting while Auto Learn can continue on the others.
+Select **Default** to unlock the setting.
 
-While parked with Auto Learn enabled, **Accept finding** in StarPilot Tuner saves an
-eligible finding for the next drive and lets Auto Learn keep refining it. Check
+With Auto Learn enabled, park and switch off the vehicle after a drive. Open
+**Tools → Tuning and Analysis → Your tune** in local Galaxy and wait for the drive review.
+Use **Accept finding** on an eligible finding to save it for the next drive. Check
 **Applied now** to see what the controller is using.
 
 ??? example "See this in Galaxy: manual tuning and Auto Learn"
@@ -186,6 +195,15 @@ Open **Galaxy → Tools → Navigation & Maps → Setup**, enable **Navigation**
 Mapbox token. See [Navigation & Maps](../exclusive/navigation.md) for routes, GPS, and offline
 maps.
 
+## Device and display settings
+
+Under **Toggles → Device & System**, open **Power & Cooling**, **Data & Connections**,
+**StarPort**, **Browser preferences** or **Localization**. **Data & Connections** contains
+cloud services, remote access and upload preferences.
+
+Under **Toggles → Visual (Display & UI)**, find **Display**, **Driving Screen Widgets,
+Colors & Layout**, **Quick Select** and **Blind Spot Camera & Preview**.
+
 ## Backup and reset
 
 In Galaxy’s **Toggle backup**, use **Back up toggles** to save editable toggles, driving-screen
@@ -201,3 +219,7 @@ your current toggles and layout before trying again.
 **Reset toggles to default** lets you review the changes before confirming while parked.
 Calibration, downloaded models, accounts and network credentials are kept. Settings
 unavailable for the vehicle remain unchanged.
+
+For a steering tune backup, connect over Wi-Fi and use **Download tune** under **Your tune**
+to save manual sliders and Auto Learn settings. While parked with the vehicle off, use
+**Import tune** to review compatibility and choose what to restore.

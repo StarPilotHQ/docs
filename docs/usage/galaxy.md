@@ -59,7 +59,8 @@ not share Internet.
 
 **Home** shows device status, drive totals and recent drives. **Toggles** lets you search or
 browse settings; follow each change’s save or confirmation prompts. Some changes require
-Park. **Tools** opens the device tools.
+Park. See [Device and display settings](./settings.md#device-and-display-settings) for the
+menu paths. **Tools** opens the device tools.
 
 ## Routes
 
