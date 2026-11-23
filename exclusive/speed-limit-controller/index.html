@@ -2090,7 +2090,9 @@
 <p>The Speed Limit Controller, or SLC, uses the accepted speed limit plus a configurable offset. SET is your cruise ceiling. SLC can cap the target below SET. Accepting a posted limit normally leaves SET where it is.</p>
 <p>SLC does not replace the driver's judgment. Speed-limit information can be missing, delayed, or incorrect. Always follow posted signs and adjust the set speed when needed.</p>
 <h2 id="enable-slc">Enable SLC<a class="headerlink" href="#enable-slc" title="Permanent link">&para;</a></h2>
-<p>In Galaxy, open <strong>Toggles → Longitudinal (Speed &amp; Following) → Speed Limit Controller</strong>. <strong>Show speed limit signs</strong> displays available readings. For accepted limits to affect cruise speed, enable <strong>Speed Limit Controller</strong> on a supported configuration where StarPilot controls speed.</p>
+<p>In Galaxy, open <strong>Toggles → Longitudinal (Speed &amp; Following) → Speed Limit Controller</strong>.
+<strong>Show speed limit signs</strong> displays available readings. Enable <strong>Speed Limit Controller</strong> to
+use accepted limits with supported StarPilot speed control or Hyundai Redneck Cruise.</p>
 <details class="example">
 <summary>See this in Galaxy: speed-limit controls</summary>
 <p>Open <strong>Toggles → Longitudinal (Speed &amp; Following) → Speed Limit Controller</strong>.
@@ -2107,10 +2109,9 @@ The controller and sign-display switches are separate controls.</p>
 <li><strong>Maps</strong> uses installed <a href="../navigation/#offline-maps">Speed Limit Maps</a> for the current road.</li>
 <li><strong>Vision</strong> uses the road camera to detect speed-limit signs.</li>
 </ul>
-<p>Use <strong>Primary source</strong>, <strong>Secondary source</strong> and <strong>Third source</strong> to choose the order. SLC tries the next configured source when the first cannot provide a usable reading.</p>
-<p>Choose <strong>Highest</strong> or <strong>Lowest</strong> as the primary source to compare usable Dashboard and Maps
-readings by value. Usable Vision readings are included when <strong>Vision</strong> is selected as the
-secondary or third source.</p>
+<p>Use <strong>Primary source</strong>, <strong>Secondary source</strong> and <strong>Third source</strong> to choose which sources
+SLC can use. Set either optional source to <strong>Off</strong> to disable it. SLC offers the most
+recently changed valid limit. Source order breaks ties when limits change together.</p>
 <h3 id="vision-speed-limits">Vision speed limits<a class="headerlink" href="#vision-speed-limits" title="Permanent link">&para;</a></h3>
 <p>Choose <strong>Vision</strong> in any of the three source fields where available. Check camera-reported limits against road signs. Vision can misread signs, so keep another source available and use <strong>Confirm limits</strong> when evaluating it. To help improve detection, see <a href="../../usage/operation/#vision-speed-limit-detection">Vision Speed Limit Detection</a>.</p>
 <h2 id="configure-speed-offsets">Configure speed offsets<a class="headerlink" href="#configure-speed-offsets" title="Permanent link">&para;</a></h2>
@@ -2122,10 +2123,14 @@ secondary or third source.</p>
 <h2 id="look-ahead-for-changes">Look ahead for changes<a class="headerlink" href="#look-ahead-for-changes" title="Permanent link">&para;</a></h2>
 <p>Use <strong>Adopt higher limits early</strong> and <strong>Adopt lower limits early</strong> for upcoming changes in map data. Each setting can be <strong>Off</strong> or set to 1–10 seconds. Lookahead depends on available map data.</p>
 <h2 id="match-the-limit-when-engaging">Match the limit when engaging<a class="headerlink" href="#match-the-limit-when-engaging" title="Permanent link">&para;</a></h2>
-<p><strong>Match speed limit on engage</strong> can initialize SET to the adjusted speed limit when you engage. Use <strong>RES</strong> to restore the previous SET speed where supported. An ordinary limit accepted later still caps the target below SET without changing it.</p>
+<p><strong>Match Speed Limit on Engage</strong> can initialize SET to the adjusted speed limit when you engage. Use <strong>RES</strong> to restore the previous SET speed where supported. An ordinary limit accepted later still caps the target below SET without changing it.</p>
+<p>On supported Hyundai setups using <strong>Redneck Cruise</strong>, pressing <strong>SET</strong> to engage can lower
+the new SET speed to the adjusted limit. The adjusted limit must be within the vehicle's
+cruise range and below the new SET speed.</p>
 <h2 id="when-a-reading-is-unavailable">When a reading is unavailable<a class="headerlink" href="#when-a-reading-is-unavailable" title="Permanent link">&para;</a></h2>
 <p><span id="choose-fallback-behavior"></span></p>
-<p>If fresh readings are unavailable, an already accepted limit can remain in effect, bounded by SET. If there is no accepted limit, ordinary SET behavior applies.</p>
+<p>A source going quiet leaves SLC waiting for a changed reading. An accepted limit can
+remain in effect, bounded by SET. If there is no accepted limit, ordinary SET behavior applies.</p>
 <h2 id="override-slc">Override SLC<a class="headerlink" href="#override-slc" title="Permanent link">&para;</a></h2>
 <p>Use <strong>After an accelerator override</strong> to choose what happens when you release the accelerator:</p>
 <ul>
@@ -2170,7 +2175,7 @@ coverage is selected for the next Maps service start.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 05:09:50 UTC">November 18, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 23, 2026 04:43:53 UTC">November 23, 2026</span>
   </span>
 
     
@@ -2198,14 +2203,14 @@ coverage is selected for the next Maps service start.</p>
     
     <nav>
       
-        <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
-          
-          <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
-        </a>
-      
         <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
           
           <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
+        </a>
+      
+        <a href="https://github.com/firestar5683" class="md-author" title="@firestar5683">
+          
+          <img src="https://avatars.githubusercontent.com/u/168790843?v=4&size=72" alt="firestar5683">
         </a>
       
         <a href="https://github.com/prabhaavp" class="md-author" title="@prabhaavp">
