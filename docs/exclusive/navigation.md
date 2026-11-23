@@ -55,6 +55,8 @@ and require your Mapbox key. Google map tiles cannot be saved offline.
 **Speed Limit Maps** downloads regional coverage for map-based speed limits. The selected
 coverage applies the next time the Maps service starts. Choose **Maps** as a source in the
 [Speed Limit Controller](./speed-limit-controller.md#speed-limit-sources) to use those readings.
+For Canada, choose **Canada — All Canada** or select coverage under
+**Canada — Provinces and territories**.
 
 Planning a new route still needs Internet.
 
@@ -68,6 +70,9 @@ Galaxy manages destinations and saved places; the comma displays turn-by-turn in
 Turn assistance is limited to supported low-speed turns with the matching turn signal and
 corresponding blindspot clear. Upcoming maneuvers can also reduce the target speed when
 StarPilot controls speed.
+
+See [Lateral Tuning](../usage/settings.md#lateral-tuning) for **Turn Assist** and
+**Automatic Turn Initiation**.
 
 Navigation does not complete turns or exits for you. Stay attentive and ready to steer or
 brake.

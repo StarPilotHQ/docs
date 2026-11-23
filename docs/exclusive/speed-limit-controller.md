@@ -11,7 +11,9 @@ SLC does not replace the driver's judgment. Speed-limit information can be missi
 
 ## Enable SLC
 
-In Galaxy, open **Toggles → Longitudinal (Speed & Following) → Speed Limit Controller**. **Show speed limit signs** displays available readings. For accepted limits to affect cruise speed, enable **Speed Limit Controller** on a supported configuration where StarPilot controls speed.
+In Galaxy, open **Toggles → Longitudinal (Speed & Following) → Speed Limit Controller**.
+**Show speed limit signs** displays available readings. Enable **Speed Limit Controller** to
+use accepted limits with supported StarPilot speed control or Hyundai Redneck Cruise.
 
 ??? example "See this in Galaxy: speed-limit controls"
 
@@ -34,11 +36,9 @@ SLC can use the following sources:
 * **Maps** uses installed [Speed Limit Maps](./navigation.md#offline-maps) for the current road.
 * **Vision** uses the road camera to detect speed-limit signs.
 
-Use **Primary source**, **Secondary source** and **Third source** to choose the order. SLC tries the next configured source when the first cannot provide a usable reading.
-
-Choose **Highest** or **Lowest** as the primary source to compare usable Dashboard and Maps
-readings by value. Usable Vision readings are included when **Vision** is selected as the
-secondary or third source.
+Use **Primary source**, **Secondary source** and **Third source** to choose which sources
+SLC can use. Set either optional source to **Off** to disable it. SLC offers the most
+recently changed valid limit. Source order breaks ties when limits change together.
 
 ### Vision speed limits
 
@@ -62,13 +62,18 @@ Use **Adopt higher limits early** and **Adopt lower limits early** for upcoming 
 
 ## Match the limit when engaging
 
-**Match speed limit on engage** can initialize SET to the adjusted speed limit when you engage. Use **RES** to restore the previous SET speed where supported. An ordinary limit accepted later still caps the target below SET without changing it.
+**Match Speed Limit on Engage** can initialize SET to the adjusted speed limit when you engage. Use **RES** to restore the previous SET speed where supported. An ordinary limit accepted later still caps the target below SET without changing it.
+
+On supported Hyundai setups using **Redneck Cruise**, pressing **SET** to engage can lower
+the new SET speed to the adjusted limit. The adjusted limit must be within the vehicle's
+cruise range and below the new SET speed.
 
 ## When a reading is unavailable
 
 <span id="choose-fallback-behavior"></span>
 
-If fresh readings are unavailable, an already accepted limit can remain in effect, bounded by SET. If there is no accepted limit, ordinary SET behavior applies.
+A source going quiet leaves SLC waiting for a changed reading. An accepted limit can
+remain in effect, bounded by SET. If there is no accepted limit, ordinary SET behavior applies.
 
 ## Override SLC
 

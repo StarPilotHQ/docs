@@ -42,6 +42,7 @@ network connection for the package download and upload.
 | **Tablet app** | Put the tablet on the same Wi-Fi as the comma or join the Galaxy hotspot. Follow the steps Galaxy shows for the selected app. |
 
 Tap **Connect** when prompted. Keep the car on and its screen awake for the first connection.
+If a touch setup dot appears on the car display, tap it once to finish touch setup.
 Enable **Automatic Connection** to connect when you start driving.
 
 Disconnect wired Android Auto before enabling [Jetlink](../usage/model-manager.md#jetlink).
@@ -69,11 +70,14 @@ Both use the comma's USB-C port.
 If the screen is black or frozen, tap **Disconnect**, wait a few seconds, then reconnect.
 If it keeps happening, restart the car or adapter.
 
+Galaxy may offer an experimental fix when a wired 2018 Honda Fit connects without showing
+Android Auto. The fix is for head unit **39100-T5A-L313-M1** with build **83.01D.00.B.1021**.
+
 ### Connection Logs
 
 1. Try to reproduce the issue while parked. Open **Connection Logs** in StarPort and find the attempt by time, car and connection type. The list shows up to 20 sessions, newest first.
 2. Check the outcome. **Projected** means the connection reached the projection stage. **Failed** shows the recorded error. A stop at **RFCOMM** means the attempt ended during Bluetooth setup. Include the last status shown in Galaxy if the log gives little detail.
-3. For a StarPort issue, use **Send StarPort logs** if it is available. Add a short description of what happened. You can also use **Download all logs** over a network connection and attach the zip to a [support ticket](../ticketsystem.md). Include the car year/model, adapter model, connection type and steps you tried. Bluetooth-only access shows summaries and can send the archive from the comma when **Send StarPort logs** is available.
+3. For a StarPort issue, use **Send StarPort logs** if it is available. A short note about what happened is required. You can also use **Download all logs** over a network connection and attach the zip to a [support ticket](../ticketsystem.md). Include the car year/model, adapter model, connection type and steps you tried. Bluetooth-only access shows summaries and can send the archive from the comma when **Send StarPort logs** is available.
 
 ## Other phones and audio
 

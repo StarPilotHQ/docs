@@ -86,8 +86,8 @@ signs, depending on your configuration.
 When StarPilot controls speed, SLC can limit the target to the accepted speed limit plus your
 configured offset, up to your cruise SET speed. Accepting a limit normally does not change SET.
 
-The driving display shows the speed-limit sign and optional offset. Status text explains
-whether SLC is using the speed limit, using SET, awaiting confirmation or being overridden.
+The driving display shows the speed-limit sign and optional offset. The sign indicates when
+a new reading needs confirmation.
 
 See the [Speed Limit Controller guide](../exclusive/speed-limit-controller.md) for source, offset, confirmation, and override settings.
 
@@ -184,6 +184,6 @@ Navigation displays a route and can help the driving model prepare for turns. It
 drive to the destination for you. Stay ready to steer, especially at intersections and exits.
 See [Navigation & Maps](../exclusive/navigation.md) for setup.
 
-On supported configurations, **Turn Signal Guidance** can help the model choose a turning
-path at low speed even without a route. Steering assistance must be active. See
-[Lateral Tuning](./settings.md#lateral-tuning) for the setting.
+On supported configurations, **Turn Assist** helps with rolling low-speed turns while
+steering assistance is active. With **Automatic Turn Initiation** off, start the turn
+yourself. See [Lateral Tuning](./settings.md#lateral-tuning) for both controls.
