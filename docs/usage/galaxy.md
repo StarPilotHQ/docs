@@ -141,9 +141,13 @@ Navigation is a driving aid: it does not guarantee the car will complete a route
 ## Steering, speed, and driving preferences
 
 StarPilot offers settings for lateral tuning, driving personalities, curve speed control,
-and **Driving Mode** choices of **Automatic**, **Chill**, and **Experimental**. Automatic switches
-between Chill and Experimental using your saved conditions. Availability and behavior depend on
-your vehicle's steering and longitudinal capabilities.
+and **Driving Mode**. On Stable, the choices are **Automatic**, **Chill**, and **Experimental**.
+Automatic switches between Chill and Experimental using your saved conditions. Availability
+and behavior depend on your vehicle's steering and longitudinal capabilities.
+
+The upcoming `testingupstreamsync` integration plans to rename **Experimental** to
+**End to End** (**E2E**). See [Upcoming End to End behavior](./operation.md#end-to-end) for the
+planned display changes and driving personality settings.
 
 The experimental **Lane Centering** feature adjusts the model's path using detected lane
 lines when conditions allow. Its settings include **Lane offset**, **Model path preference**,

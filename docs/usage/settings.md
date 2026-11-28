@@ -84,14 +84,15 @@ engagement speed. Factory cruise uses the car's own minimum speed.
 
 ### Driving Mode and Automatic conditions {#conditional-experimental-mode-recommended}
 
-**Driving Mode** offers **Automatic**, **Chill** and **Experimental**. Automatic switches
+On Stable, **Driving Mode** offers **Automatic**, **Chill** and **Experimental**. Automatic switches
 between Chill and Experimental using your saved conditions.
 
 Open **Automatic conditions** to configure conditions involving speed, curves, lead vehicles,
 turn signals and stop lights. **Model stop time** currently defaults to **7.7 seconds**. Start
 with the default and check why Automatic activates before adjusting it.
 
-Read more about CEM [in the operation guide](./operation.md#conditional-experimental-mode).
+See [Conditional Experimental Mode](./operation.md#conditional-experimental-mode) for Stable
+or [Upcoming End to End behavior](./operation.md#end-to-end) for the planned rename.
 
 ### Conditional Chill Mode
 
@@ -113,6 +114,12 @@ widget or **Cycle Driving Personality** in Quick Select.
 
 For optional Bluetooth or USB controller setup, see the
 [Bluetooth guide](../exclusive/bluetooth-controls.md).
+
+#### Upcoming End to End acceleration {#end-to-end-acceleration}
+
+In the upcoming `testingupstreamsync` integration, **Standard** and **Aggressive** are planned
+to get the upstream-style model acceleration boost automatically. **Relaxed** will be able
+to opt into a nudge with a proposed toggle called **Speed Nudge in Relaxed**.
 
 ### Extra stopped-lead distance
 
