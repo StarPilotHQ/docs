@@ -9,40 +9,37 @@ description: Choose hardware for StarPilot on Chevrolet Bolt EV, including ACC a
 
 Things to be aware of for your vehicle:
 
-* Steering assistance has a minimum operating speed. Be ready to steer at low speeds.
-* On supported non-ACC Bolts, the [Comma Pedal](../hardware/comma-pedal.md) uses regen in one-pedal or L mode to slow the vehicle. Braking can be limited, especially at low speed. Be ready to brake manually.
-* On supported ACC Bolts, StarPilot can request friction braking through the factory ACC system. A compatible pedal can add stronger regen and support restarting from a stop. See [ACC Bolts](#acc-bolts).
-* The regen paddle can disengage assistance where supported. If the LKAS button is unavailable with the harness connected, some ACC configurations can still use the distance button for supported actions.
+* Steering assistance has a minimum operating speed of approximately 7 mph. Be ready to steer at low speeds.
+* On supported non-ACC Bolts, the [Comma Pedal](../hardware/comma-pedal.md) uses regen in one-pedal or L mode to slow the vehicle. StarPilot has no access to friction brakes, so deceleration can be limited, especially at low speed. Be ready to brake manually.
+* On supported ACC Bolts, StarPilot can request friction braking through the factory ACC system. Regen is limited to 10kW. Installing a [Comma Pedal](../hardware/comma-pedal.md) adds stronger regen (up to 70kW) and supports starting from a stop (stop and go). See [ACC Bolts](#acc-bolts).
+* The regen paddle will disengage StarPilot throttle/brake control.
 
 ## Car Configuration
 
 ### StarPilot Settings
 
-In Galaxy, open **Toggles → Vehicle**. Use **Auto** or select the exact registered vehicle configuration if manual identification is needed. With the vehicle off, verify the ACC, harness and pedal options for your setup before your next drive. See [Settings](../usage/settings.md#lateral-tuning) for supported controller choices.
+In Galaxy, open **Toggles → Vehicle**. With the car off, manually select the exact registered vehicle fingerprint that matches your configuration. Do not use any fingerprint containing ACC if you do not have ACC.
 
 ### Tires
 
 * Use the pressures recommended for your vehicle and tires.
-* Keep your car aligned.
-* Check the vehicle manufacturer’s guidance before changing wheel or tire sizes.
+* Keep your car wheels aligned.
+* Check the vehicle manufacturer’s guidance before changing wheel or tire sizes. Keep in mind that non-stock tire sizes will affect the lateral performance of StarPilot.
 
 ### One Pedal Driving/L Mode
 
-On Bolt setups that use the Comma Pedal for regen braking, use One Pedal mode on Gen 2 or L mode on Gen 0 and Gen 1. Factory ACC and ACC-plus-pedal configurations have their own braking behavior.
+On Bolt setups that use the Comma Pedal for regen braking, use One Pedal mode on 2022-2023 models or L mode on 2017-2021 models.
 
 ### Sport Mode
 
-On affected 2022–23 Bolts, Sport Mode can reduce available steering torque. Leave it off if it affects steering response.
+On 2022–23 Bolts, enabling Sport Mode will reduce available steering torque.
 
 ## Vehicle Requirements
 
-> [!WARNING] Super Cruise
-> The factory-ACC setup documented here is for Bolt EUVs without the Super Cruise package. Check [Vehicle Compatibility](./support.md) for supported configurations.
-
 ### Lane Keep Assist System (LKAS)
 
-As with most openpilot compatible cars, the Bolt must be equipped with LKAS (Lane Keep 
-Assist System) in order for openpilot to send steering commands. 
+As with most openpilot compatible cars, the Bolt must be equipped with LKAS (Lane Keep
+Assist System) in order for openpilot to send steering commands.
 
 #### Trim Levels with LKAS
 > [!WARNING] Unofficial list
@@ -51,11 +48,11 @@ Assist System) in order for openpilot to send steering commands.
 * 2017-18 EV: Premier trim with Driver Confidence II package [^1] [^2]
 * 2019-21 EV: Any trim with Driver Confidence II package [^3] [^4] [^5]
 * 2022-23 EV: All trim levels [^6] [^8]
-* 2022-23 EUV: All trim levels [^7] [^9]
+* 2022-23 EUV: All trim levels *without super cruise** [^7] [^9]
 
 ### Does your Bolt have Adaptive Cruise Control (ACC)?
 
-Both ACC and non-ACC are compatible with StarPilot, 
+Both ACC and non-ACC are compatible with StarPilot,
 but vary slightly in hardware recommendations.
 
 #### Trim Levels with ACC
