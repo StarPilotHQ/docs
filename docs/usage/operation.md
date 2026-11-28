@@ -62,9 +62,9 @@ Lane-change assistance depends on the minimum-speed setting and vehicle capabili
 | Dark teal | AOL armed and waiting to assist |
 | Teal | Steering assistance without active speed control |
 | Pink | StarPilot speed control only |
-| Green | Steering and speed assistance together, or steering with factory cruise |
+| Green | Steering and speed assistance together, steering with factory cruise, or cruising with E2E as the primary planner |
 | Yellow | Manually selected Chill mode |
-| Orange | Experimental mode on Stable or a stop-related state |
+| Orange | Slowing with E2E as the primary planner, or a stop-related state |
 | Red | Traffic Mode |
 | Purple | Switchback Mode |
 | Grey | Manual steering or speed override |
@@ -72,8 +72,8 @@ Lane-change assistance depends on the minimum-speed setting and vehicle capabili
 Mode and override colors can take precedence over the steering/speed colors. Alerts and
 optional turn-signal or blindspot edge indicators can also change the displayed border.
 
-For the planned border behavior when End to End is the primary planner, see
-[Upcoming End to End behavior](#end-to-end).
+When [End to End (E2E)](#end-to-end) is the primary planner, the display shows the reason
+for slowing alongside the orange border.
 
 ### Max Speed
 
@@ -154,40 +154,35 @@ waits for Resume or accelerator input while assistance is active and the require
 are valid. Disengaging assistance or losing required data can end the hold. Be ready to
 hold the vehicle with the brake. This option applies on the next drive.
 
-## Experimental Mode on Stable {#experimental-mode}
+<span id="experimental-mode"></span>
 
-Driving Mode offers **Automatic**, **Chill** and **Experimental**.
+## End to End
 
-Experimental mode, also known as end-to-end longitudinal, lets the driving model influence
+**Driving Mode** offers **Automatic**, **Chill** and **End to End**.
+
+**End to End** (**E2E** on compact displays) lets the driving model influence
 acceleration and braking on supported configurations. The active planner and vehicle limits
 still apply.
 
 Behavior varies with the driving model and conditions. It may brake or accelerate
 unexpectedly; stay attentive and ready to take control.
 
-## Conditional Experimental Mode on Stable {#conditional-experimental-mode}
+See [End to End acceleration](./settings.md#end-to-end-acceleration) for how the driving
+personalities use the model acceleration boost.
 
-Conditional Experimental Mode (CEM) is presented as **Automatic** in Driving Mode. It switches
-between Chill and Experimental using your saved conditions. Configure these under
-**Automatic conditions**.
+<span id="conditional-experimental-mode"></span>
 
-### CEM Widgets and Meaning
+## Automatic Driving Mode
+
+**Automatic** switches between **Chill** and **End to End** using your saved conditions.
+Configure these under **Automatic conditions**.
+
+<span id="cem-widgets-and-meaning"></span>
+
+### Automatic Mode Indicator
 
 The on-screen indicator shows the reason for the current mode choice, such as speed, a lead
 vehicle, curves, a turn signal or a stop condition.
-
-## Upcoming End to End behavior {#end-to-end}
-
-The upcoming `testingupstreamsync` integration plans to rename the **Experimental** driving mode
-to **End to End** (**E2E** in compact displays). E2E lets the driving model influence
-acceleration and braking on supported configurations.
-
-When E2E is the primary planner, the border is planned to be green while cruising and orange
-while slowing. The display will show the reason for slowing. Alerts and overrides can still
-take precedence.
-
-See [planned acceleration behavior](./settings.md#end-to-end-acceleration) for the changes by
-driving personality.
 
 ## Conditional Chill Mode
 
