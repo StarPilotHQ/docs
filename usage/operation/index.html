@@ -710,28 +710,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#experimental-mode" class="md-nav__link">
+  <a href="#end-to-end" class="md-nav__link">
     <span class="md-ellipsis">
-      Experimental Mode on Stable
+      End to End
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conditional-experimental-mode" class="md-nav__link">
+  <a href="#automatic-driving-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      Conditional Experimental Mode on Stable
+      Automatic Driving Mode
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Conditional Experimental Mode on Stable">
+    <nav class="md-nav" aria-label="Automatic Driving Mode">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cem-widgets-and-meaning" class="md-nav__link">
+  <a href="#automatic-mode-indicator" class="md-nav__link">
     <span class="md-ellipsis">
-      CEM Widgets and Meaning
+      Automatic Mode Indicator
     </span>
   </a>
   
@@ -739,15 +739,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#end-to-end" class="md-nav__link">
-    <span class="md-ellipsis">
-      Upcoming End to End behavior
-    </span>
-  </a>
   
 </li>
       
@@ -2169,28 +2160,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#experimental-mode" class="md-nav__link">
+  <a href="#end-to-end" class="md-nav__link">
     <span class="md-ellipsis">
-      Experimental Mode on Stable
+      End to End
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conditional-experimental-mode" class="md-nav__link">
+  <a href="#automatic-driving-mode" class="md-nav__link">
     <span class="md-ellipsis">
-      Conditional Experimental Mode on Stable
+      Automatic Driving Mode
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Conditional Experimental Mode on Stable">
+    <nav class="md-nav" aria-label="Automatic Driving Mode">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#cem-widgets-and-meaning" class="md-nav__link">
+  <a href="#automatic-mode-indicator" class="md-nav__link">
     <span class="md-ellipsis">
-      CEM Widgets and Meaning
+      Automatic Mode Indicator
     </span>
   </a>
   
@@ -2198,15 +2189,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#end-to-end" class="md-nav__link">
-    <span class="md-ellipsis">
-      Upcoming End to End behavior
-    </span>
-  </a>
   
 </li>
       
@@ -2317,7 +2299,7 @@ uncertain lanes still require a nudge.</p>
 </tr>
 <tr>
 <td>Green</td>
-<td>Steering and speed assistance together, or steering with factory cruise</td>
+<td>Steering and speed assistance together, steering with factory cruise, or cruising with E2E as the primary planner</td>
 </tr>
 <tr>
 <td>Yellow</td>
@@ -2325,7 +2307,7 @@ uncertain lanes still require a nudge.</p>
 </tr>
 <tr>
 <td>Orange</td>
-<td>Experimental mode on Stable or a stop-related state</td>
+<td>Slowing with E2E as the primary planner, or a stop-related state</td>
 </tr>
 <tr>
 <td>Red</td>
@@ -2343,8 +2325,8 @@ uncertain lanes still require a nudge.</p>
 </table>
 <p>Mode and override colors can take precedence over the steering/speed colors. Alerts and
 optional turn-signal or blindspot edge indicators can also change the displayed border.</p>
-<p>For the planned border behavior when End to End is the primary planner, see
-<a href="#end-to-end">Upcoming End to End behavior</a>.</p>
+<p>When <a href="#end-to-end">End to End (E2E)</a> is the primary planner, the display shows the reason
+for slowing alongside the orange border.</p>
 <h3 id="max-speed">Max Speed<a class="headerlink" href="#max-speed" title="Permanent link">&para;</a></h3>
 <p>Your cruise SET speed is shown in the driving UI; its position depends on the layout. SET is
 the driver’s cruise ceiling. Speed-limit control, curve-speed control or the active planner
@@ -2402,29 +2384,24 @@ and enables stopping at detected stop signs. Release behavior depends on the sto
 waits for Resume or accelerator input while assistance is active and the required inputs
 are valid. Disengaging assistance or losing required data can end the hold. Be ready to
 hold the vehicle with the brake. This option applies on the next drive.</p>
-<h2 id="experimental-mode">Experimental Mode on Stable<a class="headerlink" href="#experimental-mode" title="Permanent link">&para;</a></h2>
-<p>Driving Mode offers <strong>Automatic</strong>, <strong>Chill</strong> and <strong>Experimental</strong>.</p>
-<p>Experimental mode, also known as end-to-end longitudinal, lets the driving model influence
+<p><span id="experimental-mode"></span></p>
+<h2 id="end-to-end">End to End<a class="headerlink" href="#end-to-end" title="Permanent link">&para;</a></h2>
+<p><strong>Driving Mode</strong> offers <strong>Automatic</strong>, <strong>Chill</strong> and <strong>End to End</strong>.</p>
+<p><strong>End to End</strong> (<strong>E2E</strong> on compact displays) lets the driving model influence
 acceleration and braking on supported configurations. The active planner and vehicle limits
 still apply.</p>
 <p>Behavior varies with the driving model and conditions. It may brake or accelerate
 unexpectedly; stay attentive and ready to take control.</p>
-<h2 id="conditional-experimental-mode">Conditional Experimental Mode on Stable<a class="headerlink" href="#conditional-experimental-mode" title="Permanent link">&para;</a></h2>
-<p>Conditional Experimental Mode (CEM) is presented as <strong>Automatic</strong> in Driving Mode. It switches
-between Chill and Experimental using your saved conditions. Configure these under
-<strong>Automatic conditions</strong>.</p>
-<h3 id="cem-widgets-and-meaning">CEM Widgets and Meaning<a class="headerlink" href="#cem-widgets-and-meaning" title="Permanent link">&para;</a></h3>
+<p>See <a href="../settings/#end-to-end-acceleration">End to End acceleration</a> for how the driving
+personalities use the model acceleration boost.</p>
+<p><span id="conditional-experimental-mode"></span></p>
+<h2 id="automatic-driving-mode">Automatic Driving Mode<a class="headerlink" href="#automatic-driving-mode" title="Permanent link">&para;</a></h2>
+<p><strong>Automatic</strong> switches between <strong>Chill</strong> and <strong>End to End</strong> using your saved conditions.
+Configure these under <strong>Automatic conditions</strong>.</p>
+<p><span id="cem-widgets-and-meaning"></span></p>
+<h3 id="automatic-mode-indicator">Automatic Mode Indicator<a class="headerlink" href="#automatic-mode-indicator" title="Permanent link">&para;</a></h3>
 <p>The on-screen indicator shows the reason for the current mode choice, such as speed, a lead
 vehicle, curves, a turn signal or a stop condition.</p>
-<h2 id="end-to-end">Upcoming End to End behavior<a class="headerlink" href="#end-to-end" title="Permanent link">&para;</a></h2>
-<p>The upcoming <code>testingupstreamsync</code> integration plans to rename the <strong>Experimental</strong> driving mode
-to <strong>End to End</strong> (<strong>E2E</strong> in compact displays). E2E lets the driving model influence
-acceleration and braking on supported configurations.</p>
-<p>When E2E is the primary planner, the border is planned to be green while cruising and orange
-while slowing. The display will show the reason for slowing. Alerts and overrides can still
-take precedence.</p>
-<p>See <a href="../settings/#end-to-end-acceleration">planned acceleration behavior</a> for the changes by
-driving personality.</p>
 <h2 id="conditional-chill-mode">Conditional Chill Mode<a class="headerlink" href="#conditional-chill-mode" title="Permanent link">&para;</a></h2>
 <p>Older saved Conditional Chill Mode (CCM) selections are handled as Automatic. Current settings
 use <strong>Driving Mode</strong> and <strong>Automatic conditions</strong>, rather than a separate CCM editor.</p>
@@ -2457,7 +2434,7 @@ yourself. See <a href="../settings/#lateral-tuning">Lateral Tuning</a> for both 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 28, 2026 16:42:55 UTC">November 28, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 28, 2026 17:37:20 UTC">November 28, 2026</span>
   </span>
 
     
