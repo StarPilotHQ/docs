@@ -2325,32 +2325,28 @@
 <h2 id="vehicle-quirks">Vehicle Quirks<a class="headerlink" href="#vehicle-quirks" title="Permanent link">&para;</a></h2>
 <p>Things to be aware of for your vehicle:</p>
 <ul>
-<li>Steering assistance has a minimum operating speed. Be ready to steer at low speeds.</li>
-<li>On supported non-ACC Bolts, the <a href="../../hardware/comma-pedal/">Comma Pedal</a> uses regen in one-pedal or L mode to slow the vehicle. Braking can be limited, especially at low speed. Be ready to brake manually.</li>
-<li>On supported ACC Bolts, StarPilot can request friction braking through the factory ACC system. A compatible pedal can add stronger regen and support restarting from a stop. See <a href="#acc-bolts">ACC Bolts</a>.</li>
-<li>The regen paddle can disengage assistance where supported. If the LKAS button is unavailable with the harness connected, some ACC configurations can still use the distance button for supported actions.</li>
+<li>Steering assistance has a minimum operating speed of approximately 7 mph. Be ready to steer at low speeds.</li>
+<li>On supported non-ACC Bolts, the <a href="../../hardware/comma-pedal/">Comma Pedal</a> uses regen in one-pedal or L mode to slow the vehicle. StarPilot has no access to friction brakes, so deceleration can be limited, especially at low speed. Be ready to brake manually.</li>
+<li>On supported ACC Bolts, StarPilot can request friction braking through the factory ACC system. Regen is limited to 10kW. Installing a <a href="../../hardware/comma-pedal/">Comma Pedal</a> adds stronger regen (up to 70kW) and supports starting from a stop (stop and go). See <a href="#acc-bolts">ACC Bolts</a>.</li>
+<li>The regen paddle will disengage StarPilot throttle/brake control.</li>
 </ul>
 <h2 id="car-configuration">Car Configuration<a class="headerlink" href="#car-configuration" title="Permanent link">&para;</a></h2>
 <h3 id="starpilot-settings">StarPilot Settings<a class="headerlink" href="#starpilot-settings" title="Permanent link">&para;</a></h3>
-<p>In Galaxy, open <strong>Toggles → Vehicle</strong>. Use <strong>Auto</strong> or select the exact registered vehicle configuration if manual identification is needed. With the vehicle off, verify the ACC, harness and pedal options for your setup before your next drive. See <a href="../../usage/settings/#lateral-tuning">Settings</a> for supported controller choices.</p>
+<p>In Galaxy, open <strong>Toggles → Vehicle</strong>. With the car off, manually select the exact registered vehicle fingerprint that matches your configuration. Do not use any fingerprint containing ACC if you do not have ACC.</p>
 <h3 id="tires">Tires<a class="headerlink" href="#tires" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Use the pressures recommended for your vehicle and tires.</li>
-<li>Keep your car aligned.</li>
-<li>Check the vehicle manufacturer’s guidance before changing wheel or tire sizes.</li>
+<li>Keep your car wheels aligned.</li>
+<li>Check the vehicle manufacturer’s guidance before changing wheel or tire sizes. Keep in mind that non-stock tire sizes will affect the lateral performance of StarPilot.</li>
 </ul>
 <h3 id="one-pedal-drivingl-mode">One Pedal Driving/L Mode<a class="headerlink" href="#one-pedal-drivingl-mode" title="Permanent link">&para;</a></h3>
-<p>On Bolt setups that use the Comma Pedal for regen braking, use One Pedal mode on Gen 2 or L mode on Gen 0 and Gen 1. Factory ACC and ACC-plus-pedal configurations have their own braking behavior.</p>
+<p>On Bolt setups that use the Comma Pedal for regen braking, use One Pedal mode on 2022-2023 models or L mode on 2017-2021 models.</p>
 <h3 id="sport-mode">Sport Mode<a class="headerlink" href="#sport-mode" title="Permanent link">&para;</a></h3>
-<p>On affected 2022–23 Bolts, Sport Mode can reduce available steering torque. Leave it off if it affects steering response.</p>
+<p>On 2022–23 Bolts, enabling Sport Mode will reduce available steering torque.</p>
 <h2 id="vehicle-requirements">Vehicle Requirements<a class="headerlink" href="#vehicle-requirements" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Super Cruise</p>
-<p>The factory-ACC setup documented here is for Bolt EUVs without the Super Cruise package. Check <a href="../support/">Vehicle Compatibility</a> for supported configurations.</p>
-</div>
 <h3 id="lane-keep-assist-system-lkas">Lane Keep Assist System (LKAS)<a class="headerlink" href="#lane-keep-assist-system-lkas" title="Permanent link">&para;</a></h3>
-<p>As with most openpilot compatible cars, the Bolt must be equipped with LKAS (Lane Keep 
-Assist System) in order for openpilot to send steering commands. </p>
+<p>As with most openpilot compatible cars, the Bolt must be equipped with LKAS (Lane Keep
+Assist System) in order for openpilot to send steering commands.</p>
 <h4 id="trim-levels-with-lkas">Trim Levels with LKAS<a class="headerlink" href="#trim-levels-with-lkas" title="Permanent link">&para;</a></h4>
 <div class="admonition warning">
 <p class="admonition-title">Unofficial list</p>
@@ -2360,10 +2356,10 @@ Assist System) in order for openpilot to send steering commands. </p>
 <li>2017-18 EV: Premier trim with Driver Confidence II package <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2018-bolt.pdf">^1</a></li>
 <li>2019-21 EV: Any trim with Driver Confidence II package <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2020-boltev.pdf">^3</a> <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2021-boltev.pdf">^5</a></li>
 <li>2022-23 EV: All trim levels <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2023-boltev.pdf">^6</a></li>
-<li>2022-23 EUV: All trim levels <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2023-bolteuv.pdf">^7</a></li>
+<li>2022-23 EUV: All trim levels <em>without super cruise</em>* <a href="https://cdn.dealereprocess.org/cdn/brochures/chevrolet/2023-bolteuv.pdf">^7</a></li>
 </ul>
 <h3 id="does-your-bolt-have-adaptive-cruise-control-acc">Does your Bolt have Adaptive Cruise Control (ACC)?<a class="headerlink" href="#does-your-bolt-have-adaptive-cruise-control-acc" title="Permanent link">&para;</a></h3>
-<p>Both ACC and non-ACC are compatible with StarPilot, 
+<p>Both ACC and non-ACC are compatible with StarPilot,
 but vary slightly in hardware recommendations.</p>
 <h4 id="trim-levels-with-acc">Trim Levels with ACC<a class="headerlink" href="#trim-levels-with-acc" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2456,7 +2452,7 @@ for other pedal builds. Confirm which branch matches your setup.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2026 02:49:03 UTC">November 18, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 28, 2026 03:27:30 UTC">November 28, 2026</span>
   </span>
 
     
@@ -2484,6 +2480,11 @@ for other pedal builds. Confirm which branch matches your setup.</p>
     
     <nav>
       
+        <a href="https://github.com/mtawata" class="md-author" title="@mtawata">
+          
+          <img src="https://avatars.githubusercontent.com/u/24485504?v=4&size=72" alt="mtawata">
+        </a>
+      
         <a href="https://github.com/natehuby76" class="md-author" title="@natehuby76">
           
           <img src="https://avatars.githubusercontent.com/u/86365949?v=4&size=72" alt="natehuby76">
@@ -2497,11 +2498,6 @@ for other pedal builds. Confirm which branch matches your setup.</p>
         <a href="https://github.com/L4M3573R" class="md-author" title="@L4M3573R">
           
           <img src="https://avatars.githubusercontent.com/u/87735573?v=4&size=72" alt="L4M3573R">
-        </a>
-      
-        <a href="https://github.com/sherloaf-holmes" class="md-author" title="@sherloaf-holmes">
-          
-          <img src="https://avatars.githubusercontent.com/u/218003650?v=4&size=72" alt="sherloaf-holmes">
         </a>
       
       
